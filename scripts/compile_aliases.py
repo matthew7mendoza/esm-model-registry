@@ -20,7 +20,7 @@ def extract_aliases_from_file(file_path: Path) -> dict:
         return empty_dictionary
     if not data:
         return empty_dictionary
-    variables = data.get("variables", {})
+    variables = data.get("variable_entry", {})
     return {
         variable_name.lower().strip(): variable_name 
         for variable_name in variables

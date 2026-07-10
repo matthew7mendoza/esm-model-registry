@@ -78,8 +78,7 @@ def process_single_table(javascript_object_notation_filename: str, expected_pref
     except ValueError:
         return
     
-    parsed_variables_dictionary = raw_table_dictionary.get("variable_entry", {})
-    if not parsed_variables_dictionary:
+    if not raw_table_dictionary:
         return
     
     clean_name = javascript_object_notation_filename
@@ -91,7 +90,7 @@ def process_single_table(javascript_object_notation_filename: str, expected_pref
     target_filename = clean_name.replace(".json", ".yaml")
     output_file_path = os.path.join(OUTPUT_DIRECTORY, target_filename)
     try:
-        yaml_content = yaml.dump(parsed_variables_dictionary)
+        yaml_content = yaml.dump(raw_table_dictionary, sort_keys=False)
     except yaml.YAMLError:
         return
     
