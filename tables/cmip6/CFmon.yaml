@@ -1,0 +1,288 @@
+variables:
+  albisccp:
+    dimensions: longitude latitude time
+    long_name: ISCCP Mean Cloud Albedo
+    standard_name: cloud_albedo
+    units: '1'
+  clc:
+    dimensions: longitude latitude alevel time
+    long_name: Convective Cloud Area Percentage
+    standard_name: convective_cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clcalipso:
+    dimensions: longitude latitude alt40 time
+    long_name: CALIPSO Percentage Cloud Cover
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clhcalipso:
+    dimensions: longitude latitude time p220
+    long_name: CALIPSO High Level Cloud Area Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clic:
+    dimensions: longitude latitude alevel time
+    long_name: Mass Fraction of Convective Cloud Ice
+    standard_name: mass_fraction_of_convective_cloud_ice_in_air
+    units: '1'
+  clis:
+    dimensions: longitude latitude alevel time
+    long_name: Mass Fraction of Stratiform Cloud Ice
+    standard_name: mass_fraction_of_stratiform_cloud_ice_in_air
+    units: '1'
+  clisccp:
+    dimensions: longitude latitude plev7c tau time
+    long_name: ISCCP Cloud Area Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cllcalipso:
+    dimensions: longitude latitude time p840
+    long_name: CALIPSO Low Level Cloud Cover Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clmcalipso:
+    dimensions: longitude latitude time p560
+    long_name: CALIPSO Mid Level Cloud Cover Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cls:
+    dimensions: longitude latitude alevel time
+    long_name: Percentage Cover of Stratiform Cloud
+    standard_name: stratiform_cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cltcalipso:
+    dimensions: longitude latitude time
+    long_name: CALIPSO Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  cltisccp:
+    dimensions: longitude latitude time
+    long_name: ISCCP Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  clwc:
+    dimensions: longitude latitude alevel time
+    long_name: Mass Fraction of Convective Cloud Liquid Water
+    standard_name: mass_fraction_of_convective_cloud_liquid_water_in_air
+    units: '1'
+  clws:
+    dimensions: longitude latitude alevel time
+    long_name: Mass Fraction of Stratiform Cloud Liquid Water
+    standard_name: mass_fraction_of_stratiform_cloud_liquid_water_in_air
+    units: '1'
+  dmc:
+    dimensions: longitude latitude alevhalf time
+    long_name: Deep Convective Mass Flux
+    standard_name: atmosphere_net_upward_deep_convective_mass_flux
+    units: kg m-2 s-1
+  edt:
+    dimensions: longitude latitude alevel time
+    long_name: Eddy Diffusivity Coefficient for Temperature
+    standard_name: atmosphere_heat_diffusivity
+    units: m2 s-1
+  evu:
+    dimensions: longitude latitude alevel time
+    long_name: Eddy Viscosity Coefficient for Momentum
+    standard_name: atmosphere_momentum_diffusivity
+    units: m2 s-1
+  hur:
+    dimensions: longitude latitude alevel time
+    long_name: Relative Humidity
+    standard_name: relative_humidity
+    units: '%'
+  hus:
+    dimensions: longitude latitude alevel time
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  mcd:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downdraft Convective Mass Flux
+    standard_name: atmosphere_downdraft_convective_mass_flux
+    units: kg m-2 s-1
+  mcu:
+    dimensions: longitude latitude alevhalf time
+    long_name: Convective Updraft Mass Flux
+    standard_name: atmosphere_updraft_convective_mass_flux
+    units: kg m-2 s-1
+  pctisccp:
+    dimensions: longitude latitude time
+    long_name: ISCCP Mean Cloud Top Pressure
+    standard_name: air_pressure_at_cloud_top
+    units: Pa
+  ps:
+    dimensions: longitude latitude time
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  rld:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Longwave Radiation
+    standard_name: downwelling_longwave_flux_in_air
+    units: W m-2
+  rld4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Longwave Radiation 4XCO2 Atmosphere
+    standard_name: downwelling_longwave_flux_in_air
+    units: W m-2
+  rldcs:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Clear-Sky Longwave Radiation
+    standard_name: downwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rldcs4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Clear-Sky Longwave Radiation 4XCO2 Atmosphere
+    standard_name: downwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlu:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Longwave Radiation
+    standard_name: upwelling_longwave_flux_in_air
+    units: W m-2
+  rlu4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Longwave Radiation 4XCO2 Atmosphere
+    standard_name: upwelling_longwave_flux_in_air
+    units: W m-2
+  rlucs:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Clear-Sky Longwave Radiation
+    standard_name: upwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlucs4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Clear-Sky Longwave Radiation 4XCO2 Atmosphere
+    standard_name: upwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlut4co2:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Longwave Radiation 4XCO2 Atmosphere
+    standard_name: toa_outgoing_longwave_flux
+    units: W m-2
+  rlutcs4co2:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Clear-Sky Longwave Radiation 4XCO2 Atmosphere
+    standard_name: toa_outgoing_longwave_flux_assuming_clear_sky
+    units: W m-2
+  rsd:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Shortwave Radiation
+    standard_name: downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsd4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Shortwave Radiation 4XCO2 Atmosphere
+    standard_name: downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsdcs:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Clear-Sky Shortwave Radiation
+    standard_name: downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdcs4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Downwelling Clear-Sky Shortwave Radiation 4XCO2 Atmosphere
+    standard_name: downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsu:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Shortwave Radiation
+    standard_name: upwelling_shortwave_flux_in_air
+    units: W m-2
+  rsu4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Shortwave Radiation 4XCO2 Atmosphere
+    standard_name: upwelling_shortwave_flux_in_air
+    units: W m-2
+  rsucs:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Clear-Sky Shortwave Radiation
+    standard_name: upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsucs4co2:
+    dimensions: longitude latitude alevhalf time
+    long_name: Upwelling Clear-Sky Shortwave Radiation 4XCO2 Atmosphere
+    standard_name: upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsut4co2:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Shortwave Radiation in 4XCO2 Atmosphere
+    standard_name: toa_outgoing_shortwave_flux
+    units: W m-2
+  rsutcs4co2:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Clear-Sky Shortwave Radiation 4XCO2 Atmosphere
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky
+    units: W m-2
+  smc:
+    dimensions: longitude latitude alevhalf time
+    long_name: Shallow Convective Mass Flux
+    standard_name: atmosphere_net_upward_shallow_convective_mass_flux
+    units: kg m-2 s-1
+  ta:
+    dimensions: longitude latitude alevel time
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tnhus:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity
+    standard_name: tendency_of_specific_humidity
+    units: s-1
+  tnhusa:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity Due to Advection
+    standard_name: tendency_of_specific_humidity_due_to_advection
+    units: s-1
+  tnhusc:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity Due to Convection
+    standard_name: tendency_of_specific_humidity_due_to_convection
+    units: s-1
+  tnhusd:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity Due to Numerical Diffusion
+    standard_name: tendency_of_specific_humidity_due_to_diffusion
+    units: s-1
+  tnhusmp:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity Due to Model Physics
+    standard_name: tendency_of_specific_humidity_due_to_model_physics
+    units: s-1
+  tnhusscpbl:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity Due to Stratiform Cloud and Precipitation
+      and Boundary Layer Mixing
+    standard_name: tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing
+    units: s-1
+  tnt:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature
+    standard_name: tendency_of_air_temperature
+    units: K s-1
+  tnta:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Advection
+    standard_name: tendency_of_air_temperature_due_to_advection
+    units: K s-1
+  tntc:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Convection
+    standard_name: tendency_of_air_temperature_due_to_convection
+    units: K s-1
+  tntmp:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Model Physics
+    standard_name: tendency_of_air_temperature_due_to_model_physics
+    units: K s-1
+  tntr:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_radiative_heating
+    units: K s-1
+  tntscpbl:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Stratiform Cloud and Precipitation
+      and Boundary Layer Mixing
+    standard_name: tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing
+    units: K s-1

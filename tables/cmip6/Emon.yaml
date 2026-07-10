@@ -1,0 +1,1734 @@
+variables:
+  c13Land:
+    dimensions: longitude latitude time
+    long_name: Mass of 13C in All Terrestrial Carbon Pools
+    standard_name: mass_content_of_13C_in_vegetation_and_litter_and_soil_and_forestry_and_agricultural_products
+    units: kg m-2
+  c13Litter:
+    dimensions: longitude latitude time
+    long_name: Mass of 13C in Litter Pool
+    standard_name: litter_mass_content_of_13C
+    units: kg m-2
+  c13Soil:
+    dimensions: longitude latitude time
+    long_name: Mass of 13C in Soil Pool
+    standard_name: soil_mass_content_of_13C
+    units: kg m-2
+  c13Veg:
+    dimensions: longitude latitude time
+    long_name: Mass of 13C in Vegetation
+    standard_name: vegetation_mass_content_of_13C
+    units: kg m-2
+  c14Land:
+    dimensions: longitude latitude time
+    long_name: Mass of 14C in All Terrestrial Carbon Pools
+    standard_name: mass_content_of_14C_in_vegetation_and_litter_and_soil_and_forestry_and_agricultural_products
+    units: kg m-2
+  c14Litter:
+    dimensions: longitude latitude time
+    long_name: Mass of 14C in Litter Pool
+    standard_name: litter_mass_content_of_14C
+    units: kg m-2
+  c14Soil:
+    dimensions: longitude latitude time
+    long_name: Mass of 14C in Soil Pool
+    standard_name: soil_mass_content_of_14C
+    units: kg m-2
+  c14Veg:
+    dimensions: longitude latitude time
+    long_name: Mass of 14C in Vegetation
+    standard_name: vegetation_mass_content_of_14C
+    units: kg m-2
+  cLand:
+    dimensions: longitude latitude time
+    long_name: Total Carbon in All Terrestrial Carbon Pools
+    standard_name: mass_content_of_carbon_in_vegetation_and_litter_and_soil_and_forestry_and_agricultural_products
+    units: kg m-2
+  cLitterCwd:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Coarse Woody Debris
+    standard_name: wood_debris_mass_content_of_carbon
+    units: kg m-2
+  cLitterGrass:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Litter on Grass Tiles
+    standard_name: litter_mass_content_of_carbon
+    units: kg m-2
+  cLitterShrub:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Litter on Shrub Tiles
+    standard_name: litter_mass_content_of_carbon
+    units: kg m-2
+  cLitterSubSurf:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Below-Ground Litter
+    standard_name: subsurface_litter_mass_content_of_carbon
+    units: kg m-2
+  cLitterSurf:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Above-Ground Litter
+    standard_name: surface_litter_mass_content_of_carbon
+    units: kg m-2
+  cLitterTree:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Litter on Tree Tiles
+    standard_name: litter_mass_content_of_carbon
+    units: kg m-2
+  cMisc:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Other Living Compartments on Land
+    standard_name: miscellaneous_living_matter_mass_content_of_carbon
+    units: kg m-2
+  cOther:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Vegetation Components Other than Leaves, Stems and Roots
+    standard_name: miscellaneous_living_matter_mass_content_of_carbon
+    units: kg m-2
+  cSoil:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Model Soil Pool
+    standard_name: soil_mass_content_of_carbon
+    units: kg m-2
+  cSoilAbove1m:
+    dimensions: longitude latitude time sdepth10
+    long_name: Carbon Mass in Soil Pool Above 1m Depth
+    standard_name: soil_mass_content_of_carbon
+    units: kg m-2
+  cSoilGrass:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Soil on Grass Tiles
+    standard_name: soil_mass_content_of_carbon
+    units: kg m-2
+  cSoilLevels:
+    dimensions: longitude latitude sdepth time
+    long_name: Carbon Mass in Each Model Soil Level (Summed over All Soil Carbon Pools
+      in That Level)
+    standard_name: soil_mass_content_of_carbon
+    units: kg m-2
+  cSoilPools:
+    dimensions: longitude latitude soilpools time
+    long_name: Carbon Mass in Each Model Soil Pool (Summed over Vertical Levels)
+    standard_name: soil_mass_content_of_carbon
+    units: kg m-2
+  cSoilShrub:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Soil on Shrub Tiles
+    standard_name: soil_mass_content_of_carbon
+    units: kg m-2
+  cSoilTree:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Soil on Tree Tiles
+    standard_name: soil_mass_content_of_carbon
+    units: kg m-2
+  cStem:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Stem
+    standard_name: stem_mass_content_of_carbon
+    units: kg m-2
+  cTotFireLut:
+    dimensions: longitude latitude landUse time
+    long_name: Total Carbon Loss from Natural and Managed Fire on Land-Use Tile, Including
+      Deforestation Fires [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires
+    units: kg m-2 s-1
+  cVegGrass:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Vegetation on Grass Tiles
+    standard_name: vegetation_carbon_content
+    units: kg m-2
+  cVegShrub:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Vegetation on Shrub Tiles
+    standard_name: vegetation_carbon_content
+    units: kg m-2
+  cVegTree:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Vegetation on Tree Tiles
+    standard_name: vegetation_carbon_content
+    units: kg m-2
+  cWood:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Wood
+    standard_name: stem_mass_content_of_carbon
+    units: kg m-2
+  cfadDbze94:
+    dimensions: longitude latitude alt40 dbze time
+    long_name: CloudSat Radar Reflectivity CFAD
+    standard_name: histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid
+    units: '1'
+  cfadLidarsr532:
+    dimensions: longitude latitude alt40 scatratio time
+    long_name: CALIPSO Scattering Ratio CFAD
+    standard_name: histogram_of_backscattering_ratio_in_air_over_height_above_reference_ellipsoid
+    units: '1'
+  clcalipsoice:
+    dimensions: longitude latitude alt40 time
+    long_name: CALIPSO Ice Cloud Percentage
+    standard_name: ice_cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clcalipsoliq:
+    dimensions: longitude latitude alt40 time
+    long_name: CALIPSO Liquid Cloud Percentage
+    standard_name: liquid_water_cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cldicemxrat27:
+    dimensions: longitude latitude plev27 time
+    long_name: Cloud Ice Mixing Ratio
+    standard_name: cloud_ice_mixing_ratio
+    units: '1'
+  cldnci:
+    dimensions: longitude latitude time
+    long_name: Ice Crystal Number Concentration of Cloud Tops
+    standard_name: number_concentration_of_ice_crystals_in_air_at_ice_cloud_top
+    units: m-3
+  cldncl:
+    dimensions: longitude latitude time
+    long_name: Cloud Droplet Number Concentration of Cloud Tops
+    standard_name: number_concentration_of_cloud_liquid_water_particles_in_air_at_liquid_water_cloud_top
+    units: m-3
+  cldnvi:
+    dimensions: longitude latitude time
+    long_name: Column Integrated Cloud Droplet Number
+    standard_name: atmosphere_number_content_of_cloud_droplets
+    units: m-2
+  cldwatmxrat27:
+    dimensions: longitude latitude plev27 time
+    long_name: Cloud Water Mixing Ratio
+    standard_name: cloud_liquid_water_mixing_ratio
+    units: '1'
+  climodis:
+    dimensions: longitude latitude time
+    long_name: MODIS Ice Cloud Area Percentage
+    standard_name: ice_cloud_area_fraction
+    units: '%'
+  clmisr:
+    dimensions: longitude latitude alt16 tau time
+    long_name: Percentage Cloud Cover as Calculated by the MISR Simulator (Including
+      Error Flag)
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cltmodis:
+    dimensions: longitude latitude time
+    long_name: MODIS Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  clwmodis:
+    dimensions: longitude latitude time
+    long_name: MODIS Liquid Cloud Percentage
+    standard_name: liquid_water_cloud_area_fraction
+    units: '%'
+  clwvic:
+    dimensions: longitude latitude time
+    long_name: Convective Condensed Water Path
+    standard_name: atmosphere_mass_content_of_convective_cloud_condensed_water
+    units: kg m-2
+  co23D:
+    dimensions: longitude latitude alevel time
+    long_name: 3D-Field of Transported CO2
+    standard_name: mass_fraction_of_carbon_dioxide_tracer_in_air
+    units: kg kg-1
+  co2s:
+    dimensions: longitude latitude time
+    long_name: Atmosphere CO2
+    standard_name: mole_fraction_of_carbon_dioxide_in_air
+    units: 1e-06
+  columnmassflux:
+    dimensions: longitude latitude time
+    long_name: Column Integrated Mass Flux
+    standard_name: atmosphere_net_upward_convective_mass_flux
+    units: kg m-2 s-1
+  conccmcn:
+    dimensions: longitude latitude alevel time
+    long_name: Number Concentration Coarse Mode Aerosol
+    standard_name: number_concentration_of_coarse_mode_ambient_aerosol_particles_in_air
+    units: m-3
+  conccn:
+    dimensions: longitude latitude alevel time
+    long_name: Aerosol Number Concentration
+    standard_name: number_concentration_of_ambient_aerosol_particles_in_air
+    units: m-3
+  concdust:
+    dimensions: longitude latitude alevel time
+    long_name: Concentration of Dust
+    standard_name: mass_concentration_of_dust_dry_aerosol_particles_in_air
+    units: kg m-3
+  concnmcn:
+    dimensions: longitude latitude alevel time
+    long_name: Number Concentration of Nucleation Mode Aerosol
+    standard_name: number_concentration_of_nucleation_mode_ambient_aerosol_particles_in_air
+    units: m-3
+  cropFracC3:
+    dimensions: longitude latitude time typec3crop
+    long_name: Percentage Cover by C3 Crops
+    standard_name: area_fraction
+    units: '%'
+  cropFracC4:
+    dimensions: longitude latitude time typec4crop
+    long_name: Percentage Cover by C4 Crops
+    standard_name: area_fraction
+    units: '%'
+  depdust:
+    dimensions: longitude latitude time
+    long_name: Total Deposition Rate of Dust
+    standard_name: minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_deposition
+    units: kg m-2 s-1
+  diabdrag:
+    dimensions: longitude latitude plev19 time
+    long_name: Tendency of Eastward Wind from Numerical Artefacts
+    standard_name: tendency_of_eastward_wind_due_to_numerical_artefacts
+    units: m s-2
+  dissi14c:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Inorganic Carbon-14 Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_14C_in_sea_water
+    units: mol m-3
+  ec550aer:
+    dimensions: longitude latitude alevel time lambda550nm
+    long_name: Aerosol Extinction Coefficient
+    standard_name: volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles
+    units: m-1
+  evspsblpot:
+    dimensions: longitude latitude time
+    long_name: Potential Evapotranspiration
+    standard_name: water_potential_evaporation_flux
+    units: kg m-2 s-1
+  exparag:
+    dimensions: longitude latitude olevel time
+    long_name: Downward Flux of Aragonite
+    standard_name: sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water
+    units: mol m-2 s-1
+  expcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Downward Flux of Calcite
+    standard_name: sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water
+    units: mol m-2 s-1
+  expfe:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Iron Flux
+    standard_name: sinking_mole_flux_of_particulate_iron_in_sea_water
+    units: mol m-2 s-1
+  expn:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Organic Nitrogen Flux
+    standard_name: sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water
+    units: mol m-2 s-1
+  expp:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Organic Phosphorus Flux
+    standard_name: sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water
+    units: mol m-2 s-1
+  expsi:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Silicon Flux
+    standard_name: sinking_mole_flux_of_particulate_silicon_in_sea_water
+    units: mol m-2 s-1
+  fAnthDisturb:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux from Vegetation, Litter or Soil Pools into the Atmosphere
+      Due to any Human Activity [kgC m-2 s-1]
+    standard_name: tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission
+    units: kg m-2 s-1
+  fBNF:
+    dimensions: longitude latitude time
+    long_name: Biological Nitrogen Fixation
+    standard_name: tendency_of_soil_and_vegetation_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fixation
+    units: kg m-2 s-1
+  fCLandToOcean:
+    dimensions: longitude latitude time
+    long_name: Lateral Transfer of Carbon out of Grid Cell That Eventually Goes into
+      Ocean
+    standard_name: mass_flux_of_carbon_into_sea_water_from_rivers
+    units: kg m-2 s-1
+  fDeforestToAtmos:
+    dimensions: longitude latitude time
+    long_name: Deforested Biomass That Goes into Atmosphere as a Result of Anthropogenic
+      Land-Use Change [kgC m-2 s-1]
+    standard_name: surface_net_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_anthropogenic_land_use_change
+    units: kg m-2 s-1
+  fDeforestToProduct:
+    dimensions: longitude latitude time
+    long_name: Deforested Biomass That Goes into Product Pool as a Result of Anthropogenic
+      Land-Use Change
+    standard_name: carbon_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change
+    units: kg m-2 s-1
+  fFireAll:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to CO2 Emission from Fire Including
+      All Sources [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires
+    units: kg m-2 s-1
+  fFireNat:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to CO2 Emission from Natural Fire
+      [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_fires
+    units: kg m-2 s-1
+  fHarvestToAtmos:
+    dimensions: longitude latitude time
+    long_name: Harvested Biomass That Goes Straight into Atmosphere as Carbon Mass
+      Flux [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_crop_harvesting
+    units: kg m-2 s-1
+  fHarvestToProduct:
+    dimensions: longitude latitude time
+    long_name: Harvested Biomass That Goes into Product Pool
+    standard_name: mass_flux_of_carbon_into_forestry_and_agricultural_products_due_to_crop_harvesting
+    units: kg m-2 s-1
+  fLitterFire:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux from Litter, CWD or any non-Living Pool into Atmosphere
+      Due to CO2 Emission from All Fire [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_litter_in_fires
+    units: kg m-2 s-1
+  fLuc:
+    dimensions: longitude latitude time
+    long_name: Net Carbon Mass Flux into Atmosphere Due to Land-Use Change [kgC m-2
+      s-1]
+    standard_name: surface_net_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_anthropogenic_land_use_change
+    units: kg m-2 s-1
+  fLulccAtmLut:
+    dimensions: longitude latitude landUse time
+    long_name: Carbon Transferred Directly to Atmosphere Due to any Land-Use or Land-Cover
+      Change Activities [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_land_use_or_land_cover_change_excluding_forestry_and_agricultural_products
+    units: kg m-2 s-1
+  fLulccProductLut:
+    dimensions: longitude latitude landUse time
+    long_name: Carbon Harvested Due to Land-Use or Land-Cover Change Process That
+      Enters Anthropogenic Product Pools on Tile
+    standard_name: carbon_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change
+    units: kg m-2 s-1
+  fLulccResidueLut:
+    dimensions: longitude latitude landUse time
+    long_name: Carbon Transferred to Soil or Litter Pools Due to Land-Use or Land-Cover
+      Change Processes on Tile
+    standard_name: carbon_mass_flux_into_litter_and_soil_due_to_anthropogenic_land_use_or_land_cover_change
+    units: kg m-2 s-1
+  fN2O:
+    dimensions: longitude latitude time
+    long_name: Total Land N2O Flux
+    standard_name: surface_upward_mass_flux_of_nitrous_oxide_expressed_as_nitrogen_out_of_vegetation_and_litter_and_soil
+    units: kg m-2 s-1
+  fNAnthDisturb:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass Flux out of Land Due to any Human Activity
+    standard_name: tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_anthropogenic_emission
+    units: kg m-2 s-1
+  fNLandToOcean:
+    dimensions: longitude latitude time
+    long_name: Lateral Transfer of Nitrogen out of Grid Cell That Eventually Goes
+      into Ocean
+    standard_name: mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_into_sea_from_rivers
+    units: kg m-2 s-1
+  fNLitterSoil:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Mass Flux from Litter to Soil
+    standard_name: nitrogen_mass_flux_into_soil_from_litter
+    units: kg m-2 s-1
+  fNOx:
+    dimensions: longitude latitude time
+    long_name: Total Land NOx Flux
+    standard_name: surface_upward_mass_flux_of_nox_expressed_as_nitrogen_out_of_vegetation_and_litter_and_soil
+    units: kg m-2 s-1
+  fNProduct:
+    dimensions: longitude latitude time
+    long_name: Deforested or Harvested Biomass as a Result of Anthropogenic Land-Use
+      or Change
+    standard_name: nitrogen_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change
+    units: kg m-2 s-1
+  fNVegLitter:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Mass Flux from Vegetation to Litter
+    standard_name: nitrogen_mass_flux_into_litter_from_vegetation
+    units: kg m-2 s-1
+  fNVegSoil:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Mass Flux from Vegetation Directly to Soil
+    standard_name: nitrogen_mass_flux_into_soil_from_vegetation_excluding_litter
+    units: kg m-2 s-1
+  fNdep:
+    dimensions: longitude latitude time
+    long_name: Dry and Wet Deposition of Reactive Nitrogen onto Land
+    standard_name: minus_tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition
+    units: kg m-2 s-1
+  fNfert:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Added for Cropland Fertilisation (Artificial and Manure)
+    standard_name: tendency_of_soil_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fertilization
+    units: kg m-2 s-1
+  fNgas:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Lost to the Atmosphere (Sum of NHx, NOx, N2O, N2)
+    standard_name: surface_upward_mass_flux_of_nitrogen_compounds_expressed_as_nitrogen
+    units: kg m-2 s-1
+  fNgasFire:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Lost to the Atmosphere (Including NHx, NOx, N2O, N2)
+      from Fire
+    standard_name: surface_upward_mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_due_to_emission_from_fires
+    units: kg m-2 s-1
+  fNgasNonFire:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Lost to the Atmosphere (Including NHx, NOx, N2O, N2)
+      from All Processes Except Fire
+    standard_name: surface_upward_mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_due_to_all_land_processes_excluding_fires
+    units: kg m-2 s-1
+  fNleach:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Loss to Leaching or Runoff (Sum of Ammonium, Nitrite
+      and Nitrate)
+    standard_name: mass_flux_of_carbon_out_of_soil_due_to_leaching_and_runoff
+    units: kg m-2 s-1
+  fNloss:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen Lost (Including NHx, NOx, N2O, N2 and Leaching)
+    standard_name: surface_upward_mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_out_of_vegetation_and_litter_and_soil
+    units: kg m-2 s-1
+  fNnetmin:
+    dimensions: longitude latitude time
+    long_name: Net Nitrogen Release from Soil and Litter as the Outcome of Nitrogen
+      Immobilisation and Gross Mineralisation
+    standard_name: mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_out_of_litter_and_soil_due_to_immobilisation_and_remineralization
+    units: kg m-2 s-1
+  fNup:
+    dimensions: longitude latitude time
+    long_name: Total Plant Nitrogen Uptake (Sum of Ammonium and Nitrate) Irrespective
+      of the Source of Nitrogen
+    standard_name: tendency_of_vegetation_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fixation
+    units: kg m-2 s-1
+  fProductDecomp:
+    dimensions: longitude latitude time
+    long_name: Decomposition out of Product Pools to CO2 in Atmosphere as Carbon Mass
+      Flux [kgC m-2 s-1]
+    standard_name: tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_forestry_and_agricultural_products
+    units: kg m-2 s-1
+  fProductDecompLut:
+    dimensions: longitude latitude landUse time
+    long_name: Net Carbon Mass Flux from Wood and Agricultural Product Pools on Land
+      Use Tile into Atmosphere [kgC m-2 s-1]
+    standard_name: tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_forestry_and_agricultural_products
+    units: kg m-2 s-1
+  fVegFire:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux from Vegetation into Atmosphere Due to CO2 Emission
+      from All Fire [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_vegetation_in_fires
+    units: kg m-2 s-1
+  fVegLitterMortality:
+    dimensions: longitude latitude time
+    long_name: Total Carbon Mass Flux from Vegetation to Litter as a Result of Mortality
+    standard_name: mass_flux_of_carbon_into_litter_from_vegetation_due_to_mortality
+    units: kg m-2 s-1
+  fVegLitterSenescence:
+    dimensions: longitude latitude time
+    long_name: Total Carbon Mass Flux from Vegetation to Litter as a Result of Leaf,
+      Branch, and Root Senescence
+    standard_name: mass_flux_of_carbon_into_litter_from_vegetation_due_to_senescence
+    units: kg m-2 s-1
+  fVegSoilMortality:
+    dimensions: longitude latitude time
+    long_name: Total Carbon Mass Flux from Vegetation to Soil as a Result of Mortality
+    standard_name: mass_flux_of_carbon_into_soil_from_vegetation_due_to_mortality
+    units: kg m-2 s-1
+  fVegSoilSenescence:
+    dimensions: longitude latitude time
+    long_name: Total Carbon Mass Flux from Vegetation to Soil as a Result of Leaf,
+      Branch, and Root Senescence
+    standard_name: mass_flux_of_carbon_into_soil_from_vegetation_due_to_senescence
+    units: kg m-2 s-1
+  fahLut:
+    dimensions: longitude latitude landUse time
+    long_name: Anthropogenic Heat Flux Generated from non-Renewable Human Primary
+      Energy Consumption
+    standard_name: surface_upward_heat_flux_due_to_anthropogenic_energy_consumption
+    units: W m-2
+  fg14co2:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Mass Flux of Carbon-14 as 14CO2 [kgC m-2 s-1]
+    standard_name: surface_downward_mass_flux_of_14C_dioxide_abiotic_analogue_expressed_as_carbon
+    units: kg m-2 s-1
+  flandice:
+    dimensions: longitude latitude time
+    long_name: Water Flux into Sea Water from Land Ice
+    standard_name: water_flux_into_sea_water_from_land_ice
+    units: kg m-2 s-1
+  flashrate:
+    dimensions: longitude latitude time
+    long_name: Lightning Flash Rate
+    standard_name: frequency_of_lightning_flashes_per_unit_area
+    units: km-2 s-1
+  fracLut:
+    dimensions: longitude latitude landUse time
+    long_name: Percentage of Grid Cell for Each Land-Use Tile
+    standard_name: area_fraction
+    units: '%'
+  gppGrass:
+    dimensions: longitude latitude time
+    long_name: Gross Primary Production on Grass Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  gppLut:
+    dimensions: longitude latitude landUse time
+    long_name: Gross Primary Production on Land-Use Tile as Carbon Mass Flux [kgC
+      m-2 s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  gppShrub:
+    dimensions: longitude latitude time
+    long_name: Gross Primary Production on Shrub Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  gppTree:
+    dimensions: longitude latitude time
+    long_name: Gross Primary Production on Tree Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  gppc13:
+    dimensions: longitude latitude time
+    long_name: Carbon-13 Mass Flux out of Atmosphere Due to Gross Primary Production
+      on Land [kgC m-2 s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_13C
+    units: kg m-2 s-1
+  gppc14:
+    dimensions: longitude latitude time
+    long_name: Carbon-14 Mass Flux out of Atmosphere Due to Gross Primary Production
+      on Land [kgC m-2 s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_14C
+    units: kg m-2 s-1
+  grassFracC3:
+    dimensions: longitude latitude time typec3natg
+    long_name: C3 Natural Grass Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  grassFracC4:
+    dimensions: longitude latitude time typec4natg
+    long_name: C4 Natural Grass Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  grplmxrat27:
+    dimensions: longitude latitude plev27 time
+    long_name: Graupel Mixing Ratio
+    standard_name: mass_fraction_of_graupel_in_air
+    units: '1'
+  hflsLut:
+    dimensions: longitude latitude landUse time
+    long_name: Latent Heat Flux on Land-Use Tile
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  hfssLut:
+    dimensions: longitude latitude landUse time
+    long_name: Sensible Heat Flux on Land-Use Tile
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  hursminCrop:
+    dimensions: longitude latitude time height2m
+    long_name: Daily Minimum Near-Surface Relative Humidity over Crop Tile
+    standard_name: relative_humidity
+    units: '%'
+  hus:
+    dimensions: longitude latitude plev7h time
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  hus27:
+    dimensions: longitude latitude plev27 time
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  hussLut:
+    dimensions: longitude latitude landUse time height2m
+    long_name: Near-Surface Specific Humidity on Land-Use Tile
+    standard_name: specific_humidity
+    units: '1'
+  intuadse:
+    dimensions: longitude latitude time
+    long_name: Vertically Integrated Eastward Dry Statice Energy Transport
+    standard_name: eastward_atmosphere_dry_static_energy_transport_across_unit_distance
+    units: MJ m-1 s-1
+  intuaw:
+    dimensions: longitude latitude time
+    long_name: Vertically Integrated Eastward Moisture Transport
+    standard_name: eastward_atmosphere_water_transport_across_unit_distance
+    units: kg m-1 s-1
+  intvadse:
+    dimensions: longitude latitude time
+    long_name: Vertically Integrated Northward Dry Static Energy Transport
+    standard_name: northward_atmosphere_dry_static_energy_transport_across_unit_distance
+    units: MJ m-1 s-1
+  intvaw:
+    dimensions: longitude latitude time
+    long_name: Vertically Integrated Northward Moisture Transport
+    standard_name: northward_atmosphere_water_transport_across_unit_distance
+    units: kg m-1 s-1
+  irrLut:
+    dimensions: longitude latitude landUse time
+    long_name: Irrigation Flux Including any Irrigation for Crops, Trees, Pasture,
+      or Urban Lawns
+    standard_name: surface_downward_mass_flux_of_water_due_to_irrigation
+    units: kg m-2 s-1
+  jpdftaureicemodis:
+    dimensions: longitude latitude effectRadIc tau time
+    long_name: MODIS Joint Distribution of Optical Thickness and Particle Size, Ice
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  jpdftaureliqmodis:
+    dimensions: longitude latitude effectRadLi tau time
+    long_name: MODIS Optical Thickness-Particle Size Joint Distribution, Liquid
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  laiLut:
+    dimensions: longitude latitude landUse time
+    long_name: Leaf Area Index on Land-Use Tile
+    standard_name: leaf_area_index
+    units: '1'
+  loaddust:
+    dimensions: longitude latitude time
+    long_name: Load of Dust
+    standard_name: atmosphere_mass_content_of_dust_dry_aerosol_particles
+    units: kg m-2
+  loadso4:
+    dimensions: longitude latitude time
+    long_name: Load of SO4
+    standard_name: atmosphere_mass_content_of_sulfate_dry_aerosol_particles
+    units: kg m-2
+  loadss:
+    dimensions: longitude latitude time
+    long_name: Load of Sea-Salt Aerosol
+    standard_name: atmosphere_mass_content_of_sea_salt_dry_aerosol_particles
+    units: kg m-2
+  lwsrfasdust:
+    dimensions: longitude latitude time
+    long_name: All-Sky Surface Longwave Radiative Flux Due to Dust
+    standard_name: surface_net_downward_longwave_dust_ambient_aerosol_particles_direct_radiative_effect
+    units: W m-2
+  lwsrfcsdust:
+    dimensions: longitude latitude time
+    long_name: Clear-Sky Surface Longwave Radiative Flux Due to Dust
+    standard_name: surface_net_downward_longwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky
+    units: W m-2
+  lwtoaasdust:
+    dimensions: longitude latitude time
+    long_name: TOA All-Sky Longwave Radiative Forcing Due to Dust
+    standard_name: toa_instantaneous_longwave_forcing
+    units: W m-2
+  lwtoacsaer:
+    dimensions: longitude latitude time
+    long_name: TOA Clear-Sky Longwave Radiative Forcing Due to Aerosols
+    standard_name: toa_instantaneous_longwave_forcing
+    units: W m-2
+  lwtoacsdust:
+    dimensions: longitude latitude time
+    long_name: TOA Clear-Sky Longwave Radiative Forcing Due to Dust
+    standard_name: toa_longwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky
+    units: W m-2
+  md:
+    dimensions: longitude latitude alevel time
+    long_name: Wet Diameter Mode Coarse Insoluble
+    standard_name: tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_emission
+    units: kg m-2 s-1
+  mmrno3:
+    dimensions: longitude latitude time
+    long_name: NO3 Aerosol Mass Mixing Ratio
+    standard_name: mass_fraction_of_nitrate_dry_aerosol_particles_in_air
+    units: kg kg-1
+  mrlso:
+    dimensions: longitude latitude time
+    long_name: Soil Liquid Water Content
+    standard_name: liquid_water_content_of_soil_layer
+    units: kg m-2
+  mrroLut:
+    dimensions: longitude latitude landUse time
+    long_name: Total Runoff from Land-Use Tile
+    standard_name: runoff_flux
+    units: kg m-2 s-1
+  mrsfl:
+    dimensions: longitude latitude sdepth time
+    long_name: Frozen Water Content of Soil Layer
+    standard_name: frozen_water_content_of_soil_layer
+    units: kg m-2
+  mrsll:
+    dimensions: longitude latitude sdepth time
+    long_name: Liquid Water Content of Soil Layer
+    standard_name: liquid_water_content_of_soil_layer
+    units: kg m-2
+  mrsoLut:
+    dimensions: longitude latitude landUse time
+    long_name: Total Soil Moisture
+    standard_name: mass_content_of_water_in_soil
+    units: kg m-2
+  mrsol:
+    dimensions: longitude latitude sdepth time
+    long_name: Total Water Content of Soil Layer
+    standard_name: mass_content_of_water_in_soil_layer
+    units: kg m-2
+  mrsosLut:
+    dimensions: longitude latitude landUse time sdepth1
+    long_name: Moisture in Upper Portion of Soil Column of Land-Use Tile
+    standard_name: mass_content_of_water_in_soil_layer
+    units: kg m-2
+  mrtws:
+    dimensions: longitude latitude time
+    long_name: Terrestrial Water Storage
+    standard_name: land_water_amount
+    units: kg m-2
+  nLand:
+    dimensions: longitude latitude time
+    long_name: Total Nitrogen in All Terrestrial Nitrogen Pools
+    standard_name: mass_content_of_nitrogen_in_vegetation_and_litter_and_soil_and_forestry_and_agricultural_products
+    units: kg m-2
+  nLeaf:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Leaves
+    standard_name: leaf_mass_content_of_nitrogen
+    units: kg m-2
+  nLitter:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Litter Pool
+    standard_name: litter_mass_content_of_nitrogen
+    units: kg m-2
+  nLitterCwd:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Coarse Woody Debris
+    standard_name: wood_debris_mass_content_of_nitrogen
+    units: kg m-2
+  nLitterSubSurf:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Below-Ground Litter (non CWD)
+    standard_name: subsurface_litter_mass_content_of_nitrogen
+    units: kg m-2
+  nLitterSurf:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Above-Ground Litter (non CWD)
+    standard_name: surface_litter_mass_content_of_nitrogen
+    units: kg m-2
+  nMineral:
+    dimensions: longitude latitude time
+    long_name: Mineral Nitrogen in the Soil
+    standard_name: soil_mass_content_of_inorganic_nitrogen_expressed_as_nitrogen
+    units: kg m-2
+  nMineralNH4:
+    dimensions: longitude latitude time
+    long_name: Mineral Ammonium in the Soil
+    standard_name: soil_mass_content_of_inorganic_ammonium_expressed_as_nitrogen
+    units: kg m-2
+  nMineralNO3:
+    dimensions: longitude latitude time
+    long_name: Mineral Nitrate in the Soil
+    standard_name: soil_mass_content_of_inorganic_nitrate_expressed_as_nitrogen
+    units: kg m-2
+  nOther:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Vegetation Components Other than Leaves, Stem and
+      Root
+    standard_name: miscellaneous_living_matter_mass_content_of_nitrogen
+    units: kg m-2
+  nProduct:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Products of Land-Use Change
+    standard_name: nitrogen_mass_content_of_forestry_and_agricultural_products
+    units: kg m-2
+  nRoot:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Roots
+    standard_name: root_mass_content_of_nitrogen
+    units: kg m-2
+  nSoil:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Soil Pool
+    standard_name: soil_mass_content_of_nitrogen
+    units: kg m-2
+  nStem:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Stem
+    standard_name: stem_mass_content_of_nitrogen
+    units: kg m-2
+  nVeg:
+    dimensions: longitude latitude time
+    long_name: Nitrogen Mass in Vegetation
+    standard_name: vegetation_mass_content_of_nitrogen
+    units: kg m-2
+  necbLut:
+    dimensions: longitude latitude landUse time
+    long_name: Net Carbon Mass Flux into Land-Use Tile [kgC m-2 s-1]
+    standard_name: surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes
+    units: kg m-2 s-1
+  nep:
+    dimensions: longitude latitude time
+    long_name: Net Carbon Mass Flux out of Atmosphere Due to Net Ecosystem Productivity
+      on Land [kgC m-2 s-1]
+    standard_name: surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes_excluding_anthropogenic_land_use_change
+    units: kg m-2 s-1
+  netAtmosLandC13Flux:
+    dimensions: longitude latitude time
+    long_name: Net Mass Flux of 13C Between Atmosphere and Land (Positive into Land)
+      as a Result of All Processes [kgC m-2 s-1]
+    standard_name: surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_13C_due_to_all_land_processes
+    units: kg m-2 s-1
+  netAtmosLandC14Flux:
+    dimensions: longitude latitude time
+    long_name: Net Mass Flux of 14C Between Atmosphere and Land (Positive into Land)
+      as a Result of All Processes [kgC m-2 s-1]
+    standard_name: surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_14C_due_to_all_land_processes
+    units: kg m-2 s-1
+  netAtmosLandCO2Flux:
+    dimensions: longitude latitude time
+    long_name: Net Flux of CO2 Between Atmosphere and Land (Positive into Land) as
+      a Result of All Processes [kgC m-2 s-1]
+    standard_name: surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes
+    units: kg m-2 s-1
+  nppGrass:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production on Grass Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  nppLut:
+    dimensions: longitude latitude landUse time
+    long_name: Net Primary Production on Land-Use Tile as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  nppOther:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production Allocated to Other Pools (not Leaves Stem or
+      Roots) as Carbon Mass Flux [kgC m-2 s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_miscellaneous_living_matter
+    units: kg m-2 s-1
+  nppShrub:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production on Shrub Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  nppStem:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production Allocated to Stem as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_stems
+    units: kg m-2 s-1
+  nppTree:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production on Tree Tiles as Carbon Mass Flux [kgC m-2 s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  nwdFracLut:
+    dimensions: longitude latitude landUse time typenwd
+    long_name: Non-Woody Vegetation Percentage Cover
+    standard_name: area_fraction
+    units: '%'
+  ocontempdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Dianeutral Mixing
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_dianeutral_mixing
+    units: W m-2
+  ocontempmint:
+    dimensions: longitude latitude time
+    long_name: Depth Integral of Product of Sea Water Density and Conservative Temperature
+    standard_name: integral_wrt_depth_of_product_of_conservative_temperature_and_sea_water_density
+    units: degC kg m-2
+  ocontemppadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Eddy Advection
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection
+    units: W m-2
+  ocontemppmdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Mesoscale Diffusion
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion
+    units: W m-2
+  ocontemppsmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Submesoscale Advection
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection
+    units: W m-2
+  ocontemprmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Residual Mean Advection
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_residual_mean_advection
+    units: W m-2
+  ocontemptend:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content
+    units: W m-2
+  od443dust:
+    dimensions: longitude latitude time
+    long_name: Optical Thickness at 443nm Dust
+    standard_name: atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles
+    units: '1'
+  od550aerso:
+    dimensions: longitude latitude time lambda550nm
+    long_name: Stratospheric Optical Depth at 550nm (All Aerosols) 2D-Field (Stratosphere
+      Only)
+    standard_name: stratosphere_optical_thickness_due_to_ambient_aerosol_particles
+    units: '1'
+  od550so4so:
+    dimensions: longitude latitude time lambda550nm
+    long_name: Stratospheric Optical Depth at 550nm (Sulphate Only) 2D-Field (Stratosphere
+      Only)
+    standard_name: stratosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles
+    units: '1'
+  od865dust:
+    dimensions: longitude latitude time
+    long_name: Dust Optical Depth at 865nm
+    standard_name: atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles
+    units: '1'
+  opottempdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Dianeutral Mixing
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_dianeutral_mixing
+    units: W m-2
+  opottempmint:
+    dimensions: longitude latitude time
+    long_name: Integral with Respect to Depth of Product of Sea Water Density and
+      Potential Temperature
+    standard_name: integral_wrt_depth_of_product_of_potential_temperature_and_sea_water_density
+    units: degC kg m-2
+  opottemppadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Eddy Advection
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection
+    units: W m-2
+  opottemppmdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Mesoscale Diffusion
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion
+    units: W m-2
+  opottemppsmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Submesoscale Advection
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection
+    units: W m-2
+  opottemprmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Residual Mean Advection
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_residual_mean_advection
+    units: W m-2
+  opottemptend:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content
+    units: W m-2
+  orog:
+    dimensions: longitude latitude time
+    long_name: Surface Altitude
+    standard_name: surface_altitude
+    units: m
+  osaltdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Dianeutral Mixing
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_dianeutral_mixing
+    units: kg m-2 s-1
+  osaltpadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Eddy Advection
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_eddy_advection
+    units: kg m-2 s-1
+  osaltpmdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Mesoscale Diffusion
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_mesoscale_eddy_diffusion
+    units: kg m-2 s-1
+  osaltpsmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Submesoscale Advection
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_submesoscale_eddy_advection
+    units: kg m-2 s-1
+  osaltrmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Residual
+      Mean Advection
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_residual_mean_advection
+    units: kg m-2 s-1
+  osalttend:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content
+    units: kg m-2 s-1
+  pabigthetao:
+    dimensions: longitude latitude olevel time
+    long_name: Sea Water Added Conservative Temperature
+    standard_name: sea_water_added_conservative_temperature
+    units: degC
+  parasolRefl:
+    dimensions: longitude latitude sza5 time
+    long_name: PARASOL Reflectance
+    standard_name: toa_bidirectional_reflectance
+    units: '1'
+  pastureFracC3:
+    dimensions: longitude latitude time typec3pastures
+    long_name: C3 Pasture Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  pastureFracC4:
+    dimensions: longitude latitude time typec4pastures
+    long_name: C4 Pasture Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  pathetao:
+    dimensions: longitude latitude olevel time
+    long_name: Sea Water Additional Potential Temperature
+    standard_name: sea_water_added_potential_temperature
+    units: degC
+  ppcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Mole Productivity of Carbon by Calcareous Phytoplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_calcareous_phytoplankton
+    units: mol m-3 s-1
+  ppdiat:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Organic Carbon Production by Diatoms
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diatoms
+    units: mol m-3 s-1
+  ppdiaz:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Mole Productivity of Carbon by Diazotrophs
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diazotrophic_phytoplankton
+    units: mol m-3 s-1
+  ppmisc:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Organic Carbon Production by Other Phytoplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_miscellaneous_phytoplankton
+    units: mol m-3 s-1
+  pppico:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Mole Productivity of Carbon by Picophytoplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_picophytoplankton
+    units: mol m-3 s-1
+  pr17O:
+    dimensions: longitude latitude time
+    long_name: Precipitation Flux of Water Containing Oxygen-17 (H2 17O)
+    standard_name: precipitation_flux_containing_17O
+    units: kg m-2 s-1
+  pr18O:
+    dimensions: longitude latitude time
+    long_name: Precipitation Flux of Water Containing Oxygen-18 (H2 18O)
+    standard_name: precipitation_flux_containing_18O
+    units: kg m-2 s-1
+  pr2h:
+    dimensions: longitude latitude time
+    long_name: Precipitation Flux of Water Containing Deuterium (1H 2H O)
+    standard_name: precipitation_flux_containing_single_2H
+    units: kg m-2 s-1
+  prCrop:
+    dimensions: longitude latitude time
+    long_name: Precipitation over Crop Tile
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prbigthetao:
+    dimensions: longitude latitude olevel time
+    long_name: Sea Water Redistributed Conservative Temperature
+    standard_name: sea_water_redistributed_conservative_temperature
+    units: degC
+  prhmax:
+    dimensions: longitude latitude time
+    long_name: Maximum Hourly Precipitation Rate
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prsn17O:
+    dimensions: longitude latitude time
+    long_name: Precipitation Flux of Snow and Ice Containing Oxygen-17 (H2 17O)
+    standard_name: solid_precipitation_flux_containing_17O
+    units: kg m-2 s-1
+  prsn18O:
+    dimensions: longitude latitude time
+    long_name: Precipitation Flux of Snow and Ice Containing Oxygen-18 (H2 18O)
+    standard_name: solid_precipitation_flux_containing_18O
+    units: kg m-2 s-1
+  prsn2h:
+    dimensions: longitude latitude time
+    long_name: Precipitation Flux of Snow and Ice Containing Deuterium (1H 2H O)
+    standard_name: solid_precipitation_flux_containing_single_2H
+    units: kg m-2 s-1
+  prthetao:
+    dimensions: longitude latitude olevel time
+    long_name: Sea Water Redistributed Potential Temperature
+    standard_name: sea_water_redistributed_potential_temperature
+    units: degC
+  prw17O:
+    dimensions: longitude latitude alevel time
+    long_name: Mass of Water Vapor Containing Oxygen-17 (H2 17O) in Layer
+    standard_name: mass_content_of_water_vapor_containing_17O_in_atmosphere_layer
+    units: kg m-2
+  prw18O:
+    dimensions: longitude latitude olevel time
+    long_name: Mass of Water Vapor Containing Oxygen-18 (H2 18O) in Layer
+    standard_name: mass_content_of_water_vapor_containing_18O_in_atmosphere_layer
+    units: kg m-2
+  prw2H:
+    dimensions: longitude latitude alevel time
+    long_name: Mass of Water Containing Deuterium (1H 2H O) in Layer
+    standard_name: mass_content_of_water_vapor_containing_single_2H_in_atmosphere_layer
+    units: kg m-2
+  ps:
+    dimensions: longitude latitude time
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  raGrass:
+    dimensions: longitude latitude time
+    long_name: Autotrophic Respiration on Grass Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration
+    units: kg m-2 s-1
+  raLeaf:
+    dimensions: longitude latitude time
+    long_name: Total Respiration from Leaves as Carbon Mass Flux [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_leaves
+    units: kg m-2 s-1
+  raLut:
+    dimensions: longitude latitude landUse time
+    long_name: Autotrophic Respiration on Land-Use Tile as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration
+    units: kg m-2 s-1
+  raOther:
+    dimensions: longitude latitude time
+    long_name: Total Respiration from Other Pools (not Leaves Stem or Roots) as Carbon
+      Mass Flux [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_miscellaneous_living_matter
+    units: kg m-2 s-1
+  raRoot:
+    dimensions: longitude latitude time
+    long_name: Total Respiration from Roots as Carbon Mass Flux [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_roots
+    units: kg m-2 s-1
+  raShrub:
+    dimensions: longitude latitude time
+    long_name: Autotrophic Respiration on Shrub Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration
+    units: kg m-2 s-1
+  raStem:
+    dimensions: longitude latitude time
+    long_name: Total Respiration from Stem as Carbon Mass Flux [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_stems
+    units: kg m-2 s-1
+  raTree:
+    dimensions: longitude latitude time
+    long_name: Autotrophic Respiration on Tree Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration
+    units: kg m-2 s-1
+  rac13:
+    dimensions: longitude latitude time
+    long_name: Carbon-13 Mass Flux into Atmosphere Due to Autotrophic (Plant) Respiration
+      on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_13C_due_to_plant_respiration
+    units: kg m-2 s-1
+  rac14:
+    dimensions: longitude latitude time
+    long_name: Carbon-14 Mass Flux into Atmosphere Due to Autotrophic (Plant) Respiration
+      on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_14C_due_to_plant_respiration
+    units: kg m-2 s-1
+  rainmxrat27:
+    dimensions: longitude latitude plev27 time
+    long_name: Mass Fraction of Rain in Air
+    standard_name: mass_fraction_of_liquid_precipitation_in_air
+    units: '1'
+  reffclic:
+    dimensions: longitude latitude alevel time
+    long_name: Hydrometeor Effective Radius of Convective Cloud Ice
+    standard_name: effective_radius_of_convective_cloud_ice_particles
+    units: m
+  reffclis:
+    dimensions: longitude latitude alevel time
+    long_name: Hydrometeor Effective Radius of Stratiform Cloud Ice
+    standard_name: effective_radius_of_stratiform_cloud_ice_particles
+    units: m
+  reffclwc:
+    dimensions: longitude latitude alevel time
+    long_name: Convective Cloud Liquid Droplet Effective Radius
+    standard_name: effective_radius_of_convective_cloud_liquid_water_particles
+    units: m
+  reffclws:
+    dimensions: longitude latitude alevel time
+    long_name: Stratiform Cloud Liquid Droplet Effective Radius
+    standard_name: effective_radius_of_stratiform_cloud_liquid_water_particles
+    units: m
+  rhGrass:
+    dimensions: longitude latitude time
+    long_name: Heterotrophic Respiration on Grass Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  rhLitter:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to Heterotrophic Respiration from
+      Litter on Land
+    standard_name: surface_upward_mass_flux_of_carbon_due_to_heterotrophic_respiration_in_litter
+    units: kg m-2 s-1
+  rhLut:
+    dimensions: longitude latitude landUse time
+    long_name: Heterotrophic Respiration on Land-Use Tile as Carbon Mass Flux [kgC
+      m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  rhShrub:
+    dimensions: longitude latitude time
+    long_name: Heterotrophic Respiration on Shrub Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  rhSoil:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to Heterotrophic Respiration from
+      Soil on Land
+    standard_name: surface_upward_mass_flux_of_carbon_due_to_heterotrophic_respiration_in_soil
+    units: kg m-2 s-1
+  rhTree:
+    dimensions: longitude latitude time
+    long_name: Heterotrophic Respiration on Tree Tiles as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  rhc13:
+    dimensions: longitude latitude time
+    long_name: Carbon-13 Mass Flux into Atmosphere Due to Heterotrophic Respiration
+      on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_13C_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  rhc14:
+    dimensions: longitude latitude time
+    long_name: Carbon-14 Mass Flux into Atmosphere Due to Heterotrophic Respiration
+      on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_14C_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  rls:
+    dimensions: longitude latitude time
+    long_name: Net Longwave Surface Radiation
+    standard_name: surface_net_downward_longwave_flux
+    units: W m-2
+  rlusLut:
+    dimensions: longitude latitude landUse time
+    long_name: Surface Upwelling Longwave on Land-Use Tile
+    standard_name: surface_upwelling_longwave_flux_in_air
+    units: W m-2
+  rsdoabsorb:
+    dimensions: longitude latitude olevel time
+    long_name: Net Rate of Absorption of Shortwave Energy in Ocean Layer
+    standard_name: net_rate_of_absorption_of_shortwave_energy_in_ocean_layer
+    units: W m-2
+  rsdscsdiff:
+    dimensions: longitude latitude time
+    long_name: Surface Diffuse Downwelling Clear Sky Shortwave Radiation
+    standard_name: surface_diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdsdiff:
+    dimensions: longitude latitude time
+    long_name: Surface Diffuse Downwelling Shortwave Radiation
+    standard_name: surface_diffuse_downwelling_shortwave_flux_in_air
+    units: W m-2
+  rss:
+    dimensions: longitude latitude time
+    long_name: Net Shortwave Surface Radiation
+    standard_name: surface_net_downward_shortwave_flux
+    units: W m-2
+  rsusLut:
+    dimensions: longitude latitude landUse time
+    long_name: Surface Upwelling Shortwave on Land-Use Tile
+    standard_name: surface_upwelling_shortwave_flux_in_air
+    units: W m-2
+  sconcdust:
+    dimensions: longitude latitude time
+    long_name: Surface Concentration of Dust
+    standard_name: mass_concentration_of_dust_dry_aerosol_particles_in_air
+    units: kg m-3
+  sconcso4:
+    dimensions: longitude latitude time
+    long_name: Surface Concentration of SO4
+    standard_name: mass_concentration_of_sulfate_dry_aerosol_particles_in_air
+    units: kg m-3
+  sconcss:
+    dimensions: longitude latitude time
+    long_name: Surface Concentration of Sea-Salt Aerosol
+    standard_name: mass_concentration_of_sea_salt_dry_aerosol_particles_in_air
+    units: kg m-3
+  sedustCI:
+    dimensions: longitude latitude time
+    long_name: Sedimentation Flux of Dust Mode Coarse Insoluble
+    standard_name: minus_tendency_of_atmosphere_mass_content_of_insoluble_dust_dry_aerosol_particles_due_to_deposition
+    units: kg m-2 s-1
+  sfcWindmax:
+    dimensions: longitude latitude time height10m
+    long_name: Daily Maximum Near-Surface Wind Speed
+    standard_name: wind_speed
+    units: m s-1
+  snowmxrat27:
+    dimensions: longitude latitude plev27 time
+    long_name: Mass Fraction of Snow in Air
+    standard_name: mass_fraction_of_snow_in_air
+    units: '1'
+  somint:
+    dimensions: longitude latitude time
+    long_name: Depth Integral of Product of Sea Water Density and Prognostic Salinity
+    standard_name: integral_wrt_depth_of_product_of_salinity_and_sea_water_density
+    units: g m-2
+  sw17O:
+    dimensions: longitude latitude olevel time
+    long_name: Isotopic Ratio of Oxygen-17 in Sea Water
+    standard_name: isotope_ratio_of_17O_to_16O_in_sea_water_excluding_solutes_and_solids
+    units: '1'
+  sw18O:
+    dimensions: longitude latitude alevel time
+    long_name: Isotopic Ratio of Oxygen-18 in Sea Water
+    standard_name: isotope_ratio_of_18O_to_16O_in_sea_water_excluding_solutes_and_solids
+    units: '1'
+  sw2H:
+    dimensions: longitude latitude olevel time
+    long_name: Isotopic Ratio of Deuterium in Sea Water
+    standard_name: isotope_ratio_of_2H_to_1H_in_sea_water_excluding_solutes_and_solids
+    units: '1'
+  sweLut:
+    dimensions: longitude latitude landUse time
+    long_name: Snow Water Equivalent on Land-Use Tile
+    standard_name: lwe_thickness_of_surface_snow_amount
+    units: m
+  swsrfasdust:
+    dimensions: longitude latitude time
+    long_name: All-Sky Surface Shortwave Radiative Flux Due to Dust
+    standard_name: surface_net_downward_shortwave_dust_ambient_aerosol_particles_direct_radiative_effect
+    units: W m-2
+  swsrfcsdust:
+    dimensions: longitude latitude time
+    long_name: Clear-Sky Surface Shortwave Radiative Flux Due to Dust
+    standard_name: surface_net_downward_shortwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky
+    units: W m-2
+  swtoaasdust:
+    dimensions: longitude latitude time
+    long_name: All-Sky Shortwave Flux Due to Dust at Toa
+    standard_name: toa_instantaneous_shortwave_forcing
+    units: W m-2
+  swtoacsdust:
+    dimensions: longitude latitude time
+    long_name: Clear Sky Shortwave Flux Due to Dust at Toa
+    standard_name: toa_instantaneous_shortwave_forcing
+    units: W m-2
+  t2:
+    dimensions: longitude latitude alevel time
+    long_name: Mean-Squared Air Temperature
+    standard_name: square_of_air_temperature
+    units: K2
+  t20d:
+    dimensions: longitude latitude time
+    long_name: Depth of 20 degree Celsius Isotherm
+    standard_name: depth_of_isosurface_of_sea_water_potential_temperature
+    units: m
+  tSoilPools:
+    dimensions: longitude latitude soilpools time
+    long_name: Turnover Rate of Each Model Soil Carbon Pool
+    standard_name: soil_pool_carbon_decay_rate
+    units: s-1
+  ta27:
+    dimensions: longitude latitude plev27 time
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tasLut:
+    dimensions: longitude latitude landUse time height2m
+    long_name: Near-Surface Air Temperature on Land Use Tile
+    standard_name: air_temperature
+    units: K
+  tasmaxCrop:
+    dimensions: longitude latitude time height2m
+    long_name: Daily Maximum Near-Surface Air Temperature over Crop Tile
+    standard_name: air_temperature
+    units: K
+  tasminCrop:
+    dimensions: longitude latitude time height2m
+    long_name: Daily Minimum Near-Surface Air Temperature over Crop Tile
+    standard_name: air_temperature
+    units: K
+  tdps:
+    dimensions: longitude latitude time
+    long_name: 2m Dewpoint Temperature
+    standard_name: dew_point_temperature
+    units: K
+  thetaot:
+    dimensions: longitude latitude time
+    long_name: Vertically Averaged Sea Water Potential Temperature
+    standard_name: sea_water_potential_temperature
+    units: degC
+  thetaot2000:
+    dimensions: longitude latitude time depth2000m
+    long_name: Depth Average Potential Temperature of Upper 2000m
+    standard_name: sea_water_potential_temperature
+    units: degC
+  thetaot300:
+    dimensions: longitude latitude time depth300m
+    long_name: Depth Average Potential Temperature of Upper 300m
+    standard_name: sea_water_potential_temperature
+    units: degC
+  thetaot700:
+    dimensions: longitude latitude time depth700m
+    long_name: Depth Average Potential Temperature of Upper 700m
+    standard_name: sea_water_potential_temperature
+    units: degC
+  tnhuspbl:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity Due to Boundary Layer Mixing
+    standard_name: tendency_of_specific_humidity_due_to_boundary_layer_mixing
+    units: s-1
+  tnhusscp:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Specific Humidity Due to Stratiform Clouds and Precipitation
+    standard_name: tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation
+    units: s-1
+  tntd:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Numerical Diffusion
+    standard_name: tendency_of_air_temperature_due_to_diffusion
+    units: K s-1
+  tntmp27:
+    dimensions: longitude latitude plev27 time
+    long_name: Tendency of Air Temperature Due to Model Physics
+    standard_name: tendency_of_air_temperature_due_to_model_physics
+    units: K s-1
+  tntpbl:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Boundary Layer Mixing
+    standard_name: tendency_of_air_temperature_due_to_boundary_layer_mixing
+    units: K s-1
+  tntrl27:
+    dimensions: longitude latitude plev27 time
+    long_name: Tendency of Air Temperature Due to Longwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_longwave_heating
+    units: K s-1
+  tntrlcs:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Clear Sky Longwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_longwave_heating_assuming_clear_sky
+    units: K s-1
+  tntrs27:
+    dimensions: longitude latitude plev27 time
+    long_name: Tendency of Air Temperature Due to Shortwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_shortwave_heating
+    units: K s-1
+  tntrscs:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Clear Sky Shortwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_shortwave_heating_assuming_clear_sky
+    units: K s-1
+  tntscp:
+    dimensions: longitude latitude alevel time
+    long_name: Tendency of Air Temperature Due to Stratiform Clouds and Precipitation
+    standard_name: tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation
+    units: K s-1
+  treeFracBdlDcd:
+    dimensions: longitude latitude time typetreebd
+    long_name: Broadleaf Deciduous Tree Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  treeFracBdlEvg:
+    dimensions: longitude latitude time typetreebe
+    long_name: Broadleaf Evergreen Tree Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  treeFracNdlDcd:
+    dimensions: longitude latitude time typetreend
+    long_name: Needleleaf Deciduous Tree Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  treeFracNdlEvg:
+    dimensions: longitude latitude time typetreene
+    long_name: Needleleaf Evergreen Tree Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  tslsiLut:
+    dimensions: longitude latitude landUse time
+    long_name: Surface Temperature on Landuse Tile
+    standard_name: surface_temperature
+    units: K
+  twap:
+    dimensions: longitude latitude alevel time
+    long_name: Product of Air Temperature and Omega
+    standard_name: product_of_lagrangian_tendency_of_air_pressure_and_air_temperature
+    units: K Pa s-1
+  u2:
+    dimensions: longitude latitude alevel time
+    long_name: Mean-Squared Eastward Wind Speed
+    standard_name: square_of_eastward_wind
+    units: m2 s-2
+  ua:
+    dimensions: longitude latitude plev7h time
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  ua27:
+    dimensions: longitude latitude plev27 time
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  uqint:
+    dimensions: longitude latitude time
+    long_name: Eastward Humidity Transport
+    standard_name: integral_wrt_height_of_product_of_eastward_wind_and_specific_humidity
+    units: m2 s-1
+  ut:
+    dimensions: longitude latitude alevel time
+    long_name: Product of Air Temperature and Eastward Wind
+    standard_name: product_of_eastward_wind_and_air_temperature
+    units: K m s-1
+  utendnogw:
+    dimensions: longitude latitude plev19 time
+    long_name: Eastward Acceleration Due to Non-Orographic Gravity Wave Drag
+    standard_name: tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag
+    units: m s-2
+  utendogw:
+    dimensions: longitude latitude plev19 time
+    long_name: Eastward Acceleration Due to Orographic Gravity Wave Drag
+    standard_name: tendency_of_eastward_wind_due_to_orographic_gravity_wave_drag
+    units: m s-2
+  uv:
+    dimensions: longitude latitude alevel time
+    long_name: Product of Eastward Wind and Northward Wind
+    standard_name: product_of_eastward_wind_and_northward_wind
+    units: m2 s-2
+  uwap:
+    dimensions: longitude latitude alevel time
+    long_name: Product of Eastward Wind and Omega
+    standard_name: product_of_eastward_wind_and_lagrangian_tendency_of_air_pressure
+    units: Pa m s-2
+  v2:
+    dimensions: longitude latitude alevel time
+    long_name: Mean-Squared Northward Wind Speed
+    standard_name: square_of_northward_wind
+    units: m2 s-2
+  va:
+    dimensions: longitude latitude plev7h time
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  va27:
+    dimensions: longitude latitude plev27 time
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  vegFrac:
+    dimensions: longitude latitude time typeveg
+    long_name: Total Vegetated Percentage Cover
+    standard_name: area_fraction
+    units: '%'
+  vegHeight:
+    dimensions: longitude latitude time
+    long_name: Height of the Vegetation Canopy
+    standard_name: canopy_height
+    units: m
+  vegHeightCrop:
+    dimensions: longitude latitude time
+    long_name: Height of Crops
+    standard_name: canopy_height
+    units: m
+  vegHeightGrass:
+    dimensions: longitude latitude time
+    long_name: Height of Grass
+    standard_name: canopy_height
+    units: m
+  vegHeightPasture:
+    dimensions: longitude latitude time
+    long_name: Height of Pastures
+    standard_name: canopy_height
+    units: m
+  vegHeightShrub:
+    dimensions: longitude latitude time
+    long_name: Height of Shrubs
+    standard_name: canopy_height
+    units: m
+  vegHeightTree:
+    dimensions: longitude latitude time
+    long_name: Height of Trees
+    standard_name: canopy_height
+    units: m
+  vqint:
+    dimensions: longitude latitude time
+    long_name: Northward Humidity Transport
+    standard_name: integral_wrt_height_of_product_of_northward_wind_and_specific_humidity
+    units: m2 s-1
+  vt:
+    dimensions: longitude latitude alevel time
+    long_name: Product of Air Temperature and Northward Wind
+    standard_name: product_of_northward_wind_and_air_temperature
+    units: K m s-1
+  vtendnogw:
+    dimensions: longitude latitude plev19 time
+    long_name: Northward Acceleration Due to Non-Orographic Gravity Wave Drag
+    standard_name: tendency_of_northward_wind_due_to_nonorographic_gravity_wave_drag
+    units: m s-2
+  vtendogw:
+    dimensions: longitude latitude plev19 time
+    long_name: Northward Acceleration Due to Orographic Gravity Wave Drag
+    standard_name: tendency_of_northward_wind_due_to_orographic_gravity_wave_drag
+    units: m s-2
+  vwap:
+    dimensions: longitude latitude alevel time
+    long_name: Product of Northward Wind and Omega
+    standard_name: product_of_northward_wind_and_lagrangian_tendency_of_air_pressure
+    units: Pa m s-2
+  wap:
+    dimensions: longitude latitude alevel time
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  wap2:
+    dimensions: longitude latitude alevel time
+    long_name: Mean-Squared Vertical Velocity (Omega)
+    standard_name: square_of_lagrangian_tendency_of_air_pressure
+    units: Pa2 s-2
+  wetlandCH4:
+    dimensions: longitude latitude time
+    long_name: Grid Averaged Methane Emissions from Wetlands
+    standard_name: surface_net_upward_mass_flux_of_methane_due_to_emission_from_wetland_biological_processes
+    units: kg m-2 s-1
+  wetlandCH4cons:
+    dimensions: longitude latitude time
+    long_name: Grid Averaged Methane Consumption (Methanotrophy) from Wetlands
+    standard_name: surface_downward_mass_flux_of_methane_due_to_wetland_biological_consumption
+    units: kg m-2 s-1
+  wetlandCH4prod:
+    dimensions: longitude latitude time
+    long_name: Grid Averaged Methane Production (Methanogenesis) from Wetlands
+    standard_name: surface_upward_mass_flux_of_methane_due_to_emission_from_wetland_biological_production
+    units: kg m-2 s-1
+  wetlandFrac:
+    dimensions: longitude latitude time typewetla
+    long_name: Wetland Percentage Cover
+    standard_name: area_fraction
+    units: '%'
+  wtd:
+    dimensions: longitude latitude time
+    long_name: Water Table Depth
+    standard_name: water_table_depth
+    units: m
+  xgwdparam:
+    dimensions: longitude latitude alevel time
+    long_name: Eastward Gravity Wave Drag
+    standard_name: atmosphere_eastward_stress_due_to_gravity_wave_drag
+    units: Pa
+  ygwdparam:
+    dimensions: longitude latitude alevel time
+    long_name: Northward Gravity Wave Drag
+    standard_name: atmosphere_northward_stress_due_to_gravity_wave_drag
+    units: Pa
+  zg27:
+    dimensions: longitude latitude plev27 time
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m

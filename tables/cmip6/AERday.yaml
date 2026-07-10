@@ -1,0 +1,56 @@
+variables:
+  cod:
+    dimensions: longitude latitude time
+    long_name: Cloud Optical Depth
+    standard_name: atmosphere_optical_thickness_due_to_cloud
+    units: '1'
+  maxpblz:
+    dimensions: longitude latitude time
+    long_name: Maximum PBL Height
+    standard_name: atmosphere_boundary_layer_thickness
+    units: m
+  minpblz:
+    dimensions: longitude latitude time
+    long_name: Minimum PBL Height
+    standard_name: atmosphere_boundary_layer_thickness
+    units: m
+  od550aer:
+    dimensions: longitude latitude time lambda550nm
+    long_name: Ambient Aerosol Optical Thickness at 550nm
+    standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+    units: '1'
+  sfo3max:
+    dimensions: longitude latitude time
+    long_name: Daily Maximum O3 Volume Mixing Ratio in Lowest Model Layer
+    standard_name: mole_fraction_of_ozone_in_air
+    units: mol mol-1
+  toz:
+    dimensions: longitude latitude time
+    long_name: Total Column Ozone
+    standard_name: equivalent_thickness_at_stp_of_atmosphere_ozone_content
+    units: m
+  ua10:
+    dimensions: longitude latitude time p10
+    long_name: Eastward Wind at 10hPa
+    standard_name: eastward_wind
+    units: m s-1
+  zg10:
+    dimensions: longitude latitude time p10
+    long_name: Geopotential Height at 10hPa
+    standard_name: geopotential_height
+    units: m
+  zg100:
+    dimensions: longitude latitude time p100
+    long_name: Geopotential Height at 100hPa
+    standard_name: geopotential_height
+    units: m
+  zg1000:
+    dimensions: longitude latitude time p1000
+    long_name: Geopotential Height at 1000hPa
+    standard_name: geopotential_height
+    units: m
+  zg500:
+    dimensions: longitude latitude time p500
+    long_name: Geopotential Height at 500hPa
+    standard_name: geopotential_height
+    units: m

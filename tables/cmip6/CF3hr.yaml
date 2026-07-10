@@ -1,0 +1,321 @@
+variables:
+  ci:
+    dimensions: longitude latitude time1
+    long_name: Fraction of Time Convection Occurs in Cell
+    standard_name: convection_time_fraction
+    units: '1'
+  clc:
+    dimensions: longitude latitude alevel time1
+    long_name: Convective Cloud Area Percentage
+    standard_name: convective_cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clic:
+    dimensions: longitude latitude alevel time1
+    long_name: Mass Fraction of Convective Cloud Ice
+    standard_name: mass_fraction_of_convective_cloud_ice_in_air
+    units: '1'
+  clis:
+    dimensions: longitude latitude alevel time1
+    long_name: Mass Fraction of Stratiform Cloud Ice
+    standard_name: mass_fraction_of_stratiform_cloud_ice_in_air
+    units: '1'
+  clivi:
+    dimensions: longitude latitude time1
+    long_name: Ice Water Path
+    standard_name: atmosphere_mass_content_of_cloud_ice
+    units: kg m-2
+  cls:
+    dimensions: longitude latitude alevel time1
+    long_name: Percentage Cover of Stratiform Cloud
+    standard_name: stratiform_cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clt:
+    dimensions: longitude latitude time1
+    long_name: Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  cltc:
+    dimensions: longitude latitude time1
+    long_name: Convective Cloud Cover Percentage
+    standard_name: convective_cloud_area_fraction
+    units: '%'
+  clwc:
+    dimensions: longitude latitude alevel time1
+    long_name: Mass Fraction of Convective Cloud Liquid Water
+    standard_name: mass_fraction_of_convective_cloud_liquid_water_in_air
+    units: '1'
+  clws:
+    dimensions: longitude latitude alevel time1
+    long_name: Mass Fraction of Stratiform Cloud Liquid Water
+    standard_name: mass_fraction_of_stratiform_cloud_liquid_water_in_air
+    units: '1'
+  clwvi:
+    dimensions: longitude latitude time1
+    long_name: Condensed Water Path
+    standard_name: atmosphere_mass_content_of_cloud_condensed_water
+    units: kg m-2
+  demc:
+    dimensions: longitude latitude alevel time1
+    long_name: Convective Cloud Emissivity
+    standard_name: convective_cloud_longwave_emissivity
+    units: '1'
+  dems:
+    dimensions: longitude latitude alevel time1
+    long_name: Stratiform Cloud Emissivity
+    standard_name: stratiform_cloud_longwave_emissivity
+    units: '1'
+  dtauc:
+    dimensions: longitude latitude alevel time1
+    long_name: Convective Cloud Optical Depth
+    standard_name: atmosphere_optical_thickness_due_to_convective_cloud
+    units: '1'
+  dtaus:
+    dimensions: longitude latitude alevel time1
+    long_name: Stratiform Cloud Optical Depth
+    standard_name: atmosphere_optical_thickness_due_to_stratiform_cloud
+    units: '1'
+  evspsbl:
+    dimensions: longitude latitude time1
+    long_name: Evaporation Including Sublimation and Transpiration
+    standard_name: water_evapotranspiration_flux
+    units: kg m-2 s-1
+  grpllsprof:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Stratiform Graupel Flux
+    standard_name: stratiform_graupel_flux
+    units: kg m-2 s-1
+  h2o:
+    dimensions: longitude latitude alevel time1
+    long_name: Mass Fraction of Water
+    standard_name: mass_fraction_of_water_in_air
+    units: '1'
+  hfls:
+    dimensions: longitude latitude time1
+    long_name: Surface Upward Latent Heat Flux
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  hfss:
+    dimensions: longitude latitude time1
+    long_name: Surface Upward Sensible Heat Flux
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  hurs:
+    dimensions: longitude latitude time1 height2m
+    long_name: Near-Surface Relative Humidity
+    standard_name: relative_humidity
+    units: '%'
+  pfull:
+    dimensions: longitude latitude alevel time1
+    long_name: Pressure at Model Full-Levels
+    standard_name: air_pressure
+    units: Pa
+  phalf:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Pressure on Model Half-Levels
+    standard_name: air_pressure
+    units: Pa
+  pr:
+    dimensions: longitude latitude time1
+    long_name: Precipitation
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prc:
+    dimensions: longitude latitude time1
+    long_name: Convective Precipitation
+    standard_name: convective_precipitation_flux
+    units: kg m-2 s-1
+  prcprof:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Convective Rainfall Flux
+    standard_name: convective_rainfall_flux
+    units: kg m-2 s-1
+  prlsns:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Stratiform Snowfall Flux
+    standard_name: stratiform_snowfall_flux
+    units: kg m-2 s-1
+  prlsprof:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Stratiform Rainfall Flux
+    standard_name: stratiform_rainfall_flux
+    units: kg m-2 s-1
+  prsn:
+    dimensions: longitude latitude time1
+    long_name: Snowfall Flux
+    standard_name: snowfall_flux
+    units: kg m-2 s-1
+  prsnc:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Convective Snowfall Flux
+    standard_name: convective_snowfall_flux
+    units: kg m-2 s-1
+  prw:
+    dimensions: longitude latitude time1
+    long_name: Water Vapor Path
+    standard_name: atmosphere_mass_content_of_water_vapor
+    units: kg m-2
+  ps:
+    dimensions: longitude latitude time1
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  psl:
+    dimensions: longitude latitude time1
+    long_name: Sea Level Pressure
+    standard_name: air_pressure_at_mean_sea_level
+    units: Pa
+  reffclic:
+    dimensions: longitude latitude alevel time1
+    long_name: Hydrometeor Effective Radius of Convective Cloud Ice
+    standard_name: effective_radius_of_convective_cloud_ice_particles
+    units: m
+  reffclis:
+    dimensions: longitude latitude alevel time1
+    long_name: Hydrometeor Effective Radius of Stratiform Cloud Ice
+    standard_name: effective_radius_of_stratiform_cloud_ice_particles
+    units: m
+  reffclwc:
+    dimensions: longitude latitude alevel time1
+    long_name: Convective Cloud Liquid Droplet Effective Radius
+    standard_name: effective_radius_of_convective_cloud_liquid_water_particles
+    units: m
+  reffclws:
+    dimensions: longitude latitude alevel time1
+    long_name: Stratiform Cloud Liquid Droplet Effective Radius
+    standard_name: effective_radius_of_stratiform_cloud_liquid_water_particles
+    units: m
+  reffgrpls:
+    dimensions: longitude latitude alevel time1
+    long_name: Hydrometeor Effective Radius of Stratiform Graupel
+    standard_name: effective_radius_of_stratiform_cloud_graupel_particles
+    units: m
+  reffrainc:
+    dimensions: longitude latitude alevel time1
+    long_name: Hydrometeor Effective Radius of Convective Rainfall
+    standard_name: effective_radius_of_convective_cloud_rain_particles
+    units: m
+  reffrains:
+    dimensions: longitude latitude alevel time1
+    long_name: Hydrometeor Effective Radius of Stratiform Rainfall
+    standard_name: effective_radius_of_stratiform_cloud_rain_particles
+    units: m
+  reffsnowc:
+    dimensions: longitude latitude alevel time1
+    long_name: Hydrometeor Effective Radius of Convective Snowfall
+    standard_name: effective_radius_of_convective_cloud_snow_particles
+    units: m
+  reffsnows:
+    dimensions: longitude latitude alevel time1
+    long_name: Hydrometeor Effective Radius of Stratiform Snowfall
+    standard_name: effective_radius_of_stratiform_cloud_snow_particles
+    units: m
+  rlds:
+    dimensions: longitude latitude time1
+    long_name: Surface Downwelling Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air
+    units: W m-2
+  rldscs:
+    dimensions: longitude latitude time1
+    long_name: Surface Downwelling Clear-Sky Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlus:
+    dimensions: longitude latitude time1
+    long_name: Surface Upwelling Longwave Radiation
+    standard_name: surface_upwelling_longwave_flux_in_air
+    units: W m-2
+  rlut:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux
+    units: W m-2
+  rlutcs:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Clear-Sky Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux_assuming_clear_sky
+    units: W m-2
+  rsds:
+    dimensions: longitude latitude time1
+    long_name: Surface Downwelling Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsdscs:
+    dimensions: longitude latitude time1
+    long_name: Surface Downwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdt:
+    dimensions: longitude latitude time1
+    long_name: TOA Incident Shortwave Radiation
+    standard_name: toa_incoming_shortwave_flux
+    units: W m-2
+  rsus:
+    dimensions: longitude latitude time1
+    long_name: Surface Upwelling Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air
+    units: W m-2
+  rsuscs:
+    dimensions: longitude latitude time1
+    long_name: Surface Upwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsut:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux
+    units: W m-2
+  rsutcs:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Clear-Sky Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky
+    units: W m-2
+  rtmt:
+    dimensions: longitude latitude time1
+    long_name: Net Downward Radiative Flux at Top of Model
+    standard_name: net_downward_radiative_flux_at_top_of_atmosphere_model
+    units: W m-2
+  sbl:
+    dimensions: longitude latitude time1
+    long_name: Surface Snow and Ice Sublimation Flux
+    standard_name: tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice
+    units: kg m-2 s-1
+  sci:
+    dimensions: longitude latitude time1
+    long_name: Fraction of Time Shallow Convection Occurs
+    standard_name: shallow_convection_time_fraction
+    units: '1'
+  sfcWind:
+    dimensions: longitude latitude time1 height10m
+    long_name: Near-Surface Wind Speed
+    standard_name: wind_speed
+    units: m s-1
+  ta:
+    dimensions: longitude latitude alevel time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tauu:
+    dimensions: longitude latitude time1
+    long_name: Surface Downward Eastward Wind Stress
+    standard_name: surface_downward_eastward_stress
+    units: Pa
+  tauv:
+    dimensions: longitude latitude time1
+    long_name: Surface Downward Northward Wind Stress
+    standard_name: surface_downward_northward_stress
+    units: Pa
+  ts:
+    dimensions: longitude latitude time1
+    long_name: Surface Temperature
+    standard_name: surface_temperature
+    units: K
+  zfull:
+    dimensions: longitude latitude alevel time1
+    long_name: Altitude of Model Full-Levels
+    standard_name: height_above_reference_ellipsoid
+    units: m
+  zhalf:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Altitude of Model Half-Levels
+    standard_name: height_above_reference_ellipsoid
+    units: m

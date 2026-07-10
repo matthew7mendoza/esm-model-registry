@@ -1,0 +1,81 @@
+variables:
+  clayfrac:
+    dimensions: longitude latitude sdepth
+    long_name: Clay Fraction
+    standard_name: volume_fraction_of_clay_in_soil
+    units: '1'
+  fldcapacity:
+    dimensions: longitude latitude sdepth
+    long_name: Field Capacity
+    standard_name: volume_fraction_of_condensed_water_in_soil_at_field_capacity
+    units: '%'
+  ksat:
+    dimensions: longitude latitude sdepth
+    long_name: Saturated Hydraulic Conductivity
+    standard_name: soil_hydraulic_conductivity_at_saturation
+    units: micron s-1
+  ps:
+    dimensions: longitude latitude
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  rld:
+    dimensions: alevhalf spectband
+    long_name: Downwelling Longwave Radiation
+    standard_name: downwelling_longwave_flux_in_air
+    units: W m-2
+  rlu:
+    dimensions: alevhalf spectband
+    long_name: Upwelling Longwave Radiation
+    standard_name: upwelling_longwave_flux_in_air
+    units: W m-2
+  rootdsl:
+    dimensions: longitude latitude sdepth
+    long_name: Root Distribution
+    standard_name: root_mass_content_of_carbon
+    units: kg m-2
+  rsd:
+    dimensions: alevhalf spectband
+    long_name: Downwelling Shortwave Radiation
+    standard_name: downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsu:
+    dimensions: alevhalf spectband
+    long_name: Upwelling Shortwave Radiation
+    standard_name: upwelling_shortwave_flux_in_air
+    units: W m-2
+  sandfrac:
+    dimensions: longitude latitude sdepth
+    long_name: Sand Fraction
+    standard_name: volume_fraction_of_sand_in_soil
+    units: '1'
+  sftflf:
+    dimensions: longitude latitude
+    long_name: Floating Ice Shelf Area Percentage
+    standard_name: floating_ice_shelf_area_fraction
+    units: '%'
+  sftgrf:
+    dimensions: longitude latitude
+    long_name: Grounded Ice Sheet Area Percentage
+    standard_name: grounded_ice_sheet_area_fraction
+    units: '%'
+  siltfrac:
+    dimensions: longitude latitude sdepth
+    long_name: Silt Fraction
+    standard_name: volume_fraction_of_silt_in_soil
+    units: '1'
+  slthick:
+    dimensions: longitude latitude sdepth
+    long_name: Thickness of Soil Layers
+    standard_name: cell_thickness
+    units: m
+  vegHeight:
+    dimensions: longitude latitude
+    long_name: Height of the Vegetation Canopy
+    standard_name: canopy_height
+    units: m
+  wilt:
+    dimensions: longitude latitude sdepth
+    long_name: Wilting Point
+    standard_name: volume_fraction_of_condensed_water_in_soil_at_wilting_point
+    units: '%'

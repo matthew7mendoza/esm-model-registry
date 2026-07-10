@@ -1,0 +1,616 @@
+variables:
+  agesno:
+    dimensions: longitude latitude time
+    long_name: Mean Age of Snow
+    standard_name: age_of_surface_snow
+    units: day
+  albc:
+    dimensions: longitude latitude time
+    long_name: Canopy Albedo
+    standard_name: canopy_albedo
+    units: '1'
+  albsn:
+    dimensions: longitude latitude time
+    long_name: Snow Albedo
+    standard_name: surface_albedo
+    units: '1'
+  aod550volso4:
+    dimensions: longitude latitude time lambda550nm
+    long_name: Aerosol Optical Depth at 550nm Due to Stratospheric Volcanic Aerosols
+    standard_name: stratosphere_optical_thickness_due_to_volcanic_ambient_aerosol_particles
+    units: 1e-09
+  ares:
+    dimensions: longitude latitude time
+    long_name: Aerodynamic Resistance
+    standard_name: aerodynamic_resistance
+    units: s m-1
+  ccldncl:
+    dimensions: longitude latitude time
+    long_name: Cloud Droplet Number Concentration of Convective Cloud Tops
+    standard_name: number_concentration_of_convective_cloud_liquid_water_particles_at_convective_liquid_water_cloud_top
+    units: m-3
+  cldnci:
+    dimensions: longitude latitude time
+    long_name: Ice Crystal Number Concentration of Cloud Tops
+    standard_name: number_concentration_of_ice_crystals_in_air_at_ice_cloud_top
+    units: m-3
+  cldnvi:
+    dimensions: longitude latitude time
+    long_name: Column Integrated Cloud Droplet Number
+    standard_name: atmosphere_number_content_of_cloud_droplets
+    units: m-2
+  clivic:
+    dimensions: longitude latitude time
+    long_name: Convective Ice Water Path
+    standard_name: atmosphere_mass_content_of_convective_cloud_ice
+    units: kg m-2
+  clt:
+    dimensions: longitude latitude time
+    long_name: Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  clwvic:
+    dimensions: longitude latitude time
+    long_name: Convective Condensed Water Path
+    standard_name: atmosphere_mass_content_of_convective_cloud_condensed_water
+    units: kg m-2
+  cnc:
+    dimensions: longitude latitude time
+    long_name: Canopy Covered Area Percentage
+    standard_name: vegetation_area_fraction
+    units: '%'
+  cw:
+    dimensions: longitude latitude time
+    long_name: Total Canopy Water Storage
+    standard_name: canopy_water_amount
+    units: kg m-2
+  dcw:
+    dimensions: longitude latitude time
+    long_name: Change in Interception Storage
+    standard_name: change_over_time_in_canopy_water_amount
+    units: kg m-2
+  dgw:
+    dimensions: longitude latitude time
+    long_name: Change in Groundwater
+    standard_name: change_over_time_in_groundwater_amount
+    units: kg m-2
+  dmlt:
+    dimensions: longitude latitude time stempzero
+    long_name: Depth to Soil Thaw
+    standard_name: depth_at_shallowest_isotherm_defined_by_soil_temperature
+    units: m
+  drivw:
+    dimensions: longitude latitude time
+    long_name: Change in River Storage
+    standard_name: change_over_time_in_river_water_amount
+    units: kg m-2
+  dslw:
+    dimensions: longitude latitude time
+    long_name: Change in Soil Moisture
+    standard_name: change_over_time_in_mass_content_of_water_in_soil
+    units: kg m-2
+  dsn:
+    dimensions: longitude latitude time
+    long_name: Change in Snow Water Equivalent
+    standard_name: change_over_time_in_amount_of_ice_and_snow_on_land
+    units: kg m-2
+  dsw:
+    dimensions: longitude latitude time
+    long_name: Change in Surface Water Storage
+    standard_name: change_over_time_in_land_water_amount
+    units: kg m-2
+  dtes:
+    dimensions: longitude latitude time
+    long_name: Change in Surface Heat Storage
+    standard_name: change_over_time_in_thermal_energy_content_of_vegetation_and_litter_and_soil
+    units: J m-2
+  dtesn:
+    dimensions: longitude latitude time
+    long_name: Change in Snow and Ice Cold Content
+    standard_name: change_over_time_in_thermal_energy_content_of_ice_and_snow_on_land
+    units: J m-2
+  ec:
+    dimensions: longitude latitude time
+    long_name: Interception Evaporation
+    standard_name: water_evaporation_flux_from_canopy
+    units: kg m-2 s-1
+  eow:
+    dimensions: longitude latitude time
+    long_name: Open Water Evaporation
+    standard_name: surface_water_evaporation_flux
+    units: kg m-2 s-1
+  es:
+    dimensions: longitude latitude time
+    long_name: Bare Soil Evaporation
+    standard_name: water_evaporation_flux_from_soil
+    units: kg m-2 s-1
+  esn:
+    dimensions: longitude latitude time
+    long_name: Snow Evaporation
+    standard_name: water_evapotranspiration_flux
+    units: kg m-2 s-1
+  evspsbl:
+    dimensions: longitude latitude time
+    long_name: Evaporation Including Sublimation and Transpiration
+    standard_name: water_evapotranspiration_flux
+    units: kg m-2 s-1
+  evspsblpot:
+    dimensions: longitude latitude time
+    long_name: Potential Evapotranspiration
+    standard_name: water_potential_evaporation_flux
+    units: kg m-2 s-1
+  hfdsl:
+    dimensions: longitude latitude time
+    long_name: Downward Heat Flux at Land Surface
+    standard_name: surface_downward_heat_flux_in_air
+    units: W m-2
+  hfdsn:
+    dimensions: longitude latitude time
+    long_name: Downward Heat Flux into Snow Where Land over Land
+    standard_name: surface_downward_heat_flux_in_snow
+    units: W m-2
+  hfdsnb:
+    dimensions: longitude latitude time
+    long_name: Downward Heat Flux at Snow Base
+    standard_name: downward_heat_flux_at_ground_level_in_snow
+    units: W m-2
+  hfls:
+    dimensions: longitude latitude time
+    long_name: Surface Upward Latent Heat Flux
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  hfmlt:
+    dimensions: longitude latitude time
+    long_name: Energy of Fusion
+    standard_name: surface_snow_and_ice_melt_heat_flux
+    units: W m-2
+  hfrs:
+    dimensions: longitude latitude time
+    long_name: Heat Transferred to Snowpack by Rainfall
+    standard_name: tendency_of_thermal_energy_content_of_surface_snow_due_to_rainfall_temperature_excess_above_freezing
+    units: W m-2
+  hfsbl:
+    dimensions: longitude latitude time
+    long_name: Energy of Sublimation
+    standard_name: surface_upward_latent_heat_flux_due_to_sublimation
+    units: W m-2
+  hfss:
+    dimensions: longitude latitude time
+    long_name: Surface Upward Sensible Heat Flux
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  hursminCrop:
+    dimensions: longitude latitude time height2m
+    long_name: Daily Minimum Near-Surface Relative Humidity over Crop Tile
+    standard_name: relative_humidity
+    units: '%'
+  hus:
+    dimensions: longitude latitude plev19 time
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  hus850:
+    dimensions: longitude latitude time p850
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  jpdftaureicemodis:
+    dimensions: longitude latitude effectRadIc tau time
+    long_name: MODIS Joint Distribution of Optical Thickness and Particle Size, Ice
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  jpdftaureliqmodis:
+    dimensions: longitude latitude effectRadLi tau time
+    long_name: MODIS Optical Thickness-Particle Size Joint Distribution, Liquid
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  lai:
+    dimensions: longitude latitude time
+    long_name: Leaf Area Index
+    standard_name: leaf_area_index
+    units: '1'
+  loadbc:
+    dimensions: longitude latitude time
+    long_name: Load of Black Carbon Aerosol
+    standard_name: atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles
+    units: kg m-2
+  loaddust:
+    dimensions: longitude latitude time
+    long_name: Load of Dust
+    standard_name: atmosphere_mass_content_of_dust_dry_aerosol_particles
+    units: kg m-2
+  loadnh4:
+    dimensions: longitude latitude time
+    long_name: Load of NH4
+    standard_name: atmosphere_mass_content_of_ammonium_dry_aerosol_particles
+    units: kg m-2
+  loadno3:
+    dimensions: longitude latitude time
+    long_name: Load of NO3
+    standard_name: atmosphere_mass_content_of_nitrate_dry_aerosol_particles
+    units: kg m-2
+  loadoa:
+    dimensions: longitude latitude time
+    long_name: Load of Dry Aerosol Organic Matter
+    standard_name: atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles
+    units: kg m-2
+  loadpoa:
+    dimensions: longitude latitude time
+    long_name: Load of Dry Aerosol Primary Organic Matter
+    standard_name: atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_particles
+    units: kg m-2
+  loadso4:
+    dimensions: longitude latitude time
+    long_name: Load of SO4
+    standard_name: atmosphere_mass_content_of_sulfate_dry_aerosol_particles
+    units: kg m-2
+  loadsoa:
+    dimensions: longitude latitude time
+    long_name: Load of Dry Aerosol Secondary Organic Matter
+    standard_name: atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles
+    units: kg m-2
+  loadss:
+    dimensions: longitude latitude time
+    long_name: Load of Sea-Salt Aerosol
+    standard_name: atmosphere_mass_content_of_sea_salt_dry_aerosol_particles
+    units: kg m-2
+  lwsnl:
+    dimensions: longitude latitude time
+    long_name: Liquid Water Content of Snow Layer
+    standard_name: liquid_water_content_of_surface_snow
+    units: kg m-2
+  mlotst:
+    dimensions: longitude latitude time
+    long_name: Ocean Mixed Layer Thickness Defined by Sigma T
+    standard_name: ocean_mixed_layer_thickness_defined_by_sigma_t
+    units: m
+  mrfsofr:
+    dimensions: longitude latitude sdepth time
+    long_name: Average Layer Fraction of Frozen Moisture
+    standard_name: mass_fraction_of_frozen_water_in_soil_moisture
+    units: '1'
+  mrlqso:
+    dimensions: longitude latitude sdepth time
+    long_name: Average Layer Fraction of Liquid Moisture
+    standard_name: mass_fraction_of_unfrozen_water_in_soil_moisture
+    units: '1'
+  mrrob:
+    dimensions: longitude latitude time
+    long_name: Subsurface Runoff
+    standard_name: subsurface_runoff_flux
+    units: kg m-2 s-1
+  mrros:
+    dimensions: longitude latitude time
+    long_name: Surface Runoff
+    standard_name: surface_runoff_flux
+    units: kg m-2 s-1
+  mrsfl:
+    dimensions: longitude latitude sdepth time
+    long_name: Frozen Water Content of Soil Layer
+    standard_name: frozen_water_content_of_soil_layer
+    units: kg m-2
+  mrsll:
+    dimensions: longitude latitude sdepth time
+    long_name: Liquid Water Content of Soil Layer
+    standard_name: liquid_water_content_of_soil_layer
+    units: kg m-2
+  mrsol:
+    dimensions: longitude latitude sdepth time
+    long_name: Total Water Content of Soil Layer
+    standard_name: mass_content_of_water_in_soil_layer
+    units: kg m-2
+  mrsow:
+    dimensions: longitude latitude time
+    long_name: Total Soil Wetness
+    standard_name: volume_fraction_of_condensed_water_in_soil_at_field_capacity
+    units: '1'
+  mrtws:
+    dimensions: longitude latitude time
+    long_name: Terrestrial Water Storage
+    standard_name: land_water_amount
+    units: kg m-2
+  nudgincsm:
+    dimensions: longitude latitude time
+    long_name: Nudging Increment of Water in Soil Moisture
+    standard_name: nudging_increment_in_mass_content_of_water_in_soil
+    units: kg m-2
+  nudgincswe:
+    dimensions: longitude latitude time
+    long_name: Nudging Increment of Water in Snow
+    standard_name: nudging_increment_in_snow_and_ice_amount_on_land
+    units: kg m-2
+  parasolRefl:
+    dimensions: longitude latitude sza5 time
+    long_name: PARASOL Reflectance
+    standard_name: toa_bidirectional_reflectance
+    units: '1'
+  pflw:
+    dimensions: longitude latitude time
+    long_name: Liquid Water Content of Permafrost Layer
+    standard_name: liquid_water_content_of_permafrost_layer
+    units: kg m-2
+  prCrop:
+    dimensions: longitude latitude time
+    long_name: Precipitation over Crop Tile
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prhmax:
+    dimensions: longitude latitude time
+    long_name: Maximum Hourly Precipitation Rate
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prra:
+    dimensions: longitude latitude time
+    long_name: Rainfall Flux over Land
+    standard_name: rainfall_flux
+    units: kg m-2 s-1
+  prrc:
+    dimensions: longitude latitude time
+    long_name: Convective Rainfall Rate
+    standard_name: convective_rainfall_flux
+    units: kg m-2 s-1
+  prrsn:
+    dimensions: longitude latitude time
+    long_name: Fraction of Rainfall on Snow
+    standard_name: mass_fraction_of_rainfall_falling_onto_surface_snow
+    units: '1'
+  prsnc:
+    dimensions: longitude latitude time
+    long_name: Convective Snowfall Flux
+    standard_name: convective_snowfall_flux
+    units: kg m-2 s-1
+  prsnsn:
+    dimensions: longitude latitude time
+    long_name: Fraction of Snowfall (Including Hail and Graupel) on Snow
+    standard_name: mass_fraction_of_solid_precipitation_falling_onto_surface_snow
+    units: '1'
+  prveg:
+    dimensions: longitude latitude time
+    long_name: Precipitation onto Canopy
+    standard_name: precipitation_flux_onto_canopy
+    units: kg m-2 s-1
+  prw:
+    dimensions: longitude latitude time
+    long_name: Water Vapor Path
+    standard_name: atmosphere_mass_content_of_water_vapor
+    units: kg m-2
+  qgwr:
+    dimensions: longitude latitude time
+    long_name: Groundwater Recharge from Soil Layer
+    standard_name: downward_liquid_water_mass_flux_into_groundwater
+    units: kg m-2 s-1
+  reffcclwtop:
+    dimensions: longitude latitude time
+    long_name: Cloud-Top Effective Droplet Radius in Convective Cloud
+    standard_name: effective_radius_of_convective_cloud_liquid_water_particles_at_convective_liquid_water_cloud_top
+    units: m
+  reffsclwtop:
+    dimensions: longitude latitude time
+    long_name: Cloud-Top Effective Droplet Radius in Stratiform Cloud
+    standard_name: effective_radius_of_stratiform_cloud_liquid_water_particles_at_stratiform_liquid_water_cloud_top
+    units: m
+  rivi:
+    dimensions: longitude latitude time
+    long_name: River Inflow
+    standard_name: incoming_water_volume_transport_along_river_channel
+    units: m3 s-1
+  rivo:
+    dimensions: longitude latitude time
+    long_name: River Discharge
+    standard_name: outgoing_water_volume_transport_along_river_channel
+    units: m3 s-1
+  rls:
+    dimensions: longitude latitude time
+    long_name: Net Longwave Surface Radiation
+    standard_name: surface_net_downward_longwave_flux
+    units: W m-2
+  rsdscsdiff:
+    dimensions: longitude latitude time
+    long_name: Surface Diffuse Downwelling Clear Sky Shortwave Radiation
+    standard_name: surface_diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdsdiff:
+    dimensions: longitude latitude time
+    long_name: Surface Diffuse Downwelling Shortwave Radiation
+    standard_name: surface_diffuse_downwelling_shortwave_flux_in_air
+    units: W m-2
+  rss:
+    dimensions: longitude latitude time
+    long_name: Net Shortwave Surface Radiation
+    standard_name: surface_net_downward_shortwave_flux
+    units: W m-2
+  rzwc:
+    dimensions: longitude latitude time
+    long_name: Root Zone Soil Moisture
+    standard_name: mass_content_of_water_in_soil_layer_defined_by_root_depth
+    units: kg m-2
+  sbl:
+    dimensions: longitude latitude time
+    long_name: Surface Snow and Ice Sublimation Flux
+    standard_name: tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice
+    units: kg m-2 s-1
+  sblnosn:
+    dimensions: longitude latitude time
+    long_name: Sublimation of the Snow Free Area
+    standard_name: tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_ice
+    units: kg m-2 s-1
+  scldncl:
+    dimensions: longitude latitude time
+    long_name: Cloud Droplet Number Concentration of Stratiform Cloud Tops
+    standard_name: number_concentration_of_stratiform_cloud_liquid_water_particles_at_stratiform_liquid_water_cloud_top
+    units: m-3
+  snd:
+    dimensions: longitude latitude time
+    long_name: Snow Depth
+    standard_name: surface_snow_thickness
+    units: m
+  snm:
+    dimensions: longitude latitude time
+    long_name: Surface Snow Melt
+    standard_name: surface_snow_melt_flux
+    units: kg m-2 s-1
+  snmsl:
+    dimensions: longitude latitude time
+    long_name: Water Flowing out of Snowpack
+    standard_name: liquid_water_mass_flux_into_soil_due_to_surface_snow_melt
+    units: kg m-2 s-1
+  snrefr:
+    dimensions: longitude latitude time
+    long_name: Refreezing of Water in the Snow
+    standard_name: surface_snow_and_ice_refreezing_flux
+    units: kg m-2 s-1
+  snwc:
+    dimensions: longitude latitude time
+    long_name: Snow Water Equivalent Intercepted by the Vegetation
+    standard_name: canopy_snow_amount
+    units: kg m-2
+  sootsn:
+    dimensions: longitude latitude time
+    long_name: Snow Soot Content
+    standard_name: soot_content_of_surface_snow
+    units: kg m-2
+  sw:
+    dimensions: longitude latitude time
+    long_name: Surface Water Storage
+    standard_name: land_surface_liquid_water_amount
+    units: kg m-2
+  t20d:
+    dimensions: longitude latitude time
+    long_name: Depth of 20 degree Celsius Isotherm
+    standard_name: depth_of_isosurface_of_sea_water_potential_temperature
+    units: m
+  ta:
+    dimensions: longitude latitude plev19 time
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ta500:
+    dimensions: longitude latitude time p500
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ta850:
+    dimensions: longitude latitude time p850
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tasmaxCrop:
+    dimensions: longitude latitude time height2m
+    long_name: Daily Maximum Near-Surface Air Temperature over Crop Tile
+    standard_name: air_temperature
+    units: K
+  tasminCrop:
+    dimensions: longitude latitude time height2m
+    long_name: Daily Minimum Near-Surface Air Temperature over Crop Tile
+    standard_name: air_temperature
+    units: K
+  tau:
+    dimensions: longitude latitude time
+    long_name: Momentum Flux
+    standard_name: magnitude_of_surface_downward_stress
+    units: N m-2
+  tauu:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Eastward Wind Stress
+    standard_name: surface_downward_eastward_stress
+    units: Pa
+  tauupbl:
+    dimensions: longitude latitude time
+    long_name: Eastward Surface Stress from Planetary Boundary Layer Scheme
+    standard_name: surface_downward_eastward_stress_due_to_boundary_layer_mixing
+    units: Pa
+  tauv:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Northward Wind Stress
+    standard_name: surface_downward_northward_stress
+    units: Pa
+  tauvpbl:
+    dimensions: longitude latitude time
+    long_name: Northward Surface Stress from Planetary Boundary Layer Scheme
+    standard_name: surface_downward_northward_stress_due_to_boundary_layer_mixing
+    units: Pa
+  tcs:
+    dimensions: longitude latitude time
+    long_name: Vegetation Canopy Temperature
+    standard_name: canopy_temperature
+    units: K
+  tdps:
+    dimensions: longitude latitude time
+    long_name: 2m Dewpoint Temperature
+    standard_name: dew_point_temperature
+    units: K
+  tgs:
+    dimensions: longitude latitude time
+    long_name: Temperature of Bare Soil
+    standard_name: surface_temperature
+    units: K
+  tpf:
+    dimensions: longitude latitude time
+    long_name: Permafrost Layer Thickness
+    standard_name: permafrost_layer_thickness
+    units: m
+  tr:
+    dimensions: longitude latitude time
+    long_name: Surface Radiative Temperature
+    standard_name: surface_temperature
+    units: K
+  tran:
+    dimensions: longitude latitude time
+    long_name: Transpiration
+    standard_name: transpiration_flux
+    units: kg m-2 s-1
+  ts:
+    dimensions: longitude latitude time
+    long_name: Surface Temperature
+    standard_name: surface_temperature
+    units: K
+  tsl:
+    dimensions: longitude latitude sdepth time
+    long_name: Temperature of Soil
+    standard_name: soil_temperature
+    units: K
+  tsland:
+    dimensions: longitude latitude time
+    long_name: Land Surface Temperature
+    standard_name: surface_temperature
+    units: K
+  tsn:
+    dimensions: longitude latitude time
+    long_name: Snow Internal Temperature
+    standard_name: temperature_in_surface_snow
+    units: K
+  tsns:
+    dimensions: longitude latitude time
+    long_name: Snow Surface Temperature
+    standard_name: surface_temperature
+    units: K
+  ua:
+    dimensions: longitude latitude plev19 time
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va:
+    dimensions: longitude latitude plev19 time
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  wap:
+    dimensions: longitude latitude plev19 time
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  wtd:
+    dimensions: longitude latitude time
+    long_name: Water Table Depth
+    standard_name: water_table_depth
+    units: m
+  zg:
+    dimensions: longitude latitude plev19 time
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m
+  zmla:
+    dimensions: longitude latitude time
+    long_name: Height of Boundary Layer
+    standard_name: atmosphere_boundary_layer_thickness
+    units: m

@@ -1,0 +1,244 @@
+variables:
+  aerasymbnd:
+    dimensions: longitude latitude alevel spectband time1
+    long_name: Aerosol Level Asymmetry Parameter for Each Band
+    standard_name: asymmetry_factor_of_ambient_aerosol_particles
+    units: '1'
+  aeroptbnd:
+    dimensions: longitude latitude alevel spectband time1
+    long_name: Aerosol Level Absorption Optical Thickness for Each Band
+    standard_name: atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles
+    units: '1'
+  aerssabnd:
+    dimensions: longitude latitude alevel spectband time1
+    long_name: Aerosol Level Single Scattering Albedo for Each Band
+    standard_name: single_scattering_albedo_in_air_due_to_ambient_aerosol_particles
+    units: '1'
+  albdiffbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: Diffuse Surface Albedo for Each Band
+    standard_name: surface_diffuse_shortwave_hemispherical_reflectance
+    units: '1'
+  albdirbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: Direct Surface Albedo for Each Band
+    standard_name: surface_direct_shortwave_hemispherical_reflectance
+    units: '1'
+  cfadDbze94:
+    dimensions: longitude latitude alt40 dbze time1
+    long_name: CloudSat Radar Reflectivity CFAD
+    standard_name: histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid
+    units: '1'
+  cfadLidarsr532:
+    dimensions: longitude latitude alt40 scatratio time1
+    long_name: CALIPSO Scattering Ratio CFAD
+    standard_name: histogram_of_backscattering_ratio_in_air_over_height_above_reference_ellipsoid
+    units: '1'
+  ch4:
+    dimensions: longitude latitude alevel time1
+    long_name: Mole Fraction of CH4
+    standard_name: mole_fraction_of_methane_in_air
+    units: mol mol-1
+  clcalipso:
+    dimensions: longitude latitude alt40 time1
+    long_name: CALIPSO Percentage Cloud Cover
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clcalipso2:
+    dimensions: longitude latitude alt40 time1
+    long_name: CALIPSO Cloud Cover Percentage Undetected by CloudSat (as Percentage
+      of Area Covered)
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clhcalipso:
+    dimensions: longitude latitude time1 p220
+    long_name: CALIPSO High Level Cloud Area Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clisccp:
+    dimensions: longitude latitude plev7c tau time1
+    long_name: ISCCP Cloud Area Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cllcalipso:
+    dimensions: longitude latitude time1 p840
+    long_name: CALIPSO Low Level Cloud Cover Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clmcalipso:
+    dimensions: longitude latitude time1 p560
+    long_name: CALIPSO Mid Level Cloud Cover Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clmisr:
+    dimensions: longitude latitude alt16 tau time1
+    long_name: Percentage Cloud Cover as Calculated by the MISR Simulator (Including
+      Error Flag)
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cltcalipso:
+    dimensions: longitude latitude time1
+    long_name: CALIPSO Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  co2:
+    dimensions: longitude latitude alevel time1
+    long_name: Mole Fraction of CO2
+    standard_name: mole_fraction_of_carbon_dioxide_in_air
+    units: mol mol-1
+  hus:
+    dimensions: longitude latitude alevel time1
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  hus7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  jpdftaureicemodis:
+    dimensions: longitude latitude effectRadIc tau time1
+    long_name: MODIS Joint Distribution of Optical Thickness and Particle Size, Ice
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  jpdftaureliqmodis:
+    dimensions: longitude latitude effectRadLi tau time1
+    long_name: MODIS Optical Thickness-Particle Size Joint Distribution, Liquid
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  n2o:
+    dimensions: longitude latitude alevel time1
+    long_name: Mole Fraction of N2O
+    standard_name: mole_fraction_of_nitrous_oxide_in_air
+    units: mol mol-1
+  o3:
+    dimensions: longitude latitude alevel time1
+    long_name: Mole Fraction of O3
+    standard_name: mole_fraction_of_ozone_in_air
+    units: mol mol-1
+  parasolRefl:
+    dimensions: longitude latitude sza5 time1
+    long_name: PARASOL Reflectance
+    standard_name: toa_bidirectional_reflectance
+    units: '1'
+  ps:
+    dimensions: longitude latitude time1
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  rsdcs:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Downwelling Clear-Sky Shortwave Radiation
+    standard_name: downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdcsaf:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Downwelling Clear-Sky, Aerosol-Free Shortwave Radiation
+    standard_name: downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsdcsafbnd:
+    dimensions: longitude latitude alevhalf spectband time1
+    long_name: Downwelling Clear-Sky, Aerosol-Free, Shortwave Radiation in Bands
+    standard_name: downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsdcsbnd:
+    dimensions: longitude latitude alevhalf spectband time1
+    long_name: Downwelling Clear-Sky Shortwave Radiation at Each Level for Each Band
+    standard_name: downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdscsaf:
+    dimensions: longitude latitude time1
+    long_name: Surface Downwelling Clear-Sky, Aerosol-Free Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsdscsafbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: Surface Downwelling Clear-Sky, Aerosol-Free Shortwave Radiation in
+      Bands
+    standard_name: surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsdscsbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: Surface Downwelling Clear-Sky Shortwave Radiation for Each Band
+    standard_name: surface_downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsucs:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Upwelling Clear-Sky Shortwave Radiation
+    standard_name: upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsucsaf:
+    dimensions: longitude latitude alevhalf time1
+    long_name: Upwelling Clear-Sky, Aerosol-Free Shortwave Radiation
+    standard_name: upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsucsafbnd:
+    dimensions: longitude latitude alevhalf spectband time1
+    long_name: Upwelling Clear-Sky, Aerosol-Free Shortwave Radiation in Bands
+    standard_name: upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsucsbnd:
+    dimensions: longitude latitude alevhalf spectband time1
+    long_name: Upwelling Clear-Sky Shortwave Radiation at Each Level for Each Band
+    standard_name: upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsuscsaf:
+    dimensions: longitude latitude time1
+    long_name: Surface Upwelling Clean Clear-Sky Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsuscsafbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: Surface Upwelling Clear-Sky, Aerosol-Free Shortwave Radiation in Bands
+    standard_name: surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsuscsbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: Surface Upwelling Clear-Sky Shortwave Radiation for Each Band
+    standard_name: surface_upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsutcsaf:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Clear-Sky, Aerosol-Free Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsutcsafbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: TOA Outgoing Clear-Sky, Aerosol-Free Shortwave Radiation in Bands
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol
+    units: W m-2
+  rsutcsbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: TOA Outgoing Clear-Sky Shortwave Radiation for Each Band
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky
+    units: W m-2
+  solbnd:
+    dimensions: longitude latitude spectband time1
+    long_name: TOA Solar Irradiance for Each Band
+    standard_name: toa_incoming_shortwave_flux
+    units: W m-2
+  sza:
+    dimensions: longitude latitude time1
+    long_name: Solar Zenith Angle
+    standard_name: solar_zenith_angle
+    units: degree
+  ta7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ua7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  wap7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1

@@ -1,0 +1,186 @@
+variables:
+  cldicemxrat27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Cloud Ice Mixing Ratio
+    standard_name: cloud_ice_mixing_ratio
+    units: '1'
+  cldwatmxrat27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Cloud Water Mixing Ratio
+    standard_name: cloud_liquid_water_mixing_ratio
+    units: '1'
+  dtauc:
+    dimensions: longitude latitude time1
+    long_name: Convective Cloud Optical Depth
+    standard_name: atmosphere_optical_thickness_due_to_convective_cloud
+    units: '1'
+  dtaus:
+    dimensions: longitude latitude time1
+    long_name: Stratiform Cloud Optical Depth
+    standard_name: atmosphere_optical_thickness_due_to_stratiform_cloud
+    units: '1'
+  grplmxrat27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Graupel Mixing Ratio
+    standard_name: mass_fraction_of_graupel_in_air
+    units: '1'
+  hus27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  hus7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  huss:
+    dimensions: longitude latitude time1 height2m
+    long_name: Near-Surface Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  lwsffluxaero:
+    dimensions: longitude latitude time1
+    long_name: Longwave Flux Due to Volcanic Aerosols at the Surface
+    standard_name: surface_downwelling_longwave_flux_in_air_due_to_volcanic_ambient_aerosol_particles
+    units: W m-2
+  lwtoafluxaerocs:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Clear-Sky Longwave Flux Due to Volcanic Aerosols
+    standard_name: toa_outgoing_longwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky
+    units: W m-2
+  mrsol:
+    dimensions: longitude latitude sdepth time1
+    long_name: Total Water Content of Soil Layer
+    standard_name: mass_content_of_water_in_soil_layer
+    units: kg m-2
+  mrsos:
+    dimensions: longitude latitude time1 sdepth1
+    long_name: Moisture in Upper Portion of Soil Column
+    standard_name: mass_content_of_water_in_soil_layer
+    units: kg m-2
+  psl:
+    dimensions: longitude latitude time1
+    long_name: Sea Level Pressure
+    standard_name: air_pressure_at_mean_sea_level
+    units: Pa
+  rainmxrat27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Mass Fraction of Rain in Air
+    standard_name: mass_fraction_of_liquid_precipitation_in_air
+    units: '1'
+  rv850:
+    dimensions: longitude latitude time1 p850
+    long_name: Relative Vorticity at 850hPa
+    standard_name: atmosphere_relative_vorticity
+    units: s-1
+  sfcWind:
+    dimensions: longitude latitude time1 height10m
+    long_name: Near-Surface Wind Speed
+    standard_name: wind_speed
+    units: m s-1
+  snowmxrat27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Mass Fraction of Snow in Air
+    standard_name: mass_fraction_of_snow_in_air
+    units: '1'
+  snw:
+    dimensions: longitude latitude time1
+    long_name: Surface Snow Amount
+    standard_name: surface_snow_amount
+    units: kg m-2
+  swsffluxaero:
+    dimensions: longitude latitude time1
+    long_name: Shortwave Heating Rate Due to Volcanic Aerosols
+    standard_name: surface_downwelling_shortwave_flux_in_air_due_to_volcanic_ambient_aerosol_particles
+    units: W m-2
+  swtoafluxaerocs:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Clear-Sky Shortwave Flux Due to Volcanic Aerosols
+    standard_name: toa_outgoing_shortwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky
+    units: W m-2
+  ta:
+    dimensions: longitude latitude plev3 time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ta27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ta7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tas:
+    dimensions: longitude latitude time1 height2m
+    long_name: Near-Surface Air Temperature
+    standard_name: air_temperature
+    units: K
+  ts:
+    dimensions: longitude latitude time1
+    long_name: Surface Temperature
+    standard_name: surface_temperature
+    units: K
+  tsl:
+    dimensions: longitude latitude time1 sdepth1
+    long_name: Temperature of Soil
+    standard_name: soil_temperature
+    units: K
+  ua:
+    dimensions: longitude latitude plev3 time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  ua7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  uas:
+    dimensions: longitude latitude time1 height10m
+    long_name: Eastward Near-Surface Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va:
+    dimensions: longitude latitude plev3 time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  va7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  vas:
+    dimensions: longitude latitude time1 height10m
+    long_name: Northward Near-Surface Wind
+    standard_name: northward_wind
+    units: m s-1
+  vortmean:
+    dimensions: longitude latitude time1 pl700
+    long_name: Relative Vorticity
+    standard_name: atmosphere_relative_vorticity
+    units: s-1
+  wbptemp7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Wet Bulb Potential Temperature
+    standard_name: wet_bulb_potential_temperature
+    units: K
+  zg27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m
+  zg500:
+    dimensions: longitude latitude time1 p500
+    long_name: Geopotential Height at 500hPa
+    standard_name: geopotential_height
+    units: m
+  zg7h:
+    dimensions: longitude latitude plev7h time1
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m

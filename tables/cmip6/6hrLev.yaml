@@ -1,0 +1,41 @@
+variables:
+  bs550aer:
+    dimensions: longitude latitude alevel time1 lambda550nm
+    long_name: Aerosol Backscatter Coefficient
+    standard_name: volume_scattering_function_of_radiative_flux_in_air_due_to_ambient_aerosol_particles
+    units: m-1 sr-1
+  ec550aer:
+    dimensions: longitude latitude alevel time1 lambda550nm
+    long_name: Aerosol Extinction Coefficient
+    standard_name: volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles
+    units: m-1
+  hus:
+    dimensions: longitude latitude alevel time1
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  pfull:
+    dimensions: longitude latitude alevel time1
+    long_name: Pressure at Model Full-Levels
+    standard_name: air_pressure
+    units: Pa
+  ps:
+    dimensions: longitude latitude time1
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  ta:
+    dimensions: longitude latitude alevel time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ua:
+    dimensions: longitude latitude alevel time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va:
+    dimensions: longitude latitude alevel time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1

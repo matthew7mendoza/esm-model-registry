@@ -1,0 +1,41 @@
+variables:
+  areacella:
+    dimensions: longitude latitude
+    long_name: Grid-Cell Area for Atmospheric Grid Variables
+    standard_name: cell_area
+    units: m2
+  areacellr:
+    dimensions: longitude latitude
+    long_name: Grid-Cell Area for River Model Variables
+    standard_name: cell_area
+    units: m2
+  mrsofc:
+    dimensions: longitude latitude
+    long_name: Capacity of Soil to Store Water (Field Capacity)
+    standard_name: soil_moisture_content_at_field_capacity
+    units: kg m-2
+  orog:
+    dimensions: longitude latitude
+    long_name: Surface Altitude
+    standard_name: surface_altitude
+    units: m
+  rootd:
+    dimensions: longitude latitude
+    long_name: Maximum Root Depth
+    standard_name: root_depth
+    units: m
+  sftgif:
+    dimensions: longitude latitude
+    long_name: Land Ice Area Percentage
+    standard_name: land_ice_area_fraction
+    units: '%'
+  sftlf:
+    dimensions: longitude latitude
+    long_name: Percentage of the Grid Cell Occupied by Land (Including Lakes)
+    standard_name: land_area_fraction
+    units: '%'
+  zfull:
+    dimensions: longitude latitude alevel
+    long_name: Altitude of Model Full-Levels
+    standard_name: height_above_reference_ellipsoid
+    units: m

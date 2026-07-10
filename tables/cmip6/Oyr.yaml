@@ -1,0 +1,646 @@
+variables:
+  arag:
+    dimensions: longitude latitude olevel time
+    long_name: Aragonite Concentration
+    standard_name: mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  bacc:
+    dimensions: longitude latitude olevel time
+    long_name: Bacterial Carbon Concentration
+    standard_name: mole_concentration_of_bacteria_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  bddtalk:
+    dimensions: longitude latitude olevel time
+    long_name: Rate of Change of Alkalinity Due to Biological Activity
+    standard_name: tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes
+    units: mol m-3 s-1
+  bddtdic:
+    dimensions: longitude latitude olevel time
+    long_name: Rate of Change of Dissolved Inorganic Carbon Due to Biological Activity
+    standard_name: tendency_of_mole_concentration_of_dissolved_inorganic_carbon_in_sea_water_due_to_biological_processes
+    units: mol m-3 s-1
+  bddtdife:
+    dimensions: longitude latitude olevel time
+    long_name: Rate of Change of Dissolved Inorganic Iron Due to Biological Activity
+    standard_name: tendency_of_mole_concentration_of_dissolved_inorganic_iron_in_sea_water_due_to_biological_processes
+    units: mol m-3 s-1
+  bddtdin:
+    dimensions: longitude latitude olevel time
+    long_name: Rate of Change of Nitrogen Nutrient Due to Biological Activity
+    standard_name: tendency_of_mole_concentration_of_dissolved_inorganic_nitrogen_in_sea_water_due_to_biological_processes
+    units: mol m-3 s-1
+  bddtdip:
+    dimensions: longitude latitude olevel time
+    long_name: Rate of Change of Dissolved Phosphorus Due to Biological Activity
+    standard_name: tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes
+    units: mol m-3 s-1
+  bddtdisi:
+    dimensions: longitude latitude olevel time
+    long_name: Rate of Change of Dissolved Inorganic Silicon Due to Biological Activity
+    standard_name: tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes
+    units: mol m-3 s-1
+  bfe:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Particulate Organic Matter Expressed as Iron
+      in Sea Water
+    standard_name: mole_concentration_of_particulate_organic_matter_expressed_as_iron_in_sea_water
+    units: mol m-3
+  bsi:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Particulate Organic Matter Expressed as Silicon
+      in Sea Water
+    standard_name: mole_concentration_of_particulate_matter_expressed_as_silicon_in_sea_water
+    units: mol m-3
+  calc:
+    dimensions: longitude latitude olevel time
+    long_name: Calcite Concentration
+    standard_name: mole_concentration_of_calcite_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  cfc11:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of CFC11 in Sea Water
+    standard_name: mole_concentration_of_cfc11_in_sea_water
+    units: mol m-3
+  cfc12:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of CFC12 in Sea Water
+    standard_name: mole_concentration_of_cfc12_in_sea_water
+    units: mol m-3
+  chl:
+    dimensions: longitude latitude olevel time
+    long_name: Mass Concentration of Total Phytoplankton Expressed as Chlorophyll
+      in Sea Water
+    standard_name: mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water
+    units: kg m-3
+  chlcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Mass Concentration of Calcareous Phytoplankton Expressed as Chlorophyll
+      in Sea Water
+    standard_name: mass_concentration_of_calcareous_phytoplankton_expressed_as_chlorophyll_in_sea_water
+    units: kg m-3
+  chldiat:
+    dimensions: longitude latitude olevel time
+    long_name: Mass Concentration of Diatoms Expressed as Chlorophyll in Sea Water
+    standard_name: mass_concentration_of_diatoms_expressed_as_chlorophyll_in_sea_water
+    units: kg m-3
+  chldiaz:
+    dimensions: longitude latitude olevel time
+    long_name: Mass Concentration of Diazotrophs Expressed as Chlorophyll in Sea Water
+    standard_name: mass_concentration_of_diazotrophic_phytoplankton_expressed_as_chlorophyll_in_sea_water
+    units: kg m-3
+  chlmisc:
+    dimensions: longitude latitude olevel time
+    long_name: Mass Concentration of Other Phytoplankton Expressed as Chlorophyll
+      in Sea Water
+    standard_name: mass_concentration_of_miscellaneous_phytoplankton_expressed_as_chlorophyll_in_sea_water
+    units: kg m-3
+  chlpico:
+    dimensions: longitude latitude olevel time
+    long_name: Mass Concentration of Picophytoplankton Expressed as Chlorophyll in
+      Sea Water
+    standard_name: mass_concentration_of_picophytoplankton_expressed_as_chlorophyll_in_sea_water
+    units: kg m-3
+  co3:
+    dimensions: longitude latitude olevel time
+    long_name: Carbonate Ion Concentration
+    standard_name: mole_concentration_of_carbonate_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  co3abio:
+    dimensions: longitude latitude olevel time
+    long_name: Abiotic Carbonate Ion Concentration
+    standard_name: mole_concentration_of_carbonate_abiotic_analogue_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  co3nat:
+    dimensions: longitude latitude olevel time
+    long_name: Natural Carbonate Ion Concentration
+    standard_name: mole_concentration_of_carbonate_natural_analogue_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  co3satarag:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Carbonate Ion in Equilibrium with Pure Aragonite
+      in Sea Water
+    standard_name: mole_concentration_of_carbonate_expressed_as_carbon_at_equilibrium_with_pure_aragonite_in_sea_water
+    units: mol m-3
+  co3satcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Carbonate Ion in Equilibrium with Pure Calcite
+      in Sea Water
+    standard_name: mole_concentration_of_carbonate_expressed_as_carbon_at_equilibrium_with_pure_calcite_in_sea_water
+    units: mol m-3
+  darag:
+    dimensions: longitude latitude olevel time
+    long_name: Aragonite Dissolution
+    standard_name: tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_dissolution
+    units: mol m-3 s-1
+  dcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Calcite Dissolution
+    standard_name: tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_dissolution
+    units: mol m-3 s-1
+  detoc:
+    dimensions: longitude latitude olevel time
+    long_name: Detrital Organic Carbon Concentration
+    standard_name: mole_concentration_of_organic_detritus_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  dfe:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Iron Concentration
+    standard_name: mole_concentration_of_dissolved_iron_in_sea_water
+    units: mol m-3
+  difmxybo:
+    dimensions: longitude latitude olevel time
+    long_name: Ocean Momentum XY Biharmonic Diffusivity
+    standard_name: ocean_momentum_xy_biharmonic_diffusivity
+    units: m4 s-1
+  difmxylo:
+    dimensions: longitude latitude olevel time
+    long_name: Ocean Momentum XY Laplacian Diffusivity
+    standard_name: ocean_momentum_xy_laplacian_diffusivity
+    units: m2 s-1
+  diftrblo:
+    dimensions: longitude latitude olevel time
+    long_name: Ocean Tracer Diffusivity Due to Parameterized Mesoscale Advection
+    standard_name: ocean_tracer_laplacian_diffusivity_due_to_parameterized_mesoscale_eddy_advection
+    units: m2 s-1
+  diftrelo:
+    dimensions: longitude latitude olevel time
+    long_name: Ocean Tracer Epineutral Laplacian Diffusivity
+    standard_name: ocean_tracer_epineutral_laplacian_diffusivity
+    units: m2 s-1
+  difvho:
+    dimensions: longitude latitude olevel time
+    long_name: Ocean Vertical Heat Diffusivity
+    standard_name: ocean_vertical_heat_diffusivity
+    units: m2 s-1
+  difvso:
+    dimensions: longitude latitude olevel time
+    long_name: Ocean Vertical Salt Diffusivity
+    standard_name: ocean_vertical_salt_diffusivity
+    units: m2 s-1
+  dispkexyfo:
+    dimensions: longitude latitude time
+    long_name: Ocean Kinetic Energy Dissipation per Unit Area Due to XY Friction
+    standard_name: ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction
+    units: W m-2
+  dissi13c:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Inorganic Carbon-13 Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_13C_in_sea_water
+    units: mol m-3
+  dissi14cabio:
+    dimensions: longitude latitude olevel time
+    long_name: Abiotic Dissolved Inorganic Carbon-14 Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_14C_in_sea_water
+    units: mol m-3
+  dissic:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Inorganic Carbon Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_carbon_in_sea_water
+    units: mol m-3
+  dissicabio:
+    dimensions: longitude latitude olevel time
+    long_name: Abiotic Dissolved Inorganic Carbon Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_carbon_abiotic_analogue_in_sea_water
+    units: mol m-3
+  dissicnat:
+    dimensions: longitude latitude olevel time
+    long_name: Natural Dissolved Inorganic Carbon Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_carbon_natural_analogue_in_sea_water
+    units: mol m-3
+  dissoc:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Organic Carbon Concentration
+    standard_name: mole_concentration_of_dissolved_organic_carbon_in_sea_water
+    units: mol m-3
+  dmso:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Dimethyl Sulphide in Sea Water
+    standard_name: mole_concentration_of_dimethyl_sulfide_in_sea_water
+    units: mol m-3
+  exparag:
+    dimensions: longitude latitude olevel time
+    long_name: Downward Flux of Aragonite
+    standard_name: sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water
+    units: mol m-2 s-1
+  expc:
+    dimensions: longitude latitude olevel time
+    long_name: Downward Flux of Particulate Organic Carbon
+    standard_name: sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water
+    units: mol m-2 s-1
+  expcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Downward Flux of Calcite
+    standard_name: sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water
+    units: mol m-2 s-1
+  expfe:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Iron Flux
+    standard_name: sinking_mole_flux_of_particulate_iron_in_sea_water
+    units: mol m-2 s-1
+  expn:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Organic Nitrogen Flux
+    standard_name: sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water
+    units: mol m-2 s-1
+  expp:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Organic Phosphorus Flux
+    standard_name: sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water
+    units: mol m-2 s-1
+  expsi:
+    dimensions: longitude latitude olevel time
+    long_name: Sinking Particulate Silicon Flux
+    standard_name: sinking_mole_flux_of_particulate_silicon_in_sea_water
+    units: mol m-2 s-1
+  fediss:
+    dimensions: longitude latitude olevel time
+    long_name: Particulate Source of Dissolved Iron
+    standard_name: tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_dissolution_from_inorganic_particles
+    units: mol m-3 s-1
+  fescav:
+    dimensions: longitude latitude olevel time
+    long_name: Non-Biogenic Iron Scavenging
+    standard_name: tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_scavenging_by_inorganic_particles
+    units: mol m-3 s-1
+  fg13co2:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Mass Flux of Carbon-13 as 13CO2 [kgC m-2 s-1]
+    standard_name: surface_downward_mass_flux_of_13C_dioxide_abiotic_analogue_expressed_as_13C
+    units: kg m-2 s-1
+  fg14co2abio:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Mass Flux of Carbon-14 as Abiotic 14CO2 [kgC m-2 s-1]
+    standard_name: surface_downward_mass_flux_of_14C_dioxide_abiotic_analogue_expressed_as_carbon
+    units: kg m-2 s-1
+  fgco2:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Mass Flux of Carbon as CO2 [kgC m-2 s-1]
+    standard_name: surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon
+    units: kg m-2 s-1
+  fgco2abio:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Mass Flux of Carbon as Abiotic CO2 [kgC m-2 s-1]
+    standard_name: surface_downward_mass_flux_of_carbon_dioxide_abiotic_analogue_expressed_as_carbon
+    units: kg m-2 s-1
+  fgco2nat:
+    dimensions: longitude latitude time
+    long_name: Surface Downward Mass Flux of Carbon as Natural CO2 [kgC m-2 s-1]
+    standard_name: surface_downward_mass_flux_of_carbon_dioxide_natural_analogue_expressed_as_carbon
+    units: kg m-2 s-1
+  graz:
+    dimensions: longitude latitude olevel time
+    long_name: Total Grazing of Phytoplankton by Zooplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_grazing_of_phytoplankton
+    units: mol m-3 s-1
+  nh4:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Ammonium Concentration
+    standard_name: mole_concentration_of_ammonium_in_sea_water
+    units: mol m-3
+  no3:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Nitrate Concentration
+    standard_name: mole_concentration_of_nitrate_in_sea_water
+    units: mol m-3
+  o2:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Oxygen Concentration
+    standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
+    units: mol m-3
+  o2sat:
+    dimensions: longitude latitude olevel time
+    long_name: Dissolved Oxygen Concentration at Saturation
+    standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_at_saturation
+    units: mol m-3
+  ocontempdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Dianeutral Mixing
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_dianeutral_mixing
+    units: W m-2
+  ocontempmint:
+    dimensions: longitude latitude time
+    long_name: Depth Integral of Product of Sea Water Density and Conservative Temperature
+    standard_name: integral_wrt_depth_of_product_of_conservative_temperature_and_sea_water_density
+    units: degC kg m-2
+  ocontemppadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Eddy Advection
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection
+    units: W m-2
+  ocontemppmdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Mesoscale Diffusion
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion
+    units: W m-2
+  ocontemppsmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Parameterized Submesoscale Advection
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection
+    units: W m-2
+  ocontemprmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+      Due to Residual Mean Advection
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_residual_mean_advection
+    units: W m-2
+  ocontemptend:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Conservative Temperature Expressed as Heat Content
+    standard_name: tendency_of_sea_water_conservative_temperature_expressed_as_heat_content
+    units: W m-2
+  opottempdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Dianeutral Mixing
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_dianeutral_mixing
+    units: W m-2
+  opottempmint:
+    dimensions: longitude latitude time
+    long_name: Integral with Respect to Depth of Product of Sea Water Density and
+      Potential Temperature
+    standard_name: integral_wrt_depth_of_product_of_potential_temperature_and_sea_water_density
+    units: degC kg m-2
+  opottemppadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Eddy Advection
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection
+    units: W m-2
+  opottemppmdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Mesoscale Diffusion
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion
+    units: W m-2
+  opottemppsmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Parameterized Submesoscale Advection
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection
+    units: W m-2
+  opottemprmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+      Due to Residual Mean Advection
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_residual_mean_advection
+    units: W m-2
+  opottemptend:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Potential Temperature Expressed as Heat Content
+    standard_name: tendency_of_sea_water_potential_temperature_expressed_as_heat_content
+    units: W m-2
+  osaltdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Dianeutral Mixing
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_dianeutral_mixing
+    units: kg m-2 s-1
+  osaltpadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Eddy Advection
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_eddy_advection
+    units: kg m-2 s-1
+  osaltpmdiff:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Mesoscale Diffusion
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_mesoscale_eddy_diffusion
+    units: kg m-2 s-1
+  osaltpsmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Parameterized
+      Submesoscale Advection
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_submesoscale_eddy_advection
+    units: kg m-2 s-1
+  osaltrmadvect:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content Due to Residual
+      Mean Advection
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_residual_mean_advection
+    units: kg m-2 s-1
+  osalttend:
+    dimensions: longitude latitude olevel time
+    long_name: Tendency of Sea Water Salinity Expressed as Salt Content
+    standard_name: tendency_of_sea_water_salinity_expressed_as_salt_content
+    units: kg m-2 s-1
+  parag:
+    dimensions: longitude latitude olevel time
+    long_name: Aragonite Production
+    standard_name: tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_biological_production
+    units: mol m-3 s-1
+  pbfe:
+    dimensions: longitude latitude olevel time
+    long_name: Biogenic Iron Production
+    standard_name: tendency_of_mole_concentration_of_iron_in_sea_water_due_to_biological_production
+    units: mol m-3 s-1
+  pbsi:
+    dimensions: longitude latitude olevel time
+    long_name: Biogenic Silicon Production
+    standard_name: tendency_of_mole_concentration_of_silicon_in_sea_water_due_to_biological_production
+    units: mol m-3 s-1
+  pcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Calcite Production
+    standard_name: tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_biological_production
+    units: mol m-3 s-1
+  ph:
+    dimensions: longitude latitude olevel time
+    long_name: pH
+    standard_name: sea_water_ph_reported_on_total_scale
+    units: '1'
+  phabio:
+    dimensions: longitude latitude olevel time
+    long_name: Abiotic pH
+    standard_name: sea_water_ph_abiotic_analogue_reported_on_total_scale
+    units: '1'
+  phnat:
+    dimensions: longitude latitude olevel time
+    long_name: Natural pH
+    standard_name: sea_water_ph_natural_analogue_reported_on_total_scale
+    units: '1'
+  phyc:
+    dimensions: longitude latitude olevel time
+    long_name: Phytoplankton Carbon Concentration
+    standard_name: mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  phycalc:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Calcareous Phytoplankton Expressed as Carbon
+      in Sea Water
+    standard_name: mole_concentration_of_calcareous_phytoplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  phydiat:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Diatoms Expressed as Carbon in Sea Water
+    standard_name: mole_concentration_of_diatoms_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  phydiaz:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Diazotrophs Expressed as Carbon in Sea Water
+    standard_name: mole_concentration_of_diazotrophic_phytoplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  phyfe:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Total Phytoplankton Expressed as Iron in Sea
+      Water
+    standard_name: mole_concentration_of_phytoplankton_expressed_as_iron_in_sea_water
+    units: mol m-3
+  phymisc:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Miscellaneous Phytoplankton Expressed as Carbon
+      in Sea Water
+    standard_name: mole_concentration_of_miscellaneous_phytoplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  phyn:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Total Phytoplankton Expressed as Nitrogen in
+      Sea Water
+    standard_name: mole_concentration_of_phytoplankton_expressed_as_nitrogen_in_sea_water
+    units: mol m-3
+  phyp:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Total Phytoplankton Expressed as Phosphorus in
+      Sea Water
+    standard_name: mole_concentration_of_phytoplankton_expressed_as_phosphorus_in_sea_water
+    units: mol m-3
+  phypico:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Picophytoplankton Expressed as Carbon in Sea
+      Water
+    standard_name: mole_concentration_of_picophytoplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  physi:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Total Phytoplankton Expressed as Silicon in Sea
+      Water
+    standard_name: mole_concentration_of_phytoplankton_expressed_as_silicon_in_sea_water
+    units: mol m-3
+  pnitrate:
+    dimensions: longitude latitude olevel time
+    long_name: Primary Carbon Production by Phytoplankton Due to Nitrate Uptake Alone
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_nitrate_utilization
+    units: mol m-3 s-1
+  po4:
+    dimensions: longitude latitude olevel time
+    long_name: Total Dissolved Inorganic Phosphorus Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water
+    units: mol m-3
+  pon:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Particulate Organic Matter Expressed as Nitrogen
+      in Sea Water
+    standard_name: mole_concentration_of_particulate_organic_matter_expressed_as_nitrogen_in_sea_water
+    units: mol m-3
+  pop:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Particulate Organic Matter Expressed as Phosphorus
+      in Sea Water
+    standard_name: mole_concentration_of_particulate_organic_matter_expressed_as_phosphorus_in_sea_water
+    units: mol m-3
+  pp:
+    dimensions: longitude latitude olevel time
+    long_name: Primary Carbon Production by Phytoplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production
+    units: mol m-3 s-1
+  ppcalc:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Mole Productivity of Carbon by Calcareous Phytoplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_calcareous_phytoplankton
+    units: mol m-3 s-1
+  ppdiat:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Organic Carbon Production by Diatoms
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diatoms
+    units: mol m-3 s-1
+  ppdiaz:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Mole Productivity of Carbon by Diazotrophs
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diazotrophic_phytoplankton
+    units: mol m-3 s-1
+  ppmisc:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Organic Carbon Production by Other Phytoplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_miscellaneous_phytoplankton
+    units: mol m-3 s-1
+  pppico:
+    dimensions: longitude latitude olevel time
+    long_name: Net Primary Mole Productivity of Carbon by Picophytoplankton
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_picophytoplankton
+    units: mol m-3 s-1
+  remoc:
+    dimensions: longitude latitude olevel time
+    long_name: Remineralization of Organic Carbon
+    standard_name: tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_remineralization
+    units: mol m-3 s-1
+  rsdoabsorb:
+    dimensions: longitude latitude olevel time
+    long_name: Net Rate of Absorption of Shortwave Energy in Ocean Layer
+    standard_name: net_rate_of_absorption_of_shortwave_energy_in_ocean_layer
+    units: W m-2
+  sf6:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of SF6 in Sea Water
+    standard_name: mole_concentration_of_sulfur_hexafluoride_in_sea_water
+    units: mol m-3
+  si:
+    dimensions: longitude latitude olevel time
+    long_name: Total Dissolved Inorganic Silicon Concentration
+    standard_name: mole_concentration_of_dissolved_inorganic_silicon_in_sea_water
+    units: mol m-3
+  somint:
+    dimensions: longitude latitude time
+    long_name: Depth Integral of Product of Sea Water Density and Prognostic Salinity
+    standard_name: integral_wrt_depth_of_product_of_salinity_and_sea_water_density
+    units: g m-2
+  talk:
+    dimensions: longitude latitude olevel time
+    long_name: Total Alkalinity
+    standard_name: sea_water_alkalinity_expressed_as_mole_equivalent
+    units: mol m-3
+  talknat:
+    dimensions: longitude latitude olevel time
+    long_name: Natural Total Alkalinity
+    standard_name: sea_water_alkalinity_natural_analogue_expressed_as_mole_equivalent
+    units: mol m-3
+  tnkebto:
+    dimensions: longitude latitude time
+    long_name: Tendency of Ocean Eddy Kinetic Energy Content Due to Parameterized
+      Eddy Advection
+    standard_name: tendency_of_ocean_eddy_kinetic_energy_content_due_to_parameterized_eddy_advection
+    units: W m-2
+  tnpeo:
+    dimensions: longitude latitude time
+    long_name: Tendency of Ocean Potential Energy Content
+    standard_name: tendency_of_ocean_potential_energy_content
+    units: W m-2
+  volcello:
+    dimensions: longitude latitude olevel time
+    long_name: Ocean Grid-Cell Volume
+    standard_name: ocean_volume
+    units: m3
+  zmeso:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Mesozooplankton Expressed as Carbon in Sea Water
+    standard_name: mole_concentration_of_mesozooplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  zmicro:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Microzooplankton Expressed as Carbon in Sea Water
+    standard_name: mole_concentration_of_microzooplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  zmisc:
+    dimensions: longitude latitude olevel time
+    long_name: Mole Concentration of Other Zooplankton Expressed as Carbon in Sea
+      Water
+    standard_name: mole_concentration_of_miscellaneous_zooplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  zooc:
+    dimensions: longitude latitude olevel time
+    long_name: Zooplankton Carbon Concentration
+    standard_name: mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3

@@ -1,0 +1,37 @@
+variables:
+  chlos:
+    dimensions: longitude latitude time
+    long_name: Surface Mass Concentration of Total Phytoplankton Expressed as Chlorophyll
+      in Sea Water
+    standard_name: mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water
+    units: kg m-3
+  omldamax:
+    dimensions: longitude latitude time
+    long_name: Mean Daily Maximum Ocean Mixed Layer Thickness Defined by Mixing Scheme
+    standard_name: ocean_mixed_layer_thickness_defined_by_mixing_scheme
+    units: m
+  phycos:
+    dimensions: longitude latitude time
+    long_name: Sea Surface Phytoplankton Carbon Concentration
+    standard_name: mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water
+    units: mol m-3
+  sos:
+    dimensions: longitude latitude time
+    long_name: Sea Surface Salinity
+    standard_name: sea_surface_salinity
+    units: '0.001'
+  sossq:
+    dimensions: longitude latitude time
+    long_name: Square of Sea Surface Salinity
+    standard_name: square_of_sea_surface_salinity
+    units: 1e-06
+  tos:
+    dimensions: longitude latitude time
+    long_name: Sea Surface Temperature
+    standard_name: sea_surface_temperature
+    units: degC
+  tossq:
+    dimensions: longitude latitude time
+    long_name: Square of Sea Surface Temperature
+    standard_name: square_of_sea_surface_temperature
+    units: degC2

@@ -1,0 +1,166 @@
+variables:
+  acabf:
+    dimensions: xant yant time
+    long_name: Surface Mass Balance Flux
+    standard_name: land_ice_surface_specific_mass_balance_flux
+    units: kg m-2 s-1
+  hfgeoubed:
+    dimensions: xant yant time
+    long_name: Geothermal Heat Flux Beneath Land Ice
+    standard_name: upward_geothermal_heat_flux_at_ground_level_in_land_ice
+    units: W m-2
+  iareafl:
+    dimensions: time
+    long_name: Area Covered by Floating Ice Shelves
+    standard_name: floating_ice_shelf_area
+    units: m2
+  iareagr:
+    dimensions: time
+    long_name: Area Covered by Grounded Ice Sheet
+    standard_name: grounded_ice_sheet_area
+    units: m2
+  libmassbffl:
+    dimensions: xant yant time
+    long_name: Basal Specific Mass Balance Flux of Floating Ice Shelf
+    standard_name: land_ice_basal_specific_mass_balance_flux
+    units: kg m-2 s-1
+  libmassbfgr:
+    dimensions: xant yant time
+    long_name: Basal Specific Mass Balance Flux of Grounded Ice Sheet
+    standard_name: land_ice_basal_specific_mass_balance_flux
+    units: kg m-2 s-1
+  licalvf:
+    dimensions: xant yant time
+    long_name: Land Ice Calving Flux
+    standard_name: land_ice_specific_mass_flux_due_to_calving
+    units: kg m-2 s-1
+  lifmassbf:
+    dimensions: xant yant time
+    long_name: Land Ice Vertical Front Mass Balance Flux
+    standard_name: land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting
+    units: kg m-2 s-1
+  lim:
+    dimensions: time
+    long_name: Ice Sheet Mass
+    standard_name: land_ice_mass
+    units: kg
+  limnsw:
+    dimensions: time
+    long_name: Ice Sheet Mass That Does not Displace Sea Water
+    standard_name: land_ice_mass_not_displacing_sea_water
+    units: kg
+  litempbotfl:
+    dimensions: xant yant time
+    long_name: Basal Temperature of Floating Ice Shelf
+    standard_name: land_ice_basal_temperature
+    units: K
+  litempbotgr:
+    dimensions: xant yant time
+    long_name: Basal Temperature of Grounded Ice Sheet
+    standard_name: land_ice_basal_temperature
+    units: K
+  litemptop:
+    dimensions: xant yant time
+    long_name: Temperature at Top of Ice Sheet Model
+    standard_name: temperature_at_top_of_ice_sheet_model
+    units: K
+  lithk:
+    dimensions: xant yant time
+    long_name: Ice Sheet Thickness
+    standard_name: land_ice_thickness
+    units: m
+  modelCellAreai:
+    dimensions: xant yant time
+    long_name: The Cell Area of the Ice Sheet Model
+    standard_name: cell_area
+    units: m2
+  orog:
+    dimensions: xant yant time
+    long_name: Surface Altitude
+    standard_name: surface_altitude
+    units: m
+  sftflf:
+    dimensions: xant yant time
+    long_name: Floating Ice Shelf Area Percentage
+    standard_name: floating_ice_shelf_area_fraction
+    units: '%'
+  sftgif:
+    dimensions: xant yant time
+    long_name: Land Ice Area Percentage
+    standard_name: land_ice_area_fraction
+    units: '%'
+  sftgrf:
+    dimensions: xant yant time
+    long_name: Grounded Ice Sheet Area Percentage
+    standard_name: grounded_ice_sheet_area_fraction
+    units: '%'
+  snc:
+    dimensions: xant yant time
+    long_name: Snow Area Percentage
+    standard_name: surface_snow_area_fraction
+    units: '%'
+  strbasemag:
+    dimensions: xant yant time
+    long_name: Land Ice Basal Drag
+    standard_name: land_ice_basal_drag
+    units: Pa
+  tendacabf:
+    dimensions: time
+    long_name: Total Surface Mass Balance Flux
+    standard_name: tendency_of_land_ice_mass_due_to_surface_mass_balance
+    units: kg s-1
+  tendlibmassbf:
+    dimensions: time
+    long_name: Total Basal Mass Balance Flux
+    standard_name: tendency_of_land_ice_mass_due_to_basal_mass_balance
+    units: kg s-1
+  tendlicalvf:
+    dimensions: time
+    long_name: Total Calving Flux
+    standard_name: tendency_of_land_ice_mass_due_to_calving
+    units: kg s-1
+  topg:
+    dimensions: xant yant time
+    long_name: Bedrock Altitude
+    standard_name: bedrock_altitude
+    units: m
+  xvelbase:
+    dimensions: xant yant time
+    long_name: X-Component of Land Ice Basal Velocity
+    standard_name: land_ice_basal_x_velocity
+    units: m s-1
+  xvelmean:
+    dimensions: xant yant time
+    long_name: X-Component of Land Ice Vertical Mean Velocity
+    standard_name: land_ice_vertical_mean_x_velocity
+    units: m s-1
+  xvelsurf:
+    dimensions: xant yant time
+    long_name: X-Component of Land Ice Surface Velocity
+    standard_name: land_ice_surface_x_velocity
+    units: m s-1
+  yvelbase:
+    dimensions: xant yant time
+    long_name: Y-Component of Land Ice Basal Velocity
+    standard_name: land_ice_basal_y_velocity
+    units: m s-1
+  yvelmean:
+    dimensions: xant yant time
+    long_name: Y-Component of Land Ice Vertical Mean Velocity
+    standard_name: land_ice_vertical_mean_y_velocity
+    units: m s-1
+  yvelsurf:
+    dimensions: xant yant time
+    long_name: Y-Component of Land Ice Surface Velocity
+    standard_name: land_ice_surface_y_velocity
+    units: m s-1
+  zvelbase:
+    dimensions: xant yant time
+    long_name: Upward Component of Land-Ice Basal Velocity
+    standard_name: land_ice_basal_upward_velocity
+    units: m s-1
+  zvelsurf:
+    dimensions: xant yant time
+    long_name: Upward Component of Land-Ice Surface Velocity
+    standard_name: land_ice_surface_upward_velocity
+    units: m s-1

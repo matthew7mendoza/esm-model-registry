@@ -1,0 +1,166 @@
+variables:
+  bldep:
+    dimensions: longitude latitude time1
+    long_name: Boundary Layer Depth
+    standard_name: atmosphere_boundary_layer_thickness
+    units: m
+  hfls:
+    dimensions: longitude latitude time1
+    long_name: Surface Upward Latent Heat Flux
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  hfss:
+    dimensions: longitude latitude time1
+    long_name: Surface Upward Sensible Heat Flux
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  hus:
+    dimensions: longitude latitude alevel time1
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  huss:
+    dimensions: longitude latitude time1 height2m
+    long_name: Near-Surface Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  mc:
+    dimensions: longitude latitude alevel time1
+    long_name: Convective Mass Flux
+    standard_name: atmosphere_net_upward_convective_mass_flux
+    units: kg m-2 s-1
+  pr:
+    dimensions: longitude latitude time1
+    long_name: Precipitation
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prc:
+    dimensions: longitude latitude time1
+    long_name: Convective Precipitation
+    standard_name: convective_precipitation_flux
+    units: kg m-2 s-1
+  prw:
+    dimensions: longitude latitude time1
+    long_name: Water Vapor Path
+    standard_name: atmosphere_mass_content_of_water_vapor
+    units: kg m-2
+  ps:
+    dimensions: longitude latitude time1
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  reffclic:
+    dimensions: alevel site time1
+    long_name: Hydrometeor Effective Radius of Convective Cloud Ice
+    standard_name: effective_radius_of_convective_cloud_ice_particles
+    units: m
+  reffclis:
+    dimensions: alevel site time1
+    long_name: Hydrometeor Effective Radius of Stratiform Cloud Ice
+    standard_name: effective_radius_of_stratiform_cloud_ice_particles
+    units: m
+  reffclwc:
+    dimensions: alevel site time1
+    long_name: Convective Cloud Liquid Droplet Effective Radius
+    standard_name: effective_radius_of_convective_cloud_liquid_water_particles
+    units: m
+  reffclws:
+    dimensions: alevel site time1
+    long_name: Stratiform Cloud Liquid Droplet Effective Radius
+    standard_name: effective_radius_of_stratiform_cloud_liquid_water_particles
+    units: m
+  rlut:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux
+    units: W m-2
+  rsdt:
+    dimensions: longitude latitude time1
+    long_name: TOA Incident Shortwave Radiation
+    standard_name: toa_incoming_shortwave_flux
+    units: W m-2
+  rsut:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux
+    units: W m-2
+  ta:
+    dimensions: longitude latitude alevel time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tas:
+    dimensions: longitude latitude time1 height2m
+    long_name: Near-Surface Air Temperature
+    standard_name: air_temperature
+    units: K
+  tnhus:
+    dimensions: longitude latitude alevel time1
+    long_name: Tendency of Specific Humidity
+    standard_name: tendency_of_specific_humidity
+    units: s-1
+  tnhuspbl:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity Due to Boundary Layer Mixing
+    standard_name: tendency_of_specific_humidity_due_to_boundary_layer_mixing
+    units: s-1
+  tnhusscp:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity Due to Stratiform Clouds and Precipitation
+    standard_name: tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation
+    units: s-1
+  tnt:
+    dimensions: longitude latitude alevel time1
+    long_name: Tendency of Air Temperature
+    standard_name: tendency_of_air_temperature
+    units: K s-1
+  tntd:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Numerical Diffusion
+    standard_name: tendency_of_air_temperature_due_to_diffusion
+    units: K s-1
+  tntpbl:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Boundary Layer Mixing
+    standard_name: tendency_of_air_temperature_due_to_boundary_layer_mixing
+    units: K s-1
+  tntrl:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Longwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_longwave_heating
+    units: K s-1
+  tntrlcs:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Clear Sky Longwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_longwave_heating_assuming_clear_sky
+    units: K s-1
+  tntrs:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Shortwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_shortwave_heating
+    units: K s-1
+  tntrscs:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Clear Sky Shortwave Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_shortwave_heating_assuming_clear_sky
+    units: K s-1
+  tntscp:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Stratiform Clouds and Precipitation
+    standard_name: tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation
+    units: K s-1
+  ua:
+    dimensions: longitude latitude alevel time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va:
+    dimensions: longitude latitude alevel time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  wap:
+    dimensions: longitude latitude alevel time1
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1

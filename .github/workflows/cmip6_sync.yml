@@ -1,0 +1,55 @@
+name: Dynamic Upstream CMIP Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-tables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install requests pyyaml
+
+      - name: Run Dynamic Table Ingestion
+        run: python scripts/ingest_cmip_tables.py
+
+      - name: Re-compile Native Fast Lookup Aliases
+        run: python scripts/compile_aliases.py
+
+      - name: Open PR if Upstream Changed
+        run: |
+          git config --global user.name "gfdl-bot"
+          git config --global user.email "gfdl-bot@noaa.gov"
+          git add tables/cmip6/ 
+
+          if git diff --staged --quiet; then
+            echo "No upstream changes detected. Registry is perfectly in sync."
+            exit 0
+          fi
+
+          BRANCH_NAME="auto/cmip6-sync-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH_NAME"
+          git commit -m "Automated Sync: Updated CMIP6 variable schemas and recompiled aliases"
+          git push origin "$BRANCH_NAME"
+
+          gh pr create \
+            --title "Automated Sync: CMIP6 upstream variable update" \
+            --body "This PR was opened automatically by the weekly CMIP6 sync workflow. PCMDI upstream changes were detected in the cmip6-cmor-tables repository. Please review the variable diffs before merging." \
+            --base main \
+            --head "$BRANCH_NAME"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

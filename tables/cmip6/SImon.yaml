@@ -1,0 +1,446 @@
+variables:
+  sfdsi:
+    dimensions: longitude latitude time
+    long_name: Downward Sea Ice Basal Salt Flux
+    standard_name: downward_sea_ice_basal_salt_flux
+    units: kg m-2 s-1
+  siage:
+    dimensions: longitude latitude time
+    long_name: Age of Sea Ice
+    standard_name: age_of_sea_ice
+    units: s
+  siareaacrossline:
+    dimensions: siline time
+    long_name: Sea-Ice Area Flux Through Straits
+    standard_name: sea_ice_area_transport_across_line
+    units: m2 s-1
+  siarean:
+    dimensions: time
+    long_name: Sea-Ice Area North
+    standard_name: sea_ice_area
+    units: 1e6 km2
+  siareas:
+    dimensions: time
+    long_name: Sea-Ice Area South
+    standard_name: sea_ice_area
+    units: 1e6 km2
+  sicompstren:
+    dimensions: longitude latitude time
+    long_name: Compressive Sea Ice Strength
+    standard_name: compressive_strength_of_sea_ice
+    units: N m-1
+  siconc:
+    dimensions: longitude latitude time typesi
+    long_name: Sea-Ice Area Percentage (Ocean Grid)
+    standard_name: sea_ice_area_fraction
+    units: '%'
+  siconca:
+    dimensions: longitude latitude time typesi
+    long_name: Sea-Ice Area Percentage (Atmospheric Grid)
+    standard_name: sea_ice_area_fraction
+    units: '%'
+  sidconcdyn:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Area Percentage Tendency Due to Dynamics
+    standard_name: tendency_of_sea_ice_area_fraction_due_to_dynamics
+    units: s-1
+  sidconcth:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Area Percentage Tendency Due to Thermodynamics
+    standard_name: tendency_of_sea_ice_area_fraction_due_to_thermodynamics
+    units: s-1
+  sidivvel:
+    dimensions: longitude latitude time1
+    long_name: Divergence of the Sea-Ice Velocity Field
+    standard_name: divergence_of_sea_ice_velocity
+    units: s-1
+  sidmassdyn:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change from Dynamics
+    standard_name: tendency_of_sea_ice_amount_due_to_sea_ice_dynamics
+    units: kg m-2 s-1
+  sidmassevapsubl:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change Through Evaporation and Sublimation
+    standard_name: water_evapotranspiration_flux
+    units: kg m-2 s-1
+  sidmassgrowthbot:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change Through Basal Growth
+    standard_name: tendency_of_sea_ice_amount_due_to_congelation_ice_accumulation
+    units: kg m-2 s-1
+  sidmassgrowthwat:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change Through Growth in Supercooled Open Water (Frazil)
+    standard_name: tendency_of_sea_ice_amount_due_to_frazil_ice_accumulation_in_leads
+    units: kg m-2 s-1
+  sidmasslat:
+    dimensions: longitude latitude time
+    long_name: Lateral Sea Ice Melt Rate
+    standard_name: tendency_of_sea_ice_amount_due_to_lateral_melting
+    units: kg m-2 s-1
+  sidmassmeltbot:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change Through Bottom Melting
+    standard_name: tendency_of_sea_ice_amount_due_to_basal_melting
+    units: kg m-2 s-1
+  sidmassmelttop:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change Through Surface Melting
+    standard_name: tendency_of_sea_ice_amount_due_to_surface_melting
+    units: kg m-2 s-1
+  sidmasssi:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change Through Snow-to-Ice Conversion
+    standard_name: tendency_of_sea_ice_amount_due_to_conversion_of_snow_to_sea_ice
+    units: kg m-2 s-1
+  sidmassth:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass Change from Thermodynamics
+    standard_name: tendency_of_sea_ice_amount_due_to_sea_ice_thermodynamics
+    units: kg m-2 s-1
+  sidmasstranx:
+    dimensions: longitude latitude time
+    long_name: X-Component of Sea-Ice Mass Transport
+    standard_name: sea_ice_x_transport
+    units: kg s-1
+  sidmasstrany:
+    dimensions: longitude latitude time
+    long_name: Y-Component of Sea-Ice Mass Transport
+    standard_name: sea_ice_y_transport
+    units: kg s-1
+  sidragbot:
+    dimensions: longitude latitude time
+    long_name: Ocean Drag Coefficient
+    standard_name: sea_ice_basal_drag_coefficient_for_momentum_in_sea_water
+    units: '1'
+  sidragtop:
+    dimensions: longitude latitude time
+    long_name: Atmospheric Drag Coefficient
+    standard_name: surface_drag_coefficient_for_momentum_in_air
+    units: '1'
+  siextentn:
+    dimensions: time
+    long_name: Sea-Ice Extent North
+    standard_name: sea_ice_extent
+    units: 1e6 km2
+  siextents:
+    dimensions: time
+    long_name: Sea-Ice Extent South
+    standard_name: sea_ice_extent
+    units: 1e6 km2
+  sifb:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Freeboard
+    standard_name: sea_ice_freeboard
+    units: m
+  siflcondbot:
+    dimensions: longitude latitude time
+    long_name: Net Conductive Heat Fluxes in Ice at the Bottom
+    standard_name: basal_downward_heat_flux_in_sea_ice
+    units: W m-2
+  siflcondtop:
+    dimensions: longitude latitude time
+    long_name: Net Conductive Heat Flux in Ice at the Surface
+    standard_name: surface_downward_sensible_heat_flux
+    units: W m-2
+  siflfwbot:
+    dimensions: longitude latitude time
+    long_name: Freshwater Flux from Sea Ice
+    standard_name: water_flux_into_sea_water_due_to_sea_ice_thermodynamics
+    units: kg m-2 s-1
+  siflfwdrain:
+    dimensions: longitude latitude time
+    long_name: Freshwater Flux from Sea-Ice Surface
+    standard_name: water_flux_into_sea_water_due_to_surface_drainage
+    units: kg m-2 s-1
+  sifllatstop:
+    dimensions: longitude latitude time
+    long_name: Net Latent Heat Flux over Sea Ice
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  sifllwdtop:
+    dimensions: longitude latitude time
+    long_name: Downwelling Longwave Flux over Sea Ice
+    standard_name: surface_downwelling_longwave_flux_in_air
+    units: W m-2
+  sifllwutop:
+    dimensions: longitude latitude time
+    long_name: Upwelling Longwave Flux over Sea Ice
+    standard_name: surface_upwelling_longwave_flux_in_air
+    units: W m-2
+  siflsenstop:
+    dimensions: longitude latitude time
+    long_name: Net Upward Sensible Heat Flux over Sea Ice
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  siflsensupbot:
+    dimensions: longitude latitude time
+    long_name: Net Upward Sensible Heat Flux Under Sea Ice
+    standard_name: upward_sea_ice_basal_heat_flux
+    units: W m-2
+  siflswdbot:
+    dimensions: longitude latitude time
+    long_name: Downwelling Shortwave Flux Under Sea Ice
+    standard_name: downwelling_shortwave_flux_in_sea_water_at_sea_ice_base
+    units: W m-2
+  siflswdtop:
+    dimensions: longitude latitude time
+    long_name: Downwelling Shortwave Flux over Sea Ice
+    standard_name: surface_downwelling_shortwave_flux_in_air
+    units: W m-2
+  siflswutop:
+    dimensions: longitude latitude time
+    long_name: Upwelling Shortwave Flux over Sea Ice
+    standard_name: surface_upwelling_shortwave_flux_in_air
+    units: W m-2
+  siforcecoriolx:
+    dimensions: longitude latitude time
+    long_name: Coriolis Force Term in Force Balance (X-Component)
+    standard_name: sea_ice_x_force_per_unit_area_due_to_coriolis_effect
+    units: N m-2
+  siforcecorioly:
+    dimensions: longitude latitude time
+    long_name: Coriolis Force Term in Force Balance (Y-Component)
+    standard_name: sea_ice_y_force_per_unit_area_due_to_coriolis_effect
+    units: N m-2
+  siforceintstrx:
+    dimensions: longitude latitude time
+    long_name: Internal Stress Term in Force Balance (X-Component)
+    standard_name: sea_ice_x_internal_stress
+    units: N m-2
+  siforceintstry:
+    dimensions: longitude latitude time
+    long_name: Internal Stress Term in Force Balance (Y-Component)
+    standard_name: sea_ice_y_internal_stress
+    units: N m-2
+  siforcetiltx:
+    dimensions: longitude latitude time
+    long_name: Sea-Surface Tilt Term in Force Balance (X-Component)
+    standard_name: sea_ice_x_force_per_unit_area_due_to_sea_surface_tilt
+    units: N m-2
+  siforcetilty:
+    dimensions: longitude latitude time
+    long_name: Sea-Surface Tilt Term in Force Balance (Y-Component)
+    standard_name: sea_ice_y_force_per_unit_area_due_to_sea_surface_tilt
+    units: N m-2
+  sihc:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Heat Content per Unit Area
+    standard_name: sea_ice_temperature_expressed_as_heat_content
+    units: J m-2
+  siitdconc:
+    dimensions: longitude latitude iceband time
+    long_name: Sea-Ice Area Percentages in Thickness Categories
+    standard_name: sea_ice_area_fraction
+    units: '%'
+  siitdsnconc:
+    dimensions: longitude latitude iceband time
+    long_name: Snow Area Percentages in Ice Thickness Categories
+    standard_name: surface_snow_area_fraction
+    units: '%'
+  siitdsnthick:
+    dimensions: longitude latitude iceband time
+    long_name: Snow Thickness in Ice Thickness Categories
+    standard_name: surface_snow_thickness
+    units: m
+  siitdthick:
+    dimensions: longitude latitude iceband time
+    long_name: Sea-Ice Thickness in Thickness Categories
+    standard_name: sea_ice_thickness
+    units: m
+  simass:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Mass per Area
+    standard_name: sea_ice_amount
+    units: kg m-2
+  simassacrossline:
+    dimensions: siline time
+    long_name: Sea Mass Area Flux Through Straits
+    standard_name: sea_ice_transport_across_line
+    units: kg s-1
+  simpconc:
+    dimensions: longitude latitude time typemp
+    long_name: Percentage Cover of Sea Ice by Meltpond
+    standard_name: area_fraction
+    units: '%'
+  simpmass:
+    dimensions: longitude latitude time
+    long_name: Meltpond Mass per Unit Area (as Depth)
+    standard_name: sea_ice_melt_pond_thickness
+    units: m
+  simprefrozen:
+    dimensions: longitude latitude time
+    long_name: Thickness of Refrozen Ice on Melt Pond
+    standard_name: thickness_of_ice_on_sea_ice_melt_pond
+    units: m
+  sipr:
+    dimensions: longitude latitude time
+    long_name: Rainfall Rate over Sea Ice
+    standard_name: rainfall_flux
+    units: kg m-2 s-1
+  sirdgconc:
+    dimensions: longitude latitude time typesirdg
+    long_name: Percentage Cover of Sea Ice by Ridging
+    standard_name: area_fraction
+    units: '1'
+  sirdgthick:
+    dimensions: longitude latitude time
+    long_name: Ridged Ice Thickness
+    standard_name: sea_ice_thickness
+    units: m
+  sisali:
+    dimensions: longitude latitude time
+    long_name: Sea Ice Salinity
+    standard_name: sea_ice_salinity
+    units: '0.001'
+  sisaltmass:
+    dimensions: longitude latitude time
+    long_name: Mass of Salt in Sea Ice per Area
+    standard_name: sea_ice_mass_content_of_salt
+    units: kg m-2
+  sishevel:
+    dimensions: longitude latitude time1
+    long_name: Maximum Shear of Sea-Ice Velocity Field
+    standard_name: maximum_over_coordinate_rotation_of_sea_ice_horizontal_shear_strain_rate
+    units: s-1
+  sisnconc:
+    dimensions: longitude latitude time
+    long_name: Snow Area Percentage
+    standard_name: surface_snow_area_fraction
+    units: '%'
+  sisnhc:
+    dimensions: longitude latitude time
+    long_name: Snow Heat Content per Unit Area
+    standard_name: thermal_energy_content_of_surface_snow
+    units: J m-2
+  sisnmass:
+    dimensions: longitude latitude time
+    long_name: Snow Mass per Area
+    standard_name: liquid_water_content_of_surface_snow
+    units: kg m-2
+  sisnthick:
+    dimensions: longitude latitude time
+    long_name: Snow Thickness
+    standard_name: surface_snow_thickness
+    units: m
+  sispeed:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Speed
+    standard_name: sea_ice_speed
+    units: m s-1
+  sistremax:
+    dimensions: longitude latitude time1
+    long_name: Maximum Shear Stress in Sea Ice
+    standard_name: maximum_over_coordinate_rotation_of_sea_ice_horizontal_shear_stress
+    units: N m-1
+  sistresave:
+    dimensions: longitude latitude time1
+    long_name: Average Normal Stress in Sea Ice
+    standard_name: sea_ice_average_normal_horizontal_stress
+    units: N m-1
+  sistrxdtop:
+    dimensions: longitude latitude time
+    long_name: X-Component of Atmospheric Stress on Sea Ice
+    standard_name: surface_downward_x_stress
+    units: N m-2
+  sistrxubot:
+    dimensions: longitude latitude time
+    long_name: X-Component of Ocean Stress on Sea Ice
+    standard_name: upward_x_stress_at_sea_ice_base
+    units: N m-2
+  sistrydtop:
+    dimensions: longitude latitude time
+    long_name: Y-Component of Atmospheric Stress on Sea Ice
+    standard_name: surface_downward_y_stress
+    units: N m-2
+  sistryubot:
+    dimensions: longitude latitude time
+    long_name: Y-Component of Ocean Stress on Sea Ice
+    standard_name: upward_y_stress_at_sea_ice_base
+    units: N m-2
+  sitempbot:
+    dimensions: longitude latitude time
+    long_name: Temperature at Ice-Ocean Interface
+    standard_name: sea_ice_basal_temperature
+    units: K
+  sitempsnic:
+    dimensions: longitude latitude time
+    long_name: Temperature at Snow-Ice Interface
+    standard_name: sea_ice_surface_temperature
+    units: K
+  sitemptop:
+    dimensions: longitude latitude time
+    long_name: Surface Temperature of Sea Ice
+    standard_name: sea_ice_surface_temperature
+    units: K
+  sithick:
+    dimensions: longitude latitude time
+    long_name: Sea Ice Thickness
+    standard_name: sea_ice_thickness
+    units: m
+  sitimefrac:
+    dimensions: longitude latitude time
+    long_name: Fraction of Time Steps with Sea Ice
+    standard_name: fraction_of_time_with_sea_ice_area_fraction_above_threshold
+    units: '1'
+  siu:
+    dimensions: longitude latitude time
+    long_name: X-Component of Sea-Ice Velocity
+    standard_name: sea_ice_x_velocity
+    units: m s-1
+  siv:
+    dimensions: longitude latitude time
+    long_name: Y-Component of Sea-Ice Velocity
+    standard_name: sea_ice_y_velocity
+    units: m s-1
+  sivol:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Volume per Area
+    standard_name: sea_ice_thickness
+    units: m
+  sivoln:
+    dimensions: time
+    long_name: Sea-Ice Volume North
+    standard_name: sea_ice_volume
+    units: 1e3 km3
+  sivols:
+    dimensions: time
+    long_name: Sea-Ice Volume South
+    standard_name: sea_ice_volume
+    units: 1e3 km3
+  sndmassdyn:
+    dimensions: longitude latitude time
+    long_name: Snow Mass Rate of Change Through Advection by Sea-Ice Dynamics
+    standard_name: tendency_of_surface_snow_amount_due_to_sea_ice_dynamics
+    units: kg m-2 s-1
+  sndmassmelt:
+    dimensions: longitude latitude time
+    long_name: Snow Mass Rate of Change Through Melt
+    standard_name: surface_snow_melt_flux
+    units: kg m-2 s-1
+  sndmasssi:
+    dimensions: longitude latitude time
+    long_name: Snow Mass Rate of Change Through Snow-to-Ice Conversion
+    standard_name: tendency_of_surface_snow_amount_due_to_conversion_of_snow_to_sea_ice
+    units: kg m-2 s-1
+  sndmasssnf:
+    dimensions: longitude latitude time
+    long_name: Snow Mass Change Through Snow Fall
+    standard_name: snowfall_flux
+    units: kg m-2 s-1
+  sndmasssubl:
+    dimensions: longitude latitude time
+    long_name: Snow Mass Rate of Change Through Evaporation or Sublimation
+    standard_name: tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice
+    units: kg m-2 s-1
+  sndmasswindrif:
+    dimensions: longitude latitude time
+    long_name: Snow Mass Rate of Change Through Wind Drift of Snow
+    standard_name: tendency_of_surface_snow_amount_due_to_drifting_into_sea
+    units: kg m-2 s-1
+  snmassacrossline:
+    dimensions: siline time
+    long_name: Snow Mass Flux Through Straits
+    standard_name: snow_transport_across_line_due_to_sea_ice_dynamics
+    units: kg s-1

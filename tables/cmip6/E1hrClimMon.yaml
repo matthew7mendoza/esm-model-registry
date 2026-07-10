@@ -1,0 +1,26 @@
+variables:
+  rlut:
+    dimensions: longitude latitude time3
+    long_name: TOA Outgoing Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux
+    units: W m-2
+  rlutcs:
+    dimensions: longitude latitude time3
+    long_name: TOA Outgoing Clear-Sky Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux_assuming_clear_sky
+    units: W m-2
+  rsdt:
+    dimensions: longitude latitude time3
+    long_name: TOA Incident Shortwave Radiation
+    standard_name: toa_incoming_shortwave_flux
+    units: W m-2
+  rsut:
+    dimensions: longitude latitude time3
+    long_name: TOA Outgoing Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux
+    units: W m-2
+  rsutcs:
+    dimensions: longitude latitude time3
+    long_name: TOA Outgoing Clear-Sky Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky
+    units: W m-2

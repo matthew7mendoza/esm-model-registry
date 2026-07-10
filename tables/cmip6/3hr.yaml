@@ -1,0 +1,116 @@
+variables:
+  clt:
+    dimensions: longitude latitude time
+    long_name: Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  hfls:
+    dimensions: longitude latitude time
+    long_name: Surface Upward Latent Heat Flux
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  hfss:
+    dimensions: longitude latitude time
+    long_name: Surface Upward Sensible Heat Flux
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  huss:
+    dimensions: longitude latitude time1 height2m
+    long_name: Near-Surface Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  mrro:
+    dimensions: longitude latitude time
+    long_name: Total Runoff
+    standard_name: runoff_flux
+    units: kg m-2 s-1
+  mrsos:
+    dimensions: longitude latitude time1 sdepth1
+    long_name: Moisture in Upper Portion of Soil Column
+    standard_name: mass_content_of_water_in_soil_layer
+    units: kg m-2
+  pr:
+    dimensions: longitude latitude time
+    long_name: Precipitation
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prc:
+    dimensions: longitude latitude time
+    long_name: Convective Precipitation
+    standard_name: convective_precipitation_flux
+    units: kg m-2 s-1
+  prsn:
+    dimensions: longitude latitude time
+    long_name: Snowfall Flux
+    standard_name: snowfall_flux
+    units: kg m-2 s-1
+  ps:
+    dimensions: longitude latitude time1
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  rlds:
+    dimensions: longitude latitude time
+    long_name: Surface Downwelling Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air
+    units: W m-2
+  rldscs:
+    dimensions: longitude latitude time
+    long_name: Surface Downwelling Clear-Sky Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlus:
+    dimensions: longitude latitude time
+    long_name: Surface Upwelling Longwave Radiation
+    standard_name: surface_upwelling_longwave_flux_in_air
+    units: W m-2
+  rsds:
+    dimensions: longitude latitude time
+    long_name: Surface Downwelling Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsdscs:
+    dimensions: longitude latitude time
+    long_name: Surface Downwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdsdiff:
+    dimensions: longitude latitude time
+    long_name: Surface Diffuse Downwelling Shortwave Radiation
+    standard_name: surface_diffuse_downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsus:
+    dimensions: longitude latitude time
+    long_name: Surface Upwelling Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air
+    units: W m-2
+  rsuscs:
+    dimensions: longitude latitude time
+    long_name: Surface Upwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  tas:
+    dimensions: longitude latitude time1 height2m
+    long_name: Near-Surface Air Temperature
+    standard_name: air_temperature
+    units: K
+  tos:
+    dimensions: longitude latitude time1
+    long_name: Sea Surface Temperature
+    standard_name: sea_surface_temperature
+    units: degC
+  tslsi:
+    dimensions: longitude latitude time1
+    long_name: Surface Temperature Where Land or Sea Ice
+    standard_name: surface_temperature
+    units: K
+  uas:
+    dimensions: longitude latitude time1 height10m
+    long_name: Eastward Near-Surface Wind
+    standard_name: eastward_wind
+    units: m s-1
+  vas:
+    dimensions: longitude latitude time1 height10m
+    long_name: Northward Near-Surface Wind
+    standard_name: northward_wind
+    units: m s-1

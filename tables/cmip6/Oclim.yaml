@@ -1,0 +1,173 @@
+variables:
+  difmxybo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Momentum XY Biharmonic Diffusivity
+    standard_name: ocean_momentum_xy_biharmonic_diffusivity
+    units: m4 s-1
+  difmxybo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Momentum XY Biharmonic Diffusivity
+    standard_name: ocean_momentum_xy_biharmonic_diffusivity
+    units: m4 s-1
+  difmxylo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Momentum XY Laplacian Diffusivity
+    standard_name: ocean_momentum_xy_laplacian_diffusivity
+    units: m2 s-1
+  difmxylo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Momentum XY Laplacian Diffusivity
+    standard_name: ocean_momentum_xy_laplacian_diffusivity
+    units: m2 s-1
+  diftrbbo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Tracer Bolus Biharmonic Diffusivity
+    standard_name: ocean_tracer_biharmonic_diffusivity_due_to_parameterized_mesoscale_eddy_advection
+    units: m4 s-1
+  diftrbbo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Tracer Bolus Biharmonic Diffusivity
+    standard_name: ocean_tracer_biharmonic_diffusivity_due_to_parameterized_mesoscale_eddy_advection
+    units: m4 s-1
+  diftrblo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Tracer Diffusivity Due to Parameterized Mesoscale Advection
+    standard_name: ocean_tracer_laplacian_diffusivity_due_to_parameterized_mesoscale_eddy_advection
+    units: m2 s-1
+  diftrblo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Tracer Diffusivity Due to Parameterized Mesoscale Advection
+    standard_name: ocean_tracer_laplacian_diffusivity_due_to_parameterized_mesoscale_eddy_advection
+    units: m2 s-1
+  diftrebo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Tracer Epineutral Biharmonic Diffusivity
+    standard_name: ocean_tracer_epineutral_biharmonic_diffusivity
+    units: m4 s-1
+  diftrebo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Tracer Epineutral Biharmonic Diffusivity
+    standard_name: ocean_tracer_epineutral_biharmonic_diffusivity
+    units: m4 s-1
+  diftrelo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Tracer Epineutral Laplacian Diffusivity
+    standard_name: ocean_tracer_epineutral_laplacian_diffusivity
+    units: m2 s-1
+  diftrelo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Tracer Epineutral Laplacian Diffusivity
+    standard_name: ocean_tracer_epineutral_laplacian_diffusivity
+    units: m2 s-1
+  diftrxybo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Tracer XY Biharmonic Diffusivity
+    standard_name: ocean_tracer_xy_biharmonic_diffusivity
+    units: m4 s-1
+  diftrxybo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Tracer XY Biharmonic Diffusivity
+    standard_name: ocean_tracer_xy_biharmonic_diffusivity
+    units: m4 s-1
+  diftrxylo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Tracer XY Laplacian Diffusivity
+    standard_name: ocean_tracer_xy_laplacian_diffusivity
+    units: m2 s-1
+  diftrxylo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Tracer XY Laplacian Diffusivity
+    standard_name: ocean_tracer_xy_laplacian_diffusivity
+    units: m2 s-1
+  difvho:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Heat Diffusivity
+    standard_name: ocean_vertical_heat_diffusivity
+    units: m2 s-1
+  difvmbo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Momentum Diffusivity Due to Background
+    standard_name: ocean_vertical_momentum_diffusivity_due_to_background
+    units: m2 s-1
+  difvmfdo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Momentum Diffusivity Due to Form Drag
+    standard_name: ocean_vertical_momentum_diffusivity_due_to_form_drag
+    units: m2 s-1
+  difvmo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Momentum Diffusivity
+    standard_name: ocean_vertical_momentum_diffusivity
+    units: m2 s-1
+  difvmto:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Momentum Diffusivity Due to Tides
+    standard_name: ocean_vertical_momentum_diffusivity_due_to_tides
+    units: m2 s-1
+  difvso:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Salt Diffusivity
+    standard_name: ocean_vertical_salt_diffusivity
+    units: m2 s-1
+  difvtrbo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Tracer Diffusivity Due to Background
+    standard_name: ocean_vertical_tracer_diffusivity_due_to_background
+    units: m2 s-1
+  difvtrto:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Vertical Tracer Diffusivity Due to Tides
+    standard_name: ocean_vertical_tracer_diffusivity_due_to_tides
+    units: m2 s-1
+  dispkevfo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Kinetic Energy Dissipation per Unit Area Due to Vertical Friction
+    standard_name: ocean_kinetic_energy_dissipation_per_unit_area_due_to_vertical_friction
+    units: W m-2
+  dispkexyfo:
+    dimensions: longitude latitude olevel time2
+    long_name: Ocean Kinetic Energy Dissipation per Unit Area Due to XY Friction
+    standard_name: ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction
+    units: W m-2
+  dispkexyfo2d:
+    dimensions: longitude latitude time2
+    long_name: Ocean Kinetic Energy Dissipation per Unit Area Due to XY Friction
+    standard_name: ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction
+    units: W m-2
+  tnkebto:
+    dimensions: longitude latitude olevel time2
+    long_name: Tendency of Ocean Eddy Kinetic Energy Content Due to Parameterized
+      Eddy Advection
+    standard_name: tendency_of_ocean_eddy_kinetic_energy_content_due_to_parameterized_eddy_advection
+    units: W m-2
+  tnkebto2d:
+    dimensions: longitude latitude time2
+    long_name: Tendency of Ocean Eddy Kinetic Energy Content Due to Parameterized
+      Eddy Advection
+    standard_name: tendency_of_ocean_eddy_kinetic_energy_content_due_to_parameterized_eddy_advection
+    units: W m-2
+  tnpeo:
+    dimensions: longitude latitude olevel time2
+    long_name: Tendency of Ocean Potential Energy Content
+    standard_name: tendency_of_ocean_potential_energy_content
+    units: W m-2
+  tnpeot:
+    dimensions: longitude latitude olevel time2
+    long_name: Tendency of Ocean Potential Energy Content Due to Tides
+    standard_name: tendency_of_ocean_potential_energy_content_due_to_tides
+    units: W m-2
+  tnpeotb:
+    dimensions: longitude latitude olevel time2
+    long_name: Tendency of Ocean Potential Energy Content Due to Background
+    standard_name: tendency_of_ocean_potential_energy_content_due_to_background
+    units: W m-2
+  zfullo:
+    dimensions: longitude latitude olevel time2
+    long_name: Depth Below Geoid of Ocean Layer
+    standard_name: depth_below_geoid
+    units: m
+  zhalfo:
+    dimensions: longitude latitude olevhalf time2
+    long_name: Depth Below Geoid of Interfaces Between Ocean Layers
+    standard_name: depth_below_geoid
+    units: m

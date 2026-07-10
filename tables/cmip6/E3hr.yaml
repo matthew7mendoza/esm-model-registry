@@ -1,0 +1,99 @@
+variables:
+  clivi:
+    dimensions: longitude latitude time
+    long_name: Ice Water Path
+    standard_name: atmosphere_mass_content_of_cloud_ice
+    units: kg m-2
+  clwvi:
+    dimensions: longitude latitude time
+    long_name: Condensed Water Path
+    standard_name: atmosphere_mass_content_of_cloud_condensed_water
+    units: kg m-2
+  gpp:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux out of Atmosphere Due to Gross Primary Production
+      on Land [kgC m-2 s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  prcsh:
+    dimensions: longitude latitude time
+    long_name: Precipitation Flux from Shallow Convection
+    standard_name: shallow_convective_precipitation_flux
+    units: kg m-2 s-1
+  prra:
+    dimensions: longitude latitude time
+    long_name: Rainfall Flux
+    standard_name: rainfall_flux
+    units: kg m-2 s-1
+  prrc:
+    dimensions: longitude latitude time
+    long_name: Convective Rainfall Rate
+    standard_name: convective_rainfall_flux
+    units: kg m-2 s-1
+  prsnc:
+    dimensions: longitude latitude time
+    long_name: Convective Snowfall Flux
+    standard_name: convective_snowfall_flux
+    units: kg m-2 s-1
+  prw:
+    dimensions: longitude latitude time
+    long_name: Water Vapor Path
+    standard_name: atmosphere_mass_content_of_water_vapor
+    units: kg m-2
+  psl:
+    dimensions: longitude latitude time
+    long_name: Sea Level Pressure
+    standard_name: air_pressure_at_mean_sea_level
+    units: Pa
+  ra:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to Autotrophic (Plant) Respiration
+      on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration
+    units: kg m-2 s-1
+  rh:
+    dimensions: longitude latitude time
+    long_name: Total Heterotrophic Respiration on Land as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  rlut:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux
+    units: W m-2
+  rlutcs:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Clear-Sky Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux_assuming_clear_sky
+    units: W m-2
+  rsdt:
+    dimensions: longitude latitude time
+    long_name: TOA Incident Shortwave Radiation
+    standard_name: toa_incoming_shortwave_flux
+    units: W m-2
+  rsut:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux
+    units: W m-2
+  rsutcs:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Clear-Sky Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky
+    units: W m-2
+  sfcWind:
+    dimensions: longitude latitude time height10m
+    long_name: Near-Surface Wind Speed
+    standard_name: wind_speed
+    units: m s-1
+  uas:
+    dimensions: longitude latitude time height10m
+    long_name: Eastward Near-Surface Wind
+    standard_name: eastward_wind
+    units: m s-1
+  vas:
+    dimensions: longitude latitude time height10m
+    long_name: Northward Near-Surface Wind
+    standard_name: northward_wind
+    units: m s-1

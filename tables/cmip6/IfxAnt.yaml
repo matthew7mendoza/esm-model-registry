@@ -1,0 +1,21 @@
+variables:
+  areacellg:
+    dimensions: longitude latitude
+    long_name: Grid-Cell Area for Ice Sheet Variables
+    standard_name: cell_area
+    units: m2
+  hfgeoubed:
+    dimensions: xant yant
+    long_name: Geothermal Heat Flux Beneath Land Ice
+    standard_name: upward_geothermal_heat_flux_at_ground_level_in_land_ice
+    units: W m-2
+  lithk:
+    dimensions: xant yant
+    long_name: Ice Sheet Thickness
+    standard_name: land_ice_thickness
+    units: m
+  topg:
+    dimensions: xant yant
+    long_name: Bedrock Altitude
+    standard_name: bedrock_altitude
+    units: m

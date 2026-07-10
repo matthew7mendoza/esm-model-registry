@@ -1,0 +1,86 @@
+variables:
+  bry:
+    dimensions: latitude plev39 time
+    long_name: Total Inorganic Bromine Volume Mixing Ratio
+    standard_name: mole_fraction_of_inorganic_bromine_in_air
+    units: mol mol-1
+  ch4:
+    dimensions: latitude plev39 time
+    long_name: Mole Fraction of CH4
+    standard_name: mole_fraction_of_methane_in_air
+    units: mol mol-1
+  cly:
+    dimensions: latitude plev39 time
+    long_name: Total Inorganic Chlorine Volume Mixing Ratio
+    standard_name: mole_fraction_of_inorganic_chlorine_in_air
+    units: mol mol-1
+  h2o:
+    dimensions: latitude plev39 time
+    long_name: Mass Fraction of Water
+    standard_name: mass_fraction_of_water_in_air
+    units: '1'
+  hcl:
+    dimensions: latitude plev39 time
+    long_name: HCl Volume Mixing Ratio
+    standard_name: mole_fraction_of_hydrogen_chloride_in_air
+    units: mol mol-1
+  hno3:
+    dimensions: latitude plev39 time
+    long_name: HNO3 Volume Mixing Ratio
+    standard_name: mole_fraction_of_nitric_acid_in_air
+    units: mol mol-1
+  ho2:
+    dimensions: latitude plev39 time
+    long_name: HO2 Volume Mixing Ratio
+    standard_name: mole_fraction_of_hydroperoxyl_radical_in_air
+    units: mol mol-1
+  meanage:
+    dimensions: latitude plev39 time
+    long_name: Mean Age of Stratospheric Air
+    standard_name: age_of_stratospheric_air
+    units: yr
+  n2o:
+    dimensions: latitude plev39 time
+    long_name: Mole Fraction of N2O
+    standard_name: mole_fraction_of_nitrous_oxide_in_air
+    units: mol mol-1
+  noy:
+    dimensions: latitude plev39 time
+    long_name: Total Reactive Nitrogen Volume Mixing Ratio
+    standard_name: mole_fraction_of_noy_expressed_as_nitrogen_in_air
+    units: mol mol-1
+  o3:
+    dimensions: latitude plev39 time
+    long_name: Mole Fraction of O3
+    standard_name: mole_fraction_of_ozone_in_air
+    units: mol mol-1
+  oh:
+    dimensions: latitude plev39 time
+    long_name: OH Volume Mixing Ratio
+    standard_name: mole_fraction_of_hydroxyl_radical_in_air
+    units: mol mol-1
+  ta:
+    dimensions: latitude plev39 time
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ua:
+    dimensions: latitude plev39 time
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va:
+    dimensions: latitude plev39 time
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  vt100:
+    dimensions: latitude time p100
+    long_name: Northward Eddy Temperature Flux
+    standard_name: covariance_over_longitude_of_northward_wind_and_air_temperature
+    units: K m s-1
+  zg:
+    dimensions: latitude plev39 time
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m

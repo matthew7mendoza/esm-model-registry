@@ -1,0 +1,181 @@
+variables:
+  albisccp:
+    dimensions: longitude latitude time
+    long_name: ISCCP Mean Cloud Albedo
+    standard_name: cloud_albedo
+    units: '1'
+  ccb:
+    dimensions: longitude latitude time
+    long_name: Air Pressure at Convective Cloud Base
+    standard_name: air_pressure_at_convective_cloud_base
+    units: Pa
+  cct:
+    dimensions: longitude latitude time
+    long_name: Air Pressure at Convective Cloud Top
+    standard_name: air_pressure_at_convective_cloud_top
+    units: Pa
+  cl:
+    dimensions: longitude latitude alevel time
+    long_name: Percentage Cloud Cover
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clcalipso:
+    dimensions: longitude latitude alt40 time
+    long_name: CALIPSO Percentage Cloud Cover
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clhcalipso:
+    dimensions: longitude latitude time p220
+    long_name: CALIPSO High Level Cloud Area Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cli:
+    dimensions: longitude latitude alevel time
+    long_name: Mass Fraction of Cloud Ice
+    standard_name: mass_fraction_of_cloud_ice_in_air
+    units: kg kg-1
+  clisccp:
+    dimensions: longitude latitude plev7c tau time
+    long_name: ISCCP Cloud Area Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clivi:
+    dimensions: longitude latitude time
+    long_name: Ice Water Path
+    standard_name: atmosphere_mass_content_of_cloud_ice
+    units: kg m-2
+  cllcalipso:
+    dimensions: longitude latitude time p840
+    long_name: CALIPSO Low Level Cloud Cover Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  clmcalipso:
+    dimensions: longitude latitude time p560
+    long_name: CALIPSO Mid Level Cloud Cover Percentage
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cltcalipso:
+    dimensions: longitude latitude time
+    long_name: CALIPSO Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  cltisccp:
+    dimensions: longitude latitude time
+    long_name: ISCCP Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  clw:
+    dimensions: longitude latitude alevel time
+    long_name: Mass Fraction of Cloud Liquid Water
+    standard_name: mass_fraction_of_cloud_liquid_water_in_air
+    units: kg kg-1
+  clwvi:
+    dimensions: longitude latitude time
+    long_name: Condensed Water Path
+    standard_name: atmosphere_mass_content_of_cloud_condensed_water
+    units: kg m-2
+  hur:
+    dimensions: longitude latitude alevel time
+    long_name: Relative Humidity
+    standard_name: relative_humidity
+    units: '%'
+  hus:
+    dimensions: longitude latitude alevel time
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  mc:
+    dimensions: longitude latitude alevhalf time
+    long_name: Convective Mass Flux
+    standard_name: atmosphere_net_upward_convective_mass_flux
+    units: kg m-2 s-1
+  pctisccp:
+    dimensions: longitude latitude time
+    long_name: ISCCP Mean Cloud Top Pressure
+    standard_name: air_pressure_at_cloud_top
+    units: Pa
+  pfull:
+    dimensions: longitude latitude alevel time
+    long_name: Pressure at Model Full-Levels
+    standard_name: air_pressure
+    units: Pa
+  phalf:
+    dimensions: longitude latitude alevhalf time
+    long_name: Pressure on Model Half-Levels
+    standard_name: air_pressure
+    units: Pa
+  ps:
+    dimensions: longitude latitude time
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  rldscs:
+    dimensions: longitude latitude time
+    long_name: Surface Downwelling Clear-Sky Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlutcs:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Clear-Sky Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux_assuming_clear_sky
+    units: W m-2
+  rsdscs:
+    dimensions: longitude latitude time
+    long_name: Surface Downwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdt:
+    dimensions: longitude latitude time
+    long_name: TOA Incident Shortwave Radiation
+    standard_name: toa_incoming_shortwave_flux
+    units: W m-2
+  rsuscs:
+    dimensions: longitude latitude time
+    long_name: Surface Upwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsut:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux
+    units: W m-2
+  rsutcs:
+    dimensions: longitude latitude time
+    long_name: TOA Outgoing Clear-Sky Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky
+    units: W m-2
+  ta:
+    dimensions: longitude latitude alevel time
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ta700:
+    dimensions: longitude latitude time p700
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ua:
+    dimensions: longitude latitude alevel time
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va:
+    dimensions: longitude latitude alevel time
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  wap:
+    dimensions: longitude latitude alevel time
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  wap500:
+    dimensions: longitude latitude time p500
+    long_name: Pressure Tendency
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  zg:
+    dimensions: longitude latitude alevel time
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m

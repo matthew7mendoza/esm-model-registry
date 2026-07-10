@@ -1,0 +1,35 @@
+name: GFDL SPEAR Family
+description: Seamless System for Prediction and EArth System Research
+
+components:
+  - am4_atmosphere
+  - mom6_ocean
+  - lm4_land
+  - sis2_seaice
+
+required_tables:
+  - Amon.yaml
+  - Omon.yaml   
+  - day.yaml    
+  - 6hrLev.yaml
+
+resolution_matrix:
+  atmosphere_land:
+    LO:
+      atmosphere_grid: "1.0 degree, 33 levels"
+      land_grid: "1.0 degree, dynamic vegetation"
+    MED:
+      atmosphere_grid: "0.5 degree, 33 levels"
+      land_grid: "0.5 degree, dynamic vegetation"
+    HI:
+      atmosphere_grid: "0.25 degree, 33 levels"
+      land_grid: "0.25 degree, dynamic vegetation"
+  ocean:
+    LO:
+      ocean_grid: "1.0 degree (0.3 degree tropical refinement), 75 levels"
+    HI_25:
+      ocean_grid: "0.25 degree, 75 levels"
+    HI_8:
+      ocean_grid: "0.083 degree (1/12 degree), 75 levels"
+
+compliance_level: standard

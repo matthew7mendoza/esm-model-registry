@@ -1,0 +1,81 @@
+variables:
+  pr:
+    dimensions: longitude latitude time
+    long_name: Precipitation
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prc:
+    dimensions: longitude latitude time
+    long_name: Convective Precipitation
+    standard_name: convective_precipitation_flux
+    units: kg m-2 s-1
+  psl:
+    dimensions: longitude latitude time1
+    long_name: Sea Level Pressure
+    standard_name: air_pressure_at_mean_sea_level
+    units: Pa
+  rlut:
+    dimensions: longitude latitude time1
+    long_name: TOA Outgoing Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux
+    units: W m-2
+  ta:
+    dimensions: longitude latitude plev3 time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ta27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tntr27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Tendency of Air Temperature Due to Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_radiative_heating
+    units: K s-1
+  ua:
+    dimensions: longitude latitude plev3 time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  ua27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  utendnogw27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Eastward Acceleration Due to Non-Orographic Gravity Wave Drag
+    standard_name: tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag
+    units: m s-2
+  va:
+    dimensions: longitude latitude plev3 time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  va27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  vtendnogw27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Northward Acceleration Due to Non-Orographic Gravity Wave Drag
+    standard_name: tendency_of_northward_wind_due_to_nonorographic_gravity_wave_drag
+    units: m s-2
+  wap:
+    dimensions: longitude latitude plev3 time1
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  wap27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  zg27:
+    dimensions: longitude latitude plev27 time1
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m

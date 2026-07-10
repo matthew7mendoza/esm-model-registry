@@ -1,0 +1,6 @@
+component_id: sis2_seaice
+official_name: "SIS2"
+source_repository: "https://github.com/NOAA-GFDL/SIS2"
+default_branch: "main"
+fms_diagnostic_module: "ice_sis"
+tracking_type: "dynamic_registration"

@@ -1,0 +1,77 @@
+variables:
+  epfy:
+    dimensions: latitude plev39 time
+    long_name: Northward Component of the Eliassen-Palm Flux
+    standard_name: northward_eliassen_palm_flux_in_air
+    units: m3 s-2
+  epfz:
+    dimensions: latitude plev39 time
+    long_name: Upward Component of the Eliassen-Palm Flux
+    standard_name: upward_eliassen_palm_flux_in_air
+    units: m3 s-2
+  hus:
+    dimensions: latitude plev19 time
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  psitem:
+    dimensions: latitude plev39 time
+    long_name: Transformed Eulerian Mean Mass Streamfunction
+    standard_name: atmosphere_transformed_eulerian_mean_meridional_overturning_mass_streamfunction
+    units: kg s-1
+  ta:
+    dimensions: latitude plev19 time
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  ua:
+    dimensions: latitude plev39 time
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  utendepfd:
+    dimensions: latitude plev39 time
+    long_name: Tendency of Eastward Wind Due to Eliassen-Palm Flux Divergence
+    standard_name: tendency_of_eastward_wind_due_to_eliassen_palm_flux_divergence
+    units: m s-2
+  utendnogw:
+    dimensions: latitude plev39 time
+    long_name: Eastward Acceleration Due to Non-Orographic Gravity Wave Drag
+    standard_name: tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag
+    units: m s-2
+  utendogw:
+    dimensions: latitude plev39 time
+    long_name: Eastward Acceleration Due to Orographic Gravity Wave Drag
+    standard_name: tendency_of_eastward_wind_due_to_orographic_gravity_wave_drag
+    units: m s-2
+  utendvtem:
+    dimensions: latitude plev39 time
+    long_name: Tendency of Eastward Wind Due to TEM Northward Advection and Coriolis
+      Term
+    standard_name: tendency_of_eastward_wind_due_to_advection_by_northward_transformed_eulerian_mean_air_velocity
+    units: m s-1 d-1
+  utendwtem:
+    dimensions: latitude plev39 time
+    long_name: Tendency of Eastward Wind Due to TEM Upward Advection
+    standard_name: tendency_of_eastward_wind_due_to_advection_by_upward_transformed_eulerian_mean_air_velocity
+    units: m s-1 d-1
+  va:
+    dimensions: latitude plev19 time
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  vtem:
+    dimensions: latitude plev39 time
+    long_name: Transformed Eulerian Mean Northward Wind
+    standard_name: northward_transformed_eulerian_mean_air_velocity
+    units: m s-1
+  wtem:
+    dimensions: latitude plev39 time
+    long_name: Transformed Eulerian Mean Upward Wind
+    standard_name: upward_transformed_eulerian_mean_air_velocity
+    units: m s-1
+  zg:
+    dimensions: latitude plev19 time
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m

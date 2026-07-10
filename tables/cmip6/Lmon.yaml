@@ -1,0 +1,278 @@
+variables:
+  baresoilFrac:
+    dimensions: longitude latitude time typebare
+    long_name: Bare Soil Percentage Area Coverage
+    standard_name: area_fraction
+    units: '%'
+  burntFractionAll:
+    dimensions: longitude latitude time typeburnt
+    long_name: Percentage of Entire Grid Cell That Is Covered by Burnt Vegetation
+      (All Classes)
+    standard_name: area_fraction
+    units: '%'
+  c3PftFrac:
+    dimensions: longitude latitude time typec3pft
+    long_name: Percentage Cover by C3 Plant Functional Type
+    standard_name: area_fraction
+    units: '%'
+  c4PftFrac:
+    dimensions: longitude latitude time typec4pft
+    long_name: Percentage Cover by C4 Plant Functional Type
+    standard_name: area_fraction
+    units: '%'
+  cCwd:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Coarse Woody Debris
+    standard_name: wood_debris_mass_content_of_carbon
+    units: kg m-2
+  cLeaf:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Leaves
+    standard_name: leaf_mass_content_of_carbon
+    units: kg m-2
+  cLitter:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Litter Pool
+    standard_name: litter_mass_content_of_carbon
+    units: kg m-2
+  cLitterAbove:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Above-Ground Litter
+    standard_name: surface_litter_mass_content_of_carbon
+    units: kg m-2
+  cLitterBelow:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Below-Ground Litter
+    standard_name: subsurface_litter_mass_content_of_carbon
+    units: kg m-2
+  cProduct:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Products of Land-Use Change
+    standard_name: carbon_mass_content_of_forestry_and_agricultural_products
+    units: kg m-2
+  cRoot:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Roots
+    standard_name: root_mass_content_of_carbon
+    units: kg m-2
+  cSoilFast:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Fast Soil Pool
+    standard_name: fast_soil_pool_mass_content_of_carbon
+    units: kg m-2
+  cSoilMedium:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Medium Soil Pool
+    standard_name: medium_soil_pool_mass_content_of_carbon
+    units: kg m-2
+  cSoilSlow:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Slow Soil Pool
+    standard_name: slow_soil_pool_mass_content_of_carbon
+    units: kg m-2
+  cVeg:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass in Vegetation
+    standard_name: vegetation_carbon_content
+    units: kg m-2
+  cropFrac:
+    dimensions: longitude latitude time typecrop
+    long_name: Percentage Crop Cover
+    standard_name: area_fraction
+    units: '%'
+  evspsblsoi:
+    dimensions: longitude latitude time
+    long_name: Water Evaporation from Soil
+    standard_name: water_evaporation_flux_from_soil
+    units: kg m-2 s-1
+  evspsblveg:
+    dimensions: longitude latitude time
+    long_name: Evaporation from Canopy
+    standard_name: water_evaporation_flux_from_canopy
+    units: kg m-2 s-1
+  fFire:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to CO2 Emission from Fire Excluding
+      Land-Use Change [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires_excluding_anthropogenic_land_use_change
+    units: kg m-2 s-1
+  fGrazing:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to Grazing on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_grazing
+    units: kg m-2 s-1
+  fHarvest:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to Crop Harvesting [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_crop_harvesting
+    units: kg m-2 s-1
+  fLitterSoil:
+    dimensions: longitude latitude time
+    long_name: Total Carbon Mass Flux from Litter to Soil
+    standard_name: carbon_mass_flux_into_soil_from_litter
+    units: kg m-2 s-1
+  fVegLitter:
+    dimensions: longitude latitude time
+    long_name: Total Carbon Mass Flux from Vegetation to Litter
+    standard_name: mass_flux_of_carbon_into_litter_from_vegetation
+    units: kg m-2 s-1
+  fVegSoil:
+    dimensions: longitude latitude time
+    long_name: Total Carbon Mass Flux from Vegetation Directly to Soil
+    standard_name: carbon_mass_flux_into_soil_from_vegetation_excluding_litter
+    units: kg m-2 s-1
+  gpp:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux out of Atmosphere Due to Gross Primary Production
+      on Land [kgC m-2 s-1]
+    standard_name: gross_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  grassFrac:
+    dimensions: longitude latitude time typenatgr
+    long_name: Natural Grass Area Percentage
+    standard_name: area_fraction
+    units: '%'
+  lai:
+    dimensions: longitude latitude time
+    long_name: Leaf Area Index
+    standard_name: leaf_area_index
+    units: '1'
+  landCoverFrac:
+    dimensions: longitude latitude vegtype time
+    long_name: Percentage of Area by Vegetation or Land-Cover Category
+    standard_name: area_fraction
+    units: '%'
+  mrfso:
+    dimensions: longitude latitude time
+    long_name: Soil Frozen Water Content
+    standard_name: soil_frozen_water_content
+    units: kg m-2
+  mrro:
+    dimensions: longitude latitude time
+    long_name: Total Runoff
+    standard_name: runoff_flux
+    units: kg m-2 s-1
+  mrros:
+    dimensions: longitude latitude time
+    long_name: Surface Runoff
+    standard_name: surface_runoff_flux
+    units: kg m-2 s-1
+  mrso:
+    dimensions: longitude latitude time
+    long_name: Total Soil Moisture Content
+    standard_name: mass_content_of_water_in_soil
+    units: kg m-2
+  mrsos:
+    dimensions: longitude latitude time sdepth1
+    long_name: Moisture in Upper Portion of Soil Column
+    standard_name: mass_content_of_water_in_soil_layer
+    units: kg m-2
+  nbp:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux out of Atmosphere Due to Net Biospheric Production
+      on Land [kgC m-2 s-1]
+    standard_name: surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes
+    units: kg m-2 s-1
+  npp:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production on Land as Carbon Mass Flux [kgC m-2 s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon
+    units: kg m-2 s-1
+  nppLeaf:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production Allocated to Leaves as Carbon Mass Flux [kgC
+      m-2 s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_leaves
+    units: kg m-2 s-1
+  nppRoot:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production Allocated to Roots as Carbon Mass Flux [kgC
+      m-2 s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_roots
+    units: kg m-2 s-1
+  nppWood:
+    dimensions: longitude latitude time
+    long_name: Net Primary Production Allocated to Wood as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_wood
+    units: kg m-2 s-1
+  pastureFrac:
+    dimensions: longitude latitude time typepasture
+    long_name: Percentage of Land Which Is Anthropogenic Pasture
+    standard_name: area_fraction
+    units: '%'
+  prveg:
+    dimensions: longitude latitude time
+    long_name: Precipitation onto Canopy
+    standard_name: precipitation_flux_onto_canopy
+    units: kg m-2 s-1
+  rGrowth:
+    dimensions: longitude latitude time
+    long_name: Total Autotrophic Respiration on Land as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_for_biomass_growth
+    units: kg m-2 s-1
+  rMaint:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to Maintenance Autotrophic Respiration
+      on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_for_biomass_maintenance
+    units: kg m-2 s-1
+  ra:
+    dimensions: longitude latitude time
+    long_name: Carbon Mass Flux into Atmosphere Due to Autotrophic (Plant) Respiration
+      on Land [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration
+    units: kg m-2 s-1
+  residualFrac:
+    dimensions: longitude latitude time typeresidual
+    long_name: Percentage of Grid Cell That Is Land but neither Vegetation Covered
+      nor Bare Soil
+    standard_name: area_fraction
+    units: '%'
+  rh:
+    dimensions: longitude latitude time
+    long_name: Total Heterotrophic Respiration on Land as Carbon Mass Flux [kgC m-2
+      s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration
+    units: kg m-2 s-1
+  shrubFrac:
+    dimensions: longitude latitude time typeshrub
+    long_name: Percentage Cover by Shrub
+    standard_name: area_fraction
+    units: '%'
+  tran:
+    dimensions: longitude latitude time
+    long_name: Transpiration
+    standard_name: transpiration_flux
+    units: kg m-2 s-1
+  treeFrac:
+    dimensions: longitude latitude time typetree
+    long_name: Tree Cover Percentage
+    standard_name: area_fraction
+    units: '%'
+  treeFracPrimDec:
+    dimensions: longitude latitude time typepdec
+    long_name: Percentage Cover by Primary Deciduous Tree
+    standard_name: area_fraction
+    units: '%'
+  treeFracPrimEver:
+    dimensions: longitude latitude time typepever
+    long_name: Percentage Cover by Primary Evergreen Trees
+    standard_name: area_fraction
+    units: '%'
+  treeFracSecDec:
+    dimensions: longitude latitude time typesdec
+    long_name: Percentage Cover by Secondary Deciduous Trees
+    standard_name: area_fraction
+    units: '%'
+  treeFracSecEver:
+    dimensions: longitude latitude time typesever
+    long_name: Percentage Cover by Secondary Evergreen Trees
+    standard_name: area_fraction
+    units: '%'
+  tsl:
+    dimensions: longitude latitude sdepth time
+    long_name: Temperature of Soil
+    standard_name: soil_temperature
+    units: K

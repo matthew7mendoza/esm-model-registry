@@ -1,0 +1,6 @@
+component_id: mom6_ocean
+official_name: "MOM6"
+source_repository: "https://github.com/NOAA-GFDL/MOM6"
+pinned_commit: "2e39f174b70210375dd89d9ec3a7938204c14833"
+fms_diagnostic_module: "ocean_model"
+tracking_type: "dynamic_registration"

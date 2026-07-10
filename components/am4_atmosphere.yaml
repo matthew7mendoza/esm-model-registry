@@ -1,0 +1,6 @@
+component_id: am4_atmosphere
+official_name: "AM4.0"
+source_repository: "https://github.com/NOAA-GFDL/AM4"
+default_branch: "main"
+fms_diagnostic_module: "atmos_drivers"
+tracking_type: "dynamic_registration"

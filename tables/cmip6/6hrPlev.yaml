@@ -1,0 +1,86 @@
+variables:
+  bldep:
+    dimensions: longitude latitude time
+    long_name: Boundary Layer Depth
+    standard_name: atmosphere_boundary_layer_thickness
+    units: m
+  hurs:
+    dimensions: longitude latitude time height2m
+    long_name: Near-Surface Relative Humidity
+    standard_name: relative_humidity
+    units: '%'
+  hus4:
+    dimensions: longitude latitude plev4 time
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  pr:
+    dimensions: longitude latitude time
+    long_name: Precipitation
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prhmax:
+    dimensions: longitude latitude time
+    long_name: Maximum Hourly Precipitation Rate
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  psl:
+    dimensions: longitude latitude time
+    long_name: Sea Level Pressure
+    standard_name: air_pressure_at_mean_sea_level
+    units: Pa
+  rv850:
+    dimensions: longitude latitude time p850
+    long_name: Relative Vorticity at 850hPa
+    standard_name: atmosphere_relative_vorticity
+    units: s-1
+  sfcWind:
+    dimensions: longitude latitude time height10m
+    long_name: Near-Surface Wind Speed
+    standard_name: wind_speed
+    units: m s-1
+  tas:
+    dimensions: longitude latitude time height2m
+    long_name: Near-Surface Air Temperature
+    standard_name: air_temperature
+    units: K
+  ua100m:
+    dimensions: longitude latitude time height100m
+    long_name: Eastward Wind at 100m
+    standard_name: eastward_wind
+    units: m s-1
+  uas:
+    dimensions: longitude latitude time height10m
+    long_name: Eastward Near-Surface Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va100m:
+    dimensions: longitude latitude time height100m
+    long_name: Northward Wind at 100m
+    standard_name: northward_wind
+    units: m s-1
+  vas:
+    dimensions: longitude latitude time height10m
+    long_name: Northward Near-Surface Wind
+    standard_name: northward_wind
+    units: m s-1
+  wap4:
+    dimensions: longitude latitude plev4 time
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  wsgmax100m:
+    dimensions: longitude latitude time height100m
+    long_name: Maximum Wind Speed of Gust at 100m
+    standard_name: wind_speed_of_gust
+    units: m s-1
+  wsgmax10m:
+    dimensions: longitude latitude time height10m
+    long_name: Maximum Wind Speed of Gust at 10m
+    standard_name: wind_speed_of_gust
+    units: m s-1
+  zg1000:
+    dimensions: longitude latitude time p1000
+    long_name: Geopotential Height at 1000hPa
+    standard_name: geopotential_height
+    units: m

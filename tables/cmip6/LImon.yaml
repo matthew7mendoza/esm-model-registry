@@ -1,0 +1,181 @@
+variables:
+  acabfIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Mass Balance Flux
+    standard_name: land_ice_surface_specific_mass_balance_flux
+    units: kg m-2 s-1
+  agesno:
+    dimensions: longitude latitude time
+    long_name: Mean Age of Snow
+    standard_name: age_of_surface_snow
+    units: day
+  hfdsn:
+    dimensions: longitude latitude time
+    long_name: Downward Heat Flux into Snow Where Land over Land
+    standard_name: surface_downward_heat_flux_in_snow
+    units: W m-2
+  hflsIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Upward Latent Heat Flux
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  hfssIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Upward Sensible Heat Flux
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  icemIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Ice Melt Flux
+    standard_name: land_ice_surface_melt_flux
+    units: kg m-2 s-1
+  litemptopIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Temperature at Top of Ice Sheet Model
+    standard_name: temperature_at_top_of_ice_sheet_model
+    units: K
+  lwsnl:
+    dimensions: longitude latitude time
+    long_name: Liquid Water Content of Snow Layer
+    standard_name: liquid_water_content_of_surface_snow
+    units: kg m-2
+  mrroIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Total Runoff
+    standard_name: runoff_flux
+    units: kg m-2 s-1
+  orogIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Altitude
+    standard_name: surface_altitude
+    units: m
+  pflw:
+    dimensions: longitude latitude time
+    long_name: Liquid Water Content of Permafrost Layer
+    standard_name: liquid_water_content_of_permafrost_layer
+    units: kg m-2
+  prraIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Rainfall Rate
+    standard_name: rainfall_flux
+    units: kg m-2 s-1
+  prsnIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Snowfall Flux
+    standard_name: snowfall_flux
+    units: kg m-2 s-1
+  rldsIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Downwelling Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air
+    units: W m-2
+  rlusIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Upwelling Longwave Radiation
+    standard_name: surface_upwelling_longwave_flux_in_air
+    units: W m-2
+  rsdsIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Downwelling Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsusIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Upwelling Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air
+    units: W m-2
+  sbl:
+    dimensions: longitude latitude time
+    long_name: Surface Snow and Ice Sublimation Flux
+    standard_name: tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice
+    units: kg m-2 s-1
+  sblIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Snow and Ice Sublimation Flux
+    standard_name: tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice
+    units: kg m-2 s-1
+  sftflf:
+    dimensions: longitude latitude time
+    long_name: Floating Ice Shelf Area Percentage
+    standard_name: floating_ice_shelf_area_fraction
+    units: '%'
+  sftgif:
+    dimensions: longitude latitude time
+    long_name: Land Ice Area Percentage
+    standard_name: land_ice_area_fraction
+    units: '%'
+  sftgrf:
+    dimensions: longitude latitude time
+    long_name: Grounded Ice Sheet Area Percentage
+    standard_name: grounded_ice_sheet_area_fraction
+    units: '%'
+  snc:
+    dimensions: longitude latitude time
+    long_name: Snow Area Percentage
+    standard_name: surface_snow_area_fraction
+    units: '%'
+  sncIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Snow Cover Percentage
+    standard_name: surface_snow_area_fraction
+    units: '%'
+  snd:
+    dimensions: longitude latitude time
+    long_name: Snow Depth
+    standard_name: surface_snow_thickness
+    units: m
+  snicefreezIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Snow and Ice Refreeze Flux
+    standard_name: surface_snow_and_ice_refreezing_flux
+    units: kg m-2 s-1
+  snicemIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Snow and Ice Melt Flux
+    standard_name: surface_snow_and_ice_melt_flux
+    units: kg m-2 s-1
+  snm:
+    dimensions: longitude latitude time
+    long_name: Surface Snow Melt
+    standard_name: surface_snow_melt_flux
+    units: kg m-2 s-1
+  snmIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Snow Melt
+    standard_name: surface_snow_melt_flux
+    units: kg m-2 s-1
+  snw:
+    dimensions: longitude latitude time
+    long_name: Surface Snow Amount
+    standard_name: surface_snow_amount
+    units: kg m-2
+  sootsn:
+    dimensions: longitude latitude time
+    long_name: Snow Soot Content
+    standard_name: soot_content_of_surface_snow
+    units: kg m-2
+  tasIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Near-Surface Air Temperature
+    standard_name: air_temperature
+    units: K
+  tpf:
+    dimensions: longitude latitude time
+    long_name: Permafrost Layer Thickness
+    standard_name: permafrost_layer_thickness
+    units: m
+  tsIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Surface Temperature
+    standard_name: surface_temperature
+    units: K
+  tsn:
+    dimensions: longitude latitude time
+    long_name: Snow Internal Temperature
+    standard_name: temperature_in_surface_snow
+    units: K
+  tsnIs:
+    dimensions: longitude latitude time
+    long_name: Ice Sheet Snow Internal Temperature
+    standard_name: temperature_in_surface_snow
+    units: K

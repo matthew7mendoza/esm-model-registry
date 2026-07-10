@@ -1,0 +1,401 @@
+variables:
+  ccb:
+    dimensions: site time1
+    long_name: Air Pressure at Convective Cloud Base
+    standard_name: air_pressure_at_convective_cloud_base
+    units: Pa
+  cct:
+    dimensions: site time1
+    long_name: Air Pressure at Convective Cloud Top
+    standard_name: air_pressure_at_convective_cloud_top
+    units: Pa
+  ci:
+    dimensions: site time1
+    long_name: Fraction of Time Convection Occurs in Cell
+    standard_name: convection_time_fraction
+    units: '1'
+  cl:
+    dimensions: alevel site time1
+    long_name: Percentage Cloud Cover
+    standard_name: cloud_area_fraction_in_atmosphere_layer
+    units: '%'
+  cli:
+    dimensions: alevel site time1
+    long_name: Mass Fraction of Cloud Ice
+    standard_name: mass_fraction_of_cloud_ice_in_air
+    units: kg kg-1
+  clivi:
+    dimensions: site time1
+    long_name: Ice Water Path
+    standard_name: atmosphere_mass_content_of_cloud_ice
+    units: kg m-2
+  clt:
+    dimensions: site time1
+    long_name: Total Cloud Cover Percentage
+    standard_name: cloud_area_fraction
+    units: '%'
+  clw:
+    dimensions: alevel site time1
+    long_name: Mass Fraction of Cloud Liquid Water
+    standard_name: mass_fraction_of_cloud_liquid_water_in_air
+    units: kg kg-1
+  clwvi:
+    dimensions: site time1
+    long_name: Condensed Water Path
+    standard_name: atmosphere_mass_content_of_cloud_condensed_water
+    units: kg m-2
+  edt:
+    dimensions: alevel site time1
+    long_name: Eddy Diffusivity Coefficient for Temperature
+    standard_name: atmosphere_heat_diffusivity
+    units: m2 s-1
+  evspsbl:
+    dimensions: site time1
+    long_name: Evaporation Including Sublimation and Transpiration
+    standard_name: water_evapotranspiration_flux
+    units: kg m-2 s-1
+  evu:
+    dimensions: alevel site time1
+    long_name: Eddy Viscosity Coefficient for Momentum
+    standard_name: atmosphere_momentum_diffusivity
+    units: m2 s-1
+  fco2antt:
+    dimensions: site time1
+    long_name: Carbon Mass Flux into Atmosphere Due to All Anthropogenic Emissions
+      of CO2 [kgC m-2 s-1]
+    standard_name: tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission
+    units: kg m-2 s-1
+  fco2fos:
+    dimensions: site time1
+    long_name: Carbon Mass Flux into Atmosphere Due to Fossil Fuel Emissions of CO2
+      [kgC m-2 s-1]
+    standard_name: tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fossil_fuel_combustion
+    units: kg m-2 s-1
+  fco2nat:
+    dimensions: site time1
+    long_name: Surface Carbon Mass Flux into the Atmosphere Due to Natural Sources
+      [kgC m-2 s-1]
+    standard_name: surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_sources
+    units: kg m-2 s-1
+  hfls:
+    dimensions: site time1
+    long_name: Surface Upward Latent Heat Flux
+    standard_name: surface_upward_latent_heat_flux
+    units: W m-2
+  hfss:
+    dimensions: site time1
+    long_name: Surface Upward Sensible Heat Flux
+    standard_name: surface_upward_sensible_heat_flux
+    units: W m-2
+  hur:
+    dimensions: alevel site time1
+    long_name: Relative Humidity
+    standard_name: relative_humidity
+    units: '%'
+  hurs:
+    dimensions: site time1 height2m
+    long_name: Near-Surface Relative Humidity
+    standard_name: relative_humidity
+    units: '%'
+  hus:
+    dimensions: alevel site time1
+    long_name: Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  huss:
+    dimensions: site time1 height2m
+    long_name: Near-Surface Specific Humidity
+    standard_name: specific_humidity
+    units: '1'
+  latitude:
+    dimensions: site
+    long_name: Latitude
+    standard_name: latitude
+    units: degrees_north
+  longitude:
+    dimensions: site
+    long_name: Longitude
+    standard_name: longitude
+    units: degrees_east
+  mc:
+    dimensions: alevhalf site time1
+    long_name: Convective Mass Flux
+    standard_name: atmosphere_net_upward_convective_mass_flux
+    units: kg m-2 s-1
+  pfull:
+    dimensions: alevel site time1
+    long_name: Pressure at Model Full-Levels
+    standard_name: air_pressure
+    units: Pa
+  phalf:
+    dimensions: alevhalf site time1
+    long_name: Pressure on Model Half-Levels
+    standard_name: air_pressure
+    units: Pa
+  pr:
+    dimensions: site time1
+    long_name: Precipitation
+    standard_name: precipitation_flux
+    units: kg m-2 s-1
+  prc:
+    dimensions: site time1
+    long_name: Convective Precipitation
+    standard_name: convective_precipitation_flux
+    units: kg m-2 s-1
+  prsn:
+    dimensions: site time1
+    long_name: Snowfall Flux
+    standard_name: snowfall_flux
+    units: kg m-2 s-1
+  prw:
+    dimensions: site time1
+    long_name: Water Vapor Path
+    standard_name: atmosphere_mass_content_of_water_vapor
+    units: kg m-2
+  ps:
+    dimensions: site time1
+    long_name: Surface Air Pressure
+    standard_name: surface_air_pressure
+    units: Pa
+  psl:
+    dimensions: site time1
+    long_name: Sea Level Pressure
+    standard_name: air_pressure_at_mean_sea_level
+    units: Pa
+  rld:
+    dimensions: alevhalf site time1
+    long_name: Downwelling Longwave Radiation
+    standard_name: downwelling_longwave_flux_in_air
+    units: W m-2
+  rldcs:
+    dimensions: alevhalf site time1
+    long_name: Downwelling Clear-Sky Longwave Radiation
+    standard_name: downwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlds:
+    dimensions: site time1
+    long_name: Surface Downwelling Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air
+    units: W m-2
+  rldscs:
+    dimensions: site time1
+    long_name: Surface Downwelling Clear-Sky Longwave Radiation
+    standard_name: surface_downwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlu:
+    dimensions: alevhalf site time1
+    long_name: Upwelling Longwave Radiation
+    standard_name: upwelling_longwave_flux_in_air
+    units: W m-2
+  rlucs:
+    dimensions: alevhalf site time1
+    long_name: Upwelling Clear-Sky Longwave Radiation
+    standard_name: upwelling_longwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rlus:
+    dimensions: site time1
+    long_name: Surface Upwelling Longwave Radiation
+    standard_name: surface_upwelling_longwave_flux_in_air
+    units: W m-2
+  rlut:
+    dimensions: site time1
+    long_name: TOA Outgoing Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux
+    units: W m-2
+  rlutcs:
+    dimensions: site time1
+    long_name: TOA Outgoing Clear-Sky Longwave Radiation
+    standard_name: toa_outgoing_longwave_flux_assuming_clear_sky
+    units: W m-2
+  rsd:
+    dimensions: alevhalf site time1
+    long_name: Downwelling Shortwave Radiation
+    standard_name: downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsdcs:
+    dimensions: alevhalf site time1
+    long_name: Downwelling Clear-Sky Shortwave Radiation
+    standard_name: downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsds:
+    dimensions: site time1
+    long_name: Surface Downwelling Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air
+    units: W m-2
+  rsdscs:
+    dimensions: site time1
+    long_name: Surface Downwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_downwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsdt:
+    dimensions: site time1
+    long_name: TOA Incident Shortwave Radiation
+    standard_name: toa_incoming_shortwave_flux
+    units: W m-2
+  rsu:
+    dimensions: alevhalf site time1
+    long_name: Upwelling Shortwave Radiation
+    standard_name: upwelling_shortwave_flux_in_air
+    units: W m-2
+  rsucs:
+    dimensions: alevhalf site time1
+    long_name: Upwelling Clear-Sky Shortwave Radiation
+    standard_name: upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsus:
+    dimensions: site time1
+    long_name: Surface Upwelling Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air
+    units: W m-2
+  rsuscs:
+    dimensions: site time1
+    long_name: Surface Upwelling Clear-Sky Shortwave Radiation
+    standard_name: surface_upwelling_shortwave_flux_in_air_assuming_clear_sky
+    units: W m-2
+  rsut:
+    dimensions: site time1
+    long_name: TOA Outgoing Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux
+    units: W m-2
+  rsutcs:
+    dimensions: site time1
+    long_name: TOA Outgoing Clear-Sky Shortwave Radiation
+    standard_name: toa_outgoing_shortwave_flux_assuming_clear_sky
+    units: W m-2
+  rtmt:
+    dimensions: site time1
+    long_name: Net Downward Radiative Flux at Top of Model
+    standard_name: net_downward_radiative_flux_at_top_of_atmosphere_model
+    units: W m-2
+  sbl:
+    dimensions: site time1
+    long_name: Surface Snow and Ice Sublimation Flux
+    standard_name: tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice
+    units: kg m-2 s-1
+  sci:
+    dimensions: site time1
+    long_name: Fraction of Time Shallow Convection Occurs
+    standard_name: shallow_convection_time_fraction
+    units: '1'
+  sfcWind:
+    dimensions: site time1 height10m
+    long_name: Near-Surface Wind Speed
+    standard_name: wind_speed
+    units: m s-1
+  ta:
+    dimensions: alevel site time1
+    long_name: Air Temperature
+    standard_name: air_temperature
+    units: K
+  tas:
+    dimensions: site time1 height2m
+    long_name: Near-Surface Air Temperature
+    standard_name: air_temperature
+    units: K
+  tauu:
+    dimensions: site time1
+    long_name: Surface Downward Eastward Wind Stress
+    standard_name: surface_downward_eastward_stress
+    units: Pa
+  tauv:
+    dimensions: site time1
+    long_name: Surface Downward Northward Wind Stress
+    standard_name: surface_downward_northward_stress
+    units: Pa
+  tnhus:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity
+    standard_name: tendency_of_specific_humidity
+    units: s-1
+  tnhusa:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity Due to Advection
+    standard_name: tendency_of_specific_humidity_due_to_advection
+    units: s-1
+  tnhusc:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity Due to Convection
+    standard_name: tendency_of_specific_humidity_due_to_convection
+    units: s-1
+  tnhusd:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity Due to Numerical Diffusion
+    standard_name: tendency_of_specific_humidity_due_to_diffusion
+    units: s-1
+  tnhusmp:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity Due to Model Physics
+    standard_name: tendency_of_specific_humidity_due_to_model_physics
+    units: s-1
+  tnhusscpbl:
+    dimensions: alevel site time1
+    long_name: Tendency of Specific Humidity Due to Stratiform Cloud and Precipitation
+      and Boundary Layer Mixing
+    standard_name: tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing
+    units: s-1
+  tnt:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature
+    standard_name: tendency_of_air_temperature
+    units: K s-1
+  tnta:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Advection
+    standard_name: tendency_of_air_temperature_due_to_advection
+    units: K s-1
+  tntc:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Convection
+    standard_name: tendency_of_air_temperature_due_to_convection
+    units: K s-1
+  tntmp:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Model Physics
+    standard_name: tendency_of_air_temperature_due_to_model_physics
+    units: K s-1
+  tntr:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Radiative Heating
+    standard_name: tendency_of_air_temperature_due_to_radiative_heating
+    units: K s-1
+  tntscpbl:
+    dimensions: alevel site time1
+    long_name: Tendency of Air Temperature Due to Stratiform Cloud and Precipitation
+      and Boundary Layer Mixing
+    standard_name: tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing
+    units: K s-1
+  ts:
+    dimensions: site time1
+    long_name: Surface Temperature
+    standard_name: surface_temperature
+    units: K
+  ua:
+    dimensions: alevel site time1
+    long_name: Eastward Wind
+    standard_name: eastward_wind
+    units: m s-1
+  uas:
+    dimensions: site time1 height10m
+    long_name: Eastward Near-Surface Wind
+    standard_name: eastward_wind
+    units: m s-1
+  va:
+    dimensions: alevel site time1
+    long_name: Northward Wind
+    standard_name: northward_wind
+    units: m s-1
+  vas:
+    dimensions: site time1 height10m
+    long_name: Northward Near-Surface Wind
+    standard_name: northward_wind
+    units: m s-1
+  wap:
+    dimensions: alevel site time1
+    long_name: Omega (=dp/dt)
+    standard_name: lagrangian_tendency_of_air_pressure
+    units: Pa s-1
+  zg:
+    dimensions: alevel site time1
+    long_name: Geopotential Height
+    standard_name: geopotential_height
+    units: m

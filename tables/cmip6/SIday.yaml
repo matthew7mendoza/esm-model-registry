@@ -1,0 +1,46 @@
+variables:
+  siconc:
+    dimensions: longitude latitude time typesi
+    long_name: Sea-Ice Area Percentage (Ocean Grid)
+    standard_name: sea_ice_area_fraction
+    units: '%'
+  siconca:
+    dimensions: longitude latitude time typesi
+    long_name: Sea-Ice Area Percentage (Atmospheric Grid)
+    standard_name: sea_ice_area_fraction
+    units: '%'
+  sisnthick:
+    dimensions: longitude latitude time
+    long_name: Snow Thickness
+    standard_name: surface_snow_thickness
+    units: m
+  sispeed:
+    dimensions: longitude latitude time
+    long_name: Sea-Ice Speed
+    standard_name: sea_ice_speed
+    units: m s-1
+  sitemptop:
+    dimensions: longitude latitude time
+    long_name: Surface Temperature of Sea Ice
+    standard_name: sea_ice_surface_temperature
+    units: K
+  sithick:
+    dimensions: longitude latitude time
+    long_name: Sea Ice Thickness
+    standard_name: sea_ice_thickness
+    units: m
+  sitimefrac:
+    dimensions: longitude latitude time
+    long_name: Fraction of Time Steps with Sea Ice
+    standard_name: fraction_of_time_with_sea_ice_area_fraction_above_threshold
+    units: '1'
+  siu:
+    dimensions: longitude latitude time
+    long_name: X-Component of Sea-Ice Velocity
+    standard_name: sea_ice_x_velocity
+    units: m s-1
+  siv:
+    dimensions: longitude latitude time
+    long_name: Y-Component of Sea-Ice Velocity
+    standard_name: sea_ice_y_velocity
+    units: m s-1
